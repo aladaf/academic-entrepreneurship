@@ -1,0 +1,780 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2026-01-28">
+    <creator>NetworkX 2.8.4</creator>
+  </meta>
+  <graph defaultedgetype="undirected" mode="static" name="">
+    <attributes mode="static" class="edge">
+      <attribute id="7" title="weight_raw" type="long" />
+    </attributes>
+    <attributes mode="static" class="node">
+      <attribute id="0" title="papers" type="long" />
+      <attribute id="1" title="citations" type="long" />
+      <attribute id="2" title="modularity_class" type="long" />
+      <attribute id="3" title="degree" type="long" />
+      <attribute id="4" title="weighted_degree" type="double" />
+      <attribute id="5" title="betweenness" type="double" />
+      <attribute id="6" title="pagerank" type="double" />
+    </attributes>
+    <nodes>
+      <node id="FERREIRA, JJ" label="FERREIRA, JJ">
+        <attvalues>
+          <attvalue for="0" value="3" />
+          <attvalue for="1" value="121" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="11" />
+          <attvalue for="4" value="3.4778415307684094" />
+          <attvalue for="5" value="0.3865546218487395" />
+          <attvalue for="6" value="0.04661699752377649" />
+        </attvalues>
+      </node>
+      <node id="TEULON, F" label="TEULON, F">
+        <attvalues>
+          <attvalue for="0" value="2" />
+          <attvalue for="1" value="240" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="1" />
+          <attvalue for="4" value="0.187873826730226" />
+          <attvalue for="5" value="0.0" />
+          <attvalue for="6" value="0.009584161561251471" />
+        </attvalues>
+      </node>
+      <node id="GABRIELSSON, M" label="GABRIELSSON, M">
+        <attvalues>
+          <attvalue for="0" value="4" />
+          <attvalue for="1" value="36" />
+          <attvalue for="2" value="4" />
+          <attvalue for="3" value="4" />
+          <attvalue for="4" value="1.5846405268164176" />
+          <attvalue for="5" value="0.10756302521008404" />
+          <attvalue for="6" value="0.032991009226430584" />
+        </attvalues>
+      </node>
+      <node id="SITARIDIS, I" label="SITARIDIS, I">
+        <attvalues>
+          <attvalue for="0" value="2" />
+          <attvalue for="1" value="45" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="5" />
+          <attvalue for="4" value="1.3935742379196887" />
+          <attvalue for="5" value="0.16638655462184876" />
+          <attvalue for="6" value="0.030103411746375833" />
+        </attvalues>
+      </node>
+      <node id="GRIGOROUDIS, E" label="GRIGOROUDIS, E">
+        <attvalues>
+          <attvalue for="0" value="2" />
+          <attvalue for="1" value="40" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="3" />
+          <attvalue for="4" value="1.0521763767802357" />
+          <attvalue for="5" value="0.08235294117647059" />
+          <attvalue for="6" value="0.029722211078111738" />
+        </attvalues>
+      </node>
+      <node id="BREM, A" label="BREM, A">
+        <attvalues>
+          <attvalue for="0" value="3" />
+          <attvalue for="1" value="441" />
+          <attvalue for="2" value="3" />
+          <attvalue for="3" value="2" />
+          <attvalue for="4" value="0.5980857979348255" />
+          <attvalue for="5" value="0.05714285714285715" />
+          <attvalue for="6" value="0.01867712793157924" />
+        </attvalues>
+      </node>
+      <node id="ZARDINI, A" label="ZARDINI, A">
+        <attvalues>
+          <attvalue for="0" value="2" />
+          <attvalue for="1" value="131" />
+          <attvalue for="2" value="5" />
+          <attvalue for="3" value="3" />
+          <attvalue for="4" value="2.2831373285764585" />
+          <attvalue for="5" value="0.0" />
+          <attvalue for="6" value="0.02912859892290725" />
+        </attvalues>
+      </node>
+      <node id="TROISE, C" label="TROISE, C">
+        <attvalues>
+          <attvalue for="0" value="3" />
+          <attvalue for="1" value="69" />
+          <attvalue for="2" value="1" />
+          <attvalue for="3" value="4" />
+          <attvalue for="4" value="2.6101084829878225" />
+          <attvalue for="5" value="0.2739495798319328" />
+          <attvalue for="6" value="0.0353997787558025" />
+        </attvalues>
+      </node>
+      <node id="FERNANDES, C" label="FERNANDES, C">
+        <attvalues>
+          <attvalue for="0" value="3" />
+          <attvalue for="1" value="122" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="7" />
+          <attvalue for="4" value="2.4008692898868036" />
+          <attvalue for="5" value="0.16134453781512606" />
+          <attvalue for="6" value="0.030505698447974773" />
+        </attvalues>
+      </node>
+      <node id="FERREIRA, JJM" label="FERREIRA, JJM">
+        <attvalues>
+          <attvalue for="0" value="2" />
+          <attvalue for="1" value="68" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="2" />
+          <attvalue for="4" value="0.685713855521471" />
+          <attvalue for="5" value="0.0" />
+          <attvalue for="6" value="0.021178212634504853" />
+        </attvalues>
+      </node>
+      <node id="DAMIJ, N" label="DAMIJ, N">
+        <attvalues>
+          <attvalue for="0" value="2" />
+          <attvalue for="1" value="10" />
+          <attvalue for="2" value="1" />
+          <attvalue for="3" value="8" />
+          <attvalue for="4" value="3.757821058439356" />
+          <attvalue for="5" value="0.11204481792717089" />
+          <attvalue for="6" value="0.0445512046733758" />
+        </attvalues>
+      </node>
+      <node id="ROUNDY, PT" label="ROUNDY, PT">
+        <attvalues>
+          <attvalue for="0" value="2" />
+          <attvalue for="1" value="12" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="1" />
+          <attvalue for="4" value="0.09751671400077788" />
+          <attvalue for="5" value="0.0" />
+          <attvalue for="6" value="0.006978640582514446" />
+        </attvalues>
+      </node>
+      <node id="GÖCKE, L" label="GÖCKE, L">
+        <attvalues>
+          <attvalue for="0" value="2" />
+          <attvalue for="1" value="72" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="5" />
+          <attvalue for="4" value="1.2951925334710315" />
+          <attvalue for="5" value="0.22521008403361345" />
+          <attvalue for="6" value="0.04392913503815651" />
+        </attvalues>
+      </node>
+      <node id="HIDAYAT, H" label="HIDAYAT, H">
+        <attvalues>
+          <attvalue for="0" value="2" />
+          <attvalue for="1" value="7" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="3" />
+          <attvalue for="4" value="0.32461379188487655" />
+          <attvalue for="5" value="0.26890756302521013" />
+          <attvalue for="6" value="0.010435030309907271" />
+        </attvalues>
+      </node>
+      <node id="NEWBERY, R" label="NEWBERY, R">
+        <attvalues>
+          <attvalue for="0" value="2" />
+          <attvalue for="1" value="10" />
+          <attvalue for="2" value="1" />
+          <attvalue for="3" value="8" />
+          <attvalue for="4" value="3.7578210584393554" />
+          <attvalue for="5" value="0.11204481792717089" />
+          <attvalue for="6" value="0.0445512046733758" />
+        </attvalues>
+      </node>
+      <node id="OJALA, A" label="OJALA, A">
+        <attvalues>
+          <attvalue for="0" value="3" />
+          <attvalue for="1" value="18" />
+          <attvalue for="2" value="4" />
+          <attvalue for="3" value="3" />
+          <attvalue for="4" value="0.9147431979418502" />
+          <attvalue for="5" value="0.0" />
+          <attvalue for="6" value="0.0212210132563401" />
+        </attvalues>
+      </node>
+      <node id="BERMAN, T" label="BERMAN, T">
+        <attvalues>
+          <attvalue for="0" value="3" />
+          <attvalue for="1" value="62" />
+          <attvalue for="2" value="3" />
+          <attvalue for="3" value="2" />
+          <attvalue for="4" value="1.6363476028122823" />
+          <attvalue for="5" value="0.0" />
+          <attvalue for="6" value="0.023980499350900894" />
+        </attvalues>
+      </node>
+      <node id="DANA, LP" label="DANA, LP">
+        <attvalues>
+          <attvalue for="0" value="4" />
+          <attvalue for="1" value="138" />
+          <attvalue for="2" value="1" />
+          <attvalue for="3" value="3" />
+          <attvalue for="4" value="0.9676107999164173" />
+          <attvalue for="5" value="0.27899159663865547" />
+          <attvalue for="6" value="0.022155080884499793" />
+        </attvalues>
+      </node>
+      <node id="SINGH, P" label="SINGH, P">
+        <attvalues>
+          <attvalue for="0" value="2" />
+          <attvalue for="1" value="120" />
+          <attvalue for="2" value="1" />
+          <attvalue for="3" value="4" />
+          <attvalue for="4" value="0.8862981098167451" />
+          <attvalue for="5" value="0.0" />
+          <attvalue for="6" value="0.013354679339334902" />
+        </attvalues>
+      </node>
+      <node id="MENTER, M" label="MENTER, M">
+        <attvalues>
+          <attvalue for="0" value="3" />
+          <attvalue for="1" value="96" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="2" />
+          <attvalue for="4" value="0.9791507950773717" />
+          <attvalue for="5" value="0.18487394957983194" />
+          <attvalue for="6" value="0.029360490795347728" />
+        </attvalues>
+      </node>
+      <node id="VEIGA, PM" label="VEIGA, PM">
+        <attvalues>
+          <attvalue for="0" value="2" />
+          <attvalue for="1" value="118" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="7" />
+          <attvalue for="4" value="2.788235851199355" />
+          <attvalue for="5" value="0.005042016806722689" />
+          <attvalue for="6" value="0.03503330979192331" />
+        </attvalues>
+      </node>
+      <node id="MIR, AA" label="MIR, AA">
+        <attvalues>
+          <attvalue for="0" value="2" />
+          <attvalue for="1" value="59" />
+          <attvalue for="2" value="6" />
+          <attvalue for="3" value="3" />
+          <attvalue for="4" value="2.1487959051930328" />
+          <attvalue for="5" value="0.0" />
+          <attvalue for="6" value="0.03303027319723566" />
+        </attvalues>
+      </node>
+      <node id="BICAN, PM" label="BICAN, PM">
+        <attvalues>
+          <attvalue for="0" value="3" />
+          <attvalue for="1" value="248" />
+          <attvalue for="2" value="3" />
+          <attvalue for="3" value="1" />
+          <attvalue for="4" value="0.368523707197033" />
+          <attvalue for="5" value="0.0" />
+          <attvalue for="6" value="0.013948765067948286" />
+        </attvalues>
+      </node>
+      <node id="OLAN, F" label="OLAN, F">
+        <attvalues>
+          <attvalue for="0" value="2" />
+          <attvalue for="1" value="10" />
+          <attvalue for="2" value="1" />
+          <attvalue for="3" value="8" />
+          <attvalue for="4" value="3.7578210584393554" />
+          <attvalue for="5" value="0.11204481792717089" />
+          <attvalue for="6" value="0.04455120467337579" />
+        </attvalues>
+      </node>
+      <node id="LI, SL" label="LI, SL">
+        <attvalues>
+          <attvalue for="0" value="2" />
+          <attvalue for="1" value="146" />
+          <attvalue for="2" value="4" />
+          <attvalue for="3" value="3" />
+          <attvalue for="4" value="0.45323356968406536" />
+          <attvalue for="5" value="0.05714285714285715" />
+          <attvalue for="6" value="0.012493081818936788" />
+        </attvalues>
+      </node>
+      <node id="KITSIOS, F" label="KITSIOS, F">
+        <attvalues>
+          <attvalue for="0" value="3" />
+          <attvalue for="1" value="69" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="3" />
+          <attvalue for="4" value="1.3132314284066855" />
+          <attvalue for="5" value="0.07899159663865547" />
+          <attvalue for="6" value="0.031382004317754265" />
+        </attvalues>
+      </node>
+      <node id="KRAUS, S" label="KRAUS, S">
+        <attvalues>
+          <attvalue for="0" value="10" />
+          <attvalue for="1" value="1090" />
+          <attvalue for="2" value="3" />
+          <attvalue for="3" value="10" />
+          <attvalue for="4" value="3.7189066917061444" />
+          <attvalue for="5" value="0.3613445378151261" />
+          <attvalue for="6" value="0.050586305393017963" />
+        </attvalues>
+      </node>
+      <node id="ORLANDI, LB" label="ORLANDI, LB">
+        <attvalues>
+          <attvalue for="0" value="2" />
+          <attvalue for="1" value="131" />
+          <attvalue for="2" value="5" />
+          <attvalue for="3" value="3" />
+          <attvalue for="4" value="2.2831373285764585" />
+          <attvalue for="5" value="0.0" />
+          <attvalue for="6" value="0.02912859892290725" />
+        </attvalues>
+      </node>
+      <node id="HASSAN, S" label="HASSAN, S">
+        <attvalues>
+          <attvalue for="0" value="2" />
+          <attvalue for="1" value="59" />
+          <attvalue for="2" value="6" />
+          <attvalue for="3" value="3" />
+          <attvalue for="4" value="2.1487959051930328" />
+          <attvalue for="5" value="0.0" />
+          <attvalue for="6" value="0.03303027319723566" />
+        </attvalues>
+      </node>
+      <node id="BRAUNE, E" label="BRAUNE, E">
+        <attvalues>
+          <attvalue for="0" value="2" />
+          <attvalue for="1" value="23" />
+          <attvalue for="2" value="1" />
+          <attvalue for="3" value="1" />
+          <attvalue for="4" value="0.3425395354310701" />
+          <attvalue for="5" value="0.0" />
+          <attvalue for="6" value="0.010833181581845468" />
+        </attvalues>
+      </node>
+      <node id="MUAFI, M" label="MUAFI, M">
+        <attvalues>
+          <attvalue for="0" value="2" />
+          <attvalue for="1" value="22" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="1" />
+          <attvalue for="4" value="0.12088702634757202" />
+          <attvalue for="5" value="0.0" />
+          <attvalue for="6" value="0.00557017207520931" />
+        </attvalues>
+      </node>
+      <node id="SCHALLMO, D" label="SCHALLMO, D">
+        <attvalues>
+          <attvalue for="0" value="3" />
+          <attvalue for="1" value="62" />
+          <attvalue for="2" value="3" />
+          <attvalue for="3" value="2" />
+          <attvalue for="4" value="1.6363476028122823" />
+          <attvalue for="5" value="0.0" />
+          <attvalue for="6" value="0.023980499350900894" />
+        </attvalues>
+      </node>
+      <node id="ROSSIGNOLI, C" label="ROSSIGNOLI, C">
+        <attvalues>
+          <attvalue for="0" value="2" />
+          <attvalue for="1" value="131" />
+          <attvalue for="2" value="5" />
+          <attvalue for="3" value="3" />
+          <attvalue for="4" value="2.2831373285764585" />
+          <attvalue for="5" value="0.0" />
+          <attvalue for="6" value="0.02912859892290725" />
+        </attvalues>
+      </node>
+      <node id="KHAN, SJ" label="KHAN, SJ">
+        <attvalues>
+          <attvalue for="0" value="2" />
+          <attvalue for="1" value="59" />
+          <attvalue for="2" value="6" />
+          <attvalue for="3" value="3" />
+          <attvalue for="4" value="2.1487959051930328" />
+          <attvalue for="5" value="0.0" />
+          <attvalue for="6" value="0.03303027319723566" />
+        </attvalues>
+      </node>
+      <node id="DABIC, M" label="DABIC, M">
+        <attvalues>
+          <attvalue for="0" value="2" />
+          <attvalue for="1" value="106" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="8" />
+          <attvalue for="4" value="2.6561409559676745" />
+          <attvalue for="5" value="0.05714285714285715" />
+          <attvalue for="6" value="0.03628051067767217" />
+        </attvalues>
+      </node>
+      <node id="FRACCASTORO, S" label="FRACCASTORO, S">
+        <attvalues>
+          <attvalue for="0" value="3" />
+          <attvalue for="1" value="9" />
+          <attvalue for="2" value="4" />
+          <attvalue for="3" value="4" />
+          <attvalue for="4" value="1.61246655285715" />
+          <attvalue for="5" value="0.0" />
+          <attvalue for="6" value="0.03356876108142637" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="FERREIRA, JJ" target="SINGH, P" id="0" weight="0.19498769558511803">
+        <attvalues>
+          <attvalue for="7" value="51" />
+        </attvalues>
+      </edge>
+      <edge source="FERREIRA, JJ" target="FRACCASTORO, S" id="1" weight="0.12839520262855755">
+        <attvalues>
+          <attvalue for="7" value="50" />
+        </attvalues>
+      </edge>
+      <edge source="FERREIRA, JJ" target="DAMIJ, N" id="2" weight="0.22718572898012365">
+        <attvalues>
+          <attvalue for="7" value="47" />
+        </attvalues>
+      </edge>
+      <edge source="FERREIRA, JJ" target="KRAUS, S" id="3" weight="0.4765866657634419">
+        <attvalues>
+          <attvalue for="7" value="249" />
+        </attvalues>
+      </edge>
+      <edge source="FERREIRA, JJ" target="GABRIELSSON, M" id="4" weight="0.12987337506162872">
+        <attvalues>
+          <attvalue for="7" value="54" />
+        </attvalues>
+      </edge>
+      <edge source="FERREIRA, JJ" target="NEWBERY, R" id="5" weight="0.22718572898012365">
+        <attvalues>
+          <attvalue for="7" value="47" />
+        </attvalues>
+      </edge>
+      <edge source="FERREIRA, JJ" target="MENTER, M" id="6" weight="0.174335740094382">
+        <attvalues>
+          <attvalue for="7" value="52" />
+        </attvalues>
+      </edge>
+      <edge source="FERREIRA, JJ" target="VEIGA, PM" id="7" weight="0.7931457108844263">
+        <attvalues>
+          <attvalue for="7" value="212" />
+        </attvalues>
+      </edge>
+      <edge source="FERREIRA, JJ" target="OLAN, F" id="8" weight="0.22718572898012365">
+        <attvalues>
+          <attvalue for="7" value="47" />
+        </attvalues>
+      </edge>
+      <edge source="FERREIRA, JJ" target="DABIC, M" id="9" weight="0.4717540977918292">
+        <attvalues>
+          <attvalue for="7" value="120" />
+        </attvalues>
+      </edge>
+      <edge source="FERREIRA, JJ" target="FERNANDES, C" id="10" weight="0.42720585601865513">
+        <attvalues>
+          <attvalue for="7" value="122" />
+        </attvalues>
+      </edge>
+      <edge source="TEULON, F" target="GÖCKE, L" id="11" weight="0.187873826730226">
+        <attvalues>
+          <attvalue for="7" value="26" />
+        </attvalues>
+      </edge>
+      <edge source="GABRIELSSON, M" target="FRACCASTORO, S" id="12" weight="0.936585811581694">
+        <attvalues>
+          <attvalue for="7" value="450" />
+        </attvalues>
+      </edge>
+      <edge source="GABRIELSSON, M" target="OJALA, A" id="13" weight="0.36929214284125195">
+        <attvalues>
+          <attvalue for="7" value="95" />
+        </attvalues>
+      </edge>
+      <edge source="GABRIELSSON, M" target="LI, SL" id="14" weight="0.14888919733184308">
+        <attvalues>
+          <attvalue for="7" value="55" />
+        </attvalues>
+      </edge>
+      <edge source="SITARIDIS, I" target="MIR, AA" id="15" weight="0.14879590519303285">
+        <attvalues>
+          <attvalue for="7" value="30" />
+        </attvalues>
+      </edge>
+      <edge source="SITARIDIS, I" target="KITSIOS, F" id="16" weight="0.8238525545716345">
+        <attvalues>
+          <attvalue for="7" value="150" />
+        </attvalues>
+      </edge>
+      <edge source="SITARIDIS, I" target="KHAN, SJ" id="17" weight="0.14879590519303285">
+        <attvalues>
+          <attvalue for="7" value="30" />
+        </attvalues>
+      </edge>
+      <edge source="SITARIDIS, I" target="HIDAYAT, H" id="18" weight="0.1233339677689557">
+        <attvalues>
+          <attvalue for="7" value="18" />
+        </attvalues>
+      </edge>
+      <edge source="SITARIDIS, I" target="HASSAN, S" id="19" weight="0.14879590519303285">
+        <attvalues>
+          <attvalue for="7" value="30" />
+        </attvalues>
+      </edge>
+      <edge source="GRIGOROUDIS, E" target="GÖCKE, L" id="20" weight="0.09183979479633063">
+        <attvalues>
+          <attvalue for="7" value="15" />
+        </attvalues>
+      </edge>
+      <edge source="GRIGOROUDIS, E" target="FERREIRA, JJM" id="21" weight="0.5725667125607639">
+        <attvalues>
+          <attvalue for="7" value="87" />
+        </attvalues>
+      </edge>
+      <edge source="GRIGOROUDIS, E" target="KITSIOS, F" id="22" weight="0.3877698694231412">
+        <attvalues>
+          <attvalue for="7" value="72" />
+        </attvalues>
+      </edge>
+      <edge source="BREM, A" target="BICAN, PM" id="23" weight="0.368523707197033">
+        <attvalues>
+          <attvalue for="7" value="79" />
+        </attvalues>
+      </edge>
+      <edge source="BREM, A" target="KRAUS, S" id="24" weight="0.22956209073779252">
+        <attvalues>
+          <attvalue for="7" value="94" />
+        </attvalues>
+      </edge>
+      <edge source="ZARDINI, A" target="KRAUS, S" id="25" weight="0.2831373285764586">
+        <attvalues>
+          <attvalue for="7" value="100" />
+        </attvalues>
+      </edge>
+      <edge source="ZARDINI, A" target="ROSSIGNOLI, C" id="26" weight="1.0">
+        <attvalues>
+          <attvalue for="7" value="154" />
+        </attvalues>
+      </edge>
+      <edge source="ZARDINI, A" target="ORLANDI, LB" id="27" weight="1.0">
+        <attvalues>
+          <attvalue for="7" value="154" />
+        </attvalues>
+      </edge>
+      <edge source="TROISE, C" target="DANA, LP" id="28" weight="0.5254004447813362">
+        <attvalues>
+          <attvalue for="7" value="165" />
+        </attvalues>
+      </edge>
+      <edge source="TROISE, C" target="DAMIJ, N" id="29" weight="0.6949026794021621">
+        <attvalues>
+          <attvalue for="7" value="127" />
+        </attvalues>
+      </edge>
+      <edge source="TROISE, C" target="NEWBERY, R" id="30" weight="0.6949026794021621">
+        <attvalues>
+          <attvalue for="7" value="127" />
+        </attvalues>
+      </edge>
+      <edge source="TROISE, C" target="OLAN, F" id="31" weight="0.6949026794021621">
+        <attvalues>
+          <attvalue for="7" value="127" />
+        </attvalues>
+      </edge>
+      <edge source="FERNANDES, C" target="DAMIJ, N" id="32" weight="0.20534917259067006">
+        <attvalues>
+          <attvalue for="7" value="36" />
+        </attvalues>
+      </edge>
+      <edge source="FERNANDES, C" target="KRAUS, S" id="33" weight="0.28459046986360964">
+        <attvalues>
+          <attvalue for="7" value="126" />
+        </attvalues>
+      </edge>
+      <edge source="FERNANDES, C" target="NEWBERY, R" id="34" weight="0.20534917259067006">
+        <attvalues>
+          <attvalue for="7" value="36" />
+        </attvalues>
+      </edge>
+      <edge source="FERNANDES, C" target="VEIGA, PM" id="35" weight="0.5209624170825325">
+        <attvalues>
+          <attvalue for="7" value="118" />
+        </attvalues>
+      </edge>
+      <edge source="FERNANDES, C" target="OLAN, F" id="36" weight="0.20534917259067006">
+        <attvalues>
+          <attvalue for="7" value="36" />
+        </attvalues>
+      </edge>
+      <edge source="FERNANDES, C" target="DABIC, M" id="37" weight="0.5520630291499966">
+        <attvalues>
+          <attvalue for="7" value="119" />
+        </attvalues>
+      </edge>
+      <edge source="FERREIRA, JJM" target="GÖCKE, L" id="38" weight="0.11314714296070713">
+        <attvalues>
+          <attvalue for="7" value="18" />
+        </attvalues>
+      </edge>
+      <edge source="DAMIJ, N" target="SINGH, P" id="39" weight="0.23043680474387568">
+        <attvalues>
+          <attvalue for="7" value="37" />
+        </attvalues>
+      </edge>
+      <edge source="DAMIJ, N" target="NEWBERY, R" id="40" weight="1.0">
+        <attvalues>
+          <attvalue for="7" value="127" />
+        </attvalues>
+      </edge>
+      <edge source="DAMIJ, N" target="VEIGA, PM" id="41" weight="0.1950204648911001">
+        <attvalues>
+          <attvalue for="7" value="32" />
+        </attvalues>
+      </edge>
+      <edge source="DAMIJ, N" target="OLAN, F" id="42" weight="1.0">
+        <attvalues>
+          <attvalue for="7" value="127" />
+        </attvalues>
+      </edge>
+      <edge source="DAMIJ, N" target="DABIC, M" id="43" weight="0.20492620783142398">
+        <attvalues>
+          <attvalue for="7" value="32" />
+        </attvalues>
+      </edge>
+      <edge source="ROUNDY, PT" target="GÖCKE, L" id="44" weight="0.09751671400077788">
+        <attvalues>
+          <attvalue for="7" value="19" />
+        </attvalues>
+      </edge>
+      <edge source="GÖCKE, L" target="MENTER, M" id="45" weight="0.8048150549829897">
+        <attvalues>
+          <attvalue for="7" value="171" />
+        </attvalues>
+      </edge>
+      <edge source="HIDAYAT, H" target="DANA, LP" id="46" weight="0.09967081970401108">
+        <attvalues>
+          <attvalue for="7" value="23" />
+        </attvalues>
+      </edge>
+      <edge source="HIDAYAT, H" target="KITSIOS, F" id="47" weight="0.10160900441190979">
+        <attvalues>
+          <attvalue for="7" value="18" />
+        </attvalues>
+      </edge>
+      <edge source="NEWBERY, R" target="SINGH, P" id="48" weight="0.23043680474387568">
+        <attvalues>
+          <attvalue for="7" value="37" />
+        </attvalues>
+      </edge>
+      <edge source="NEWBERY, R" target="VEIGA, PM" id="49" weight="0.1950204648911001">
+        <attvalues>
+          <attvalue for="7" value="32" />
+        </attvalues>
+      </edge>
+      <edge source="NEWBERY, R" target="OLAN, F" id="50" weight="1.0">
+        <attvalues>
+          <attvalue for="7" value="127" />
+        </attvalues>
+      </edge>
+      <edge source="NEWBERY, R" target="DABIC, M" id="51" weight="0.20492620783142398">
+        <attvalues>
+          <attvalue for="7" value="32" />
+        </attvalues>
+      </edge>
+      <edge source="OJALA, A" target="FRACCASTORO, S" id="52" weight="0.3942961106976372">
+        <attvalues>
+          <attvalue for="7" value="95" />
+        </attvalues>
+      </edge>
+      <edge source="OJALA, A" target="LI, SL" id="53" weight="0.1511549444029611">
+        <attvalues>
+          <attvalue for="7" value="28" />
+        </attvalues>
+      </edge>
+      <edge source="BERMAN, T" target="SCHALLMO, D" id="54" weight="1.0">
+        <attvalues>
+          <attvalue for="7" value="328" />
+        </attvalues>
+      </edge>
+      <edge source="BERMAN, T" target="KRAUS, S" id="55" weight="0.6363476028122823">
+        <attvalues>
+          <attvalue for="7" value="328" />
+        </attvalues>
+      </edge>
+      <edge source="DANA, LP" target="BRAUNE, E" id="56" weight="0.3425395354310701">
+        <attvalues>
+          <attvalue for="7" value="44" />
+        </attvalues>
+      </edge>
+      <edge source="SINGH, P" target="OLAN, F" id="57" weight="0.23043680474387568">
+        <attvalues>
+          <attvalue for="7" value="37" />
+        </attvalues>
+      </edge>
+      <edge source="VEIGA, PM" target="KRAUS, S" id="58" weight="0.29923421168122555">
+        <attvalues>
+          <attvalue for="7" value="124" />
+        </attvalues>
+      </edge>
+      <edge source="VEIGA, PM" target="OLAN, F" id="59" weight="0.1950204648911001">
+        <attvalues>
+          <attvalue for="7" value="32" />
+        </attvalues>
+      </edge>
+      <edge source="VEIGA, PM" target="DABIC, M" id="60" weight="0.5898321168778697">
+        <attvalues>
+          <attvalue for="7" value="119" />
+        </attvalues>
+      </edge>
+      <edge source="MIR, AA" target="KHAN, SJ" id="61" weight="1.0">
+        <attvalues>
+          <attvalue for="7" value="271" />
+        </attvalues>
+      </edge>
+      <edge source="MIR, AA" target="HASSAN, S" id="62" weight="1.0">
+        <attvalues>
+          <attvalue for="7" value="271" />
+        </attvalues>
+      </edge>
+      <edge source="OLAN, F" target="DABIC, M" id="63" weight="0.20492620783142398">
+        <attvalues>
+          <attvalue for="7" value="32" />
+        </attvalues>
+      </edge>
+      <edge source="LI, SL" target="FRACCASTORO, S" id="64" weight="0.1531894279492612">
+        <attvalues>
+          <attvalue for="7" value="53" />
+        </attvalues>
+      </edge>
+      <edge source="KRAUS, S" target="SCHALLMO, D" id="65" weight="0.6363476028122823">
+        <attvalues>
+          <attvalue for="7" value="328" />
+        </attvalues>
+      </edge>
+      <edge source="KRAUS, S" target="ROSSIGNOLI, C" id="66" weight="0.2831373285764586">
+        <attvalues>
+          <attvalue for="7" value="100" />
+        </attvalues>
+      </edge>
+      <edge source="KRAUS, S" target="ORLANDI, LB" id="67" weight="0.2831373285764586">
+        <attvalues>
+          <attvalue for="7" value="100" />
+        </attvalues>
+      </edge>
+      <edge source="KRAUS, S" target="DABIC, M" id="68" weight="0.30682606230613474">
+        <attvalues>
+          <attvalue for="7" value="121" />
+        </attvalues>
+      </edge>
+      <edge source="ORLANDI, LB" target="ROSSIGNOLI, C" id="69" weight="1.0">
+        <attvalues>
+          <attvalue for="7" value="154" />
+        </attvalues>
+      </edge>
+      <edge source="HASSAN, S" target="KHAN, SJ" id="70" weight="1.0">
+        <attvalues>
+          <attvalue for="7" value="271" />
+        </attvalues>
+      </edge>
+      <edge source="MUAFI, M" target="DABIC, M" id="71" weight="0.12088702634757202">
+        <attvalues>
+          <attvalue for="7" value="17" />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

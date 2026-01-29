@@ -1,0 +1,1230 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2026-01-28">
+    <creator>NetworkX 2.8.4</creator>
+  </meta>
+  <graph defaultedgetype="undirected" mode="static" name="">
+    <attributes mode="static" class="node">
+      <attribute id="0" title="frequency" type="long" />
+      <attribute id="1" title="modularity_class" type="long" />
+      <attribute id="2" title="degree" type="long" />
+      <attribute id="3" title="weighted_degree" type="long" />
+      <attribute id="4" title="betweenness" type="double" />
+      <attribute id="5" title="pagerank" type="double" />
+    </attributes>
+    <nodes>
+      <node id="SUSTAINABILITY" label="SUSTAINABILITY">
+        <attvalues>
+          <attvalue for="0" value="20" />
+          <attvalue for="1" value="0" />
+          <attvalue for="2" value="13" />
+          <attvalue for="3" value="46" />
+          <attvalue for="4" value="0.005700137197736236" />
+          <attvalue for="5" value="0.007124598784093999" />
+        </attvalues>
+      </node>
+      <node id="SELF-EFFICACY" label="SELF-EFFICACY">
+        <attvalues>
+          <attvalue for="0" value="23" />
+          <attvalue for="1" value="2" />
+          <attvalue for="2" value="15" />
+          <attvalue for="3" value="58" />
+          <attvalue for="4" value="0.005762066731454486" />
+          <attvalue for="5" value="0.008409387561183014" />
+        </attvalues>
+      </node>
+      <node id="PLATFORMS" label="PLATFORMS">
+        <attvalues>
+          <attvalue for="0" value="37" />
+          <attvalue for="1" value="0" />
+          <attvalue for="2" value="35" />
+          <attvalue for="3" value="177" />
+          <attvalue for="4" value="0.0108619271884578" />
+          <attvalue for="5" value="0.019668408234112776" />
+        </attvalues>
+      </node>
+      <node id="PERSPECTIVE" label="PERSPECTIVE">
+        <attvalues>
+          <attvalue for="0" value="71" />
+          <attvalue for="1" value="0" />
+          <attvalue for="2" value="43" />
+          <attvalue for="3" value="294" />
+          <attvalue for="4" value="0.016070267809088337" />
+          <attvalue for="5" value="0.030627873412216643" />
+        </attvalues>
+      </node>
+      <node id="STRATEGIES" label="STRATEGIES">
+        <attvalues>
+          <attvalue for="0" value="23" />
+          <attvalue for="1" value="0" />
+          <attvalue for="2" value="26" />
+          <attvalue for="3" value="104" />
+          <attvalue for="4" value="0.009815354713313894" />
+          <attvalue for="5" value="0.012778854802359567" />
+        </attvalues>
+      </node>
+      <node id="SYSTEMS" label="SYSTEMS">
+        <attvalues>
+          <attvalue for="0" value="22" />
+          <attvalue for="1" value="0" />
+          <attvalue for="2" value="19" />
+          <attvalue for="3" value="87" />
+          <attvalue for="4" value="0.0022959183673469385" />
+          <attvalue for="5" value="0.010880393533623387" />
+        </attvalues>
+      </node>
+      <node id="INFORMATION-TECHNOLOGY" label="INFORMATION-TECHNOLOGY">
+        <attvalues>
+          <attvalue for="0" value="19" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="21" />
+          <attvalue for="3" value="85" />
+          <attvalue for="4" value="0.011173437629019862" />
+          <attvalue for="5" value="0.01079903314240041" />
+        </attvalues>
+      </node>
+      <node id="DIGITAL INNOVATION" label="DIGITAL INNOVATION">
+        <attvalues>
+          <attvalue for="0" value="21" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="17" />
+          <attvalue for="3" value="82" />
+          <attvalue for="4" value="0.002892791732077446" />
+          <attvalue for="5" value="0.010496393149101039" />
+        </attvalues>
+      </node>
+      <node id="DIGITAL TRANSFORMATION" label="DIGITAL TRANSFORMATION">
+        <attvalues>
+          <attvalue for="0" value="43" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="35" />
+          <attvalue for="3" value="165" />
+          <attvalue for="4" value="0.03945141305773059" />
+          <attvalue for="5" value="0.018836689485122477" />
+        </attvalues>
+      </node>
+      <node id="TECHNOLOGY" label="TECHNOLOGY">
+        <attvalues>
+          <attvalue for="0" value="90" />
+          <attvalue for="1" value="0" />
+          <attvalue for="2" value="46" />
+          <attvalue for="3" value="405" />
+          <attvalue for="4" value="0.0038669336782331974" />
+          <attvalue for="5" value="0.041090885310553146" />
+        </attvalues>
+      </node>
+      <node id="TECHNOLOGIES" label="TECHNOLOGIES">
+        <attvalues>
+          <attvalue for="0" value="27" />
+          <attvalue for="1" value="0" />
+          <attvalue for="2" value="27" />
+          <attvalue for="3" value="112" />
+          <attvalue for="4" value="0.031560561009840726" />
+          <attvalue for="5" value="0.01348196677488373" />
+        </attvalues>
+      </node>
+      <node id="KNOWLEDGE" label="KNOWLEDGE">
+        <attvalues>
+          <attvalue for="0" value="41" />
+          <attvalue for="1" value="0" />
+          <attvalue for="2" value="30" />
+          <attvalue for="3" value="159" />
+          <attvalue for="4" value="0.002891156462585034" />
+          <attvalue for="5" value="0.017726547460652557" />
+        </attvalues>
+      </node>
+      <node id="GROWTH" label="GROWTH">
+        <attvalues>
+          <attvalue for="0" value="32" />
+          <attvalue for="1" value="0" />
+          <attvalue for="2" value="26" />
+          <attvalue for="3" value="127" />
+          <attvalue for="4" value="0.014208684361745584" />
+          <attvalue for="5" value="0.014635730453212594" />
+        </attvalues>
+      </node>
+      <node id="AGENDA" label="AGENDA">
+        <attvalues>
+          <attvalue for="0" value="42" />
+          <attvalue for="1" value="0" />
+          <attvalue for="2" value="33" />
+          <attvalue for="3" value="180" />
+          <attvalue for="4" value="0.05160405647162849" />
+          <attvalue for="5" value="0.01977471675025446" />
+        </attvalues>
+      </node>
+      <node id="INNOVATION" label="INNOVATION">
+        <attvalues>
+          <attvalue for="0" value="200" />
+          <attvalue for="1" value="0" />
+          <attvalue for="2" value="49" />
+          <attvalue for="3" value="847" />
+          <attvalue for="4" value="0.0" />
+          <attvalue for="5" value="0.08367434328642823" />
+        </attvalues>
+      </node>
+      <node id="ECOSYSTEM" label="ECOSYSTEM">
+        <attvalues>
+          <attvalue for="0" value="21" />
+          <attvalue for="1" value="0" />
+          <attvalue for="2" value="19" />
+          <attvalue for="3" value="76" />
+          <attvalue for="4" value="0.01260486962017574" />
+          <attvalue for="5" value="0.010022298139428973" />
+        </attvalues>
+      </node>
+      <node id="E-COMMERCE" label="E-COMMERCE">
+        <attvalues>
+          <attvalue for="0" value="24" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="20" />
+          <attvalue for="3" value="85" />
+          <attvalue for="4" value="0.0024593170601573964" />
+          <attvalue for="5" value="0.010829436142682046" />
+        </attvalues>
+      </node>
+      <node id="ENTREPRENEURIAL ORIENTATION" label="ENTREPRENEURIAL ORIENTATION">
+        <attvalues>
+          <attvalue for="0" value="21" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="21" />
+          <attvalue for="3" value="78" />
+          <attvalue for="4" value="0.022734716597261617" />
+          <attvalue for="5" value="0.010303533667669888" />
+        </attvalues>
+      </node>
+      <node id="WORK" label="WORK">
+        <attvalues>
+          <attvalue for="0" value="22" />
+          <attvalue for="1" value="0" />
+          <attvalue for="2" value="13" />
+          <attvalue for="3" value="50" />
+          <attvalue for="4" value="0.014388969873663754" />
+          <attvalue for="5" value="0.0075931101008341936" />
+        </attvalues>
+      </node>
+      <node id="MODEL" label="MODEL">
+        <attvalues>
+          <attvalue for="0" value="36" />
+          <attvalue for="1" value="2" />
+          <attvalue for="2" value="26" />
+          <attvalue for="3" value="123" />
+          <attvalue for="4" value="0.012353951320788054" />
+          <attvalue for="5" value="0.014643286748386978" />
+        </attvalues>
+      </node>
+      <node id="DIGITAL TECHNOLOGY" label="DIGITAL TECHNOLOGY">
+        <attvalues>
+          <attvalue for="0" value="19" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="22" />
+          <attvalue for="3" value="70" />
+          <attvalue for="4" value="0.02036077584546972" />
+          <attvalue for="5" value="0.00945890349462422" />
+        </attvalues>
+      </node>
+      <node id="GENDER" label="GENDER">
+        <attvalues>
+          <attvalue for="0" value="41" />
+          <attvalue for="1" value="0" />
+          <attvalue for="2" value="23" />
+          <attvalue for="3" value="109" />
+          <attvalue for="4" value="0.004090354090354089" />
+          <attvalue for="5" value="0.013232355191840729" />
+        </attvalues>
+      </node>
+      <node id="TRANSFORMATION" label="TRANSFORMATION">
+        <attvalues>
+          <attvalue for="0" value="42" />
+          <attvalue for="1" value="0" />
+          <attvalue for="2" value="36" />
+          <attvalue for="3" value="194" />
+          <attvalue for="4" value="0.024806882459943683" />
+          <attvalue for="5" value="0.02125436714972648" />
+        </attvalues>
+      </node>
+      <node id="DIGITAL ECONOMY" label="DIGITAL ECONOMY">
+        <attvalues>
+          <attvalue for="0" value="20" />
+          <attvalue for="1" value="0" />
+          <attvalue for="2" value="8" />
+          <attvalue for="3" value="31" />
+          <attvalue for="4" value="0.038251729263133825" />
+          <attvalue for="5" value="0.005826936078033417" />
+        </attvalues>
+      </node>
+      <node id="SMES" label="SMES">
+        <attvalues>
+          <attvalue for="0" value="23" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="34" />
+          <attvalue for="3" value="116" />
+          <attvalue for="4" value="0.08706346716175645" />
+          <attvalue for="5" value="0.014104796408549183" />
+        </attvalues>
+      </node>
+      <node id="EFFECTUATION" label="EFFECTUATION">
+        <attvalues>
+          <attvalue for="0" value="25" />
+          <attvalue for="1" value="0" />
+          <attvalue for="2" value="21" />
+          <attvalue for="3" value="95" />
+          <attvalue for="4" value="0.0220140048471381" />
+          <attvalue for="5" value="0.011517111862016285" />
+        </attvalues>
+      </node>
+      <node id="SOCIAL MEDIA" label="SOCIAL MEDIA">
+        <attvalues>
+          <attvalue for="0" value="44" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="35" />
+          <attvalue for="3" value="146" />
+          <attvalue for="4" value="0.029719822980252147" />
+          <attvalue for="5" value="0.01694649909226219" />
+        </attvalues>
+      </node>
+      <node id="DIGITAL ENTREPRENEURSHIP" label="DIGITAL ENTREPRENEURSHIP">
+        <attvalues>
+          <attvalue for="0" value="388" />
+          <attvalue for="1" value="0" />
+          <attvalue for="2" value="49" />
+          <attvalue for="3" value="1225" />
+          <attvalue for="4" value="0.0" />
+          <attvalue for="5" value="0.12146871599909485" />
+        </attvalues>
+      </node>
+      <node id="ADOPTION" label="ADOPTION">
+        <attvalues>
+          <attvalue for="0" value="22" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="24" />
+          <attvalue for="3" value="84" />
+          <attvalue for="4" value="0.019517953701627167" />
+          <attvalue for="5" value="0.010761889434761644" />
+        </attvalues>
+      </node>
+      <node id="FRAMEWORK" label="FRAMEWORK">
+        <attvalues>
+          <attvalue for="0" value="20" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="20" />
+          <attvalue for="3" value="73" />
+          <attvalue for="4" value="0.008557928041346407" />
+          <attvalue for="5" value="0.009855955989162599" />
+        </attvalues>
+      </node>
+      <node id="PERFORMANCE" label="PERFORMANCE">
+        <attvalues>
+          <attvalue for="0" value="84" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="44" />
+          <attvalue for="3" value="386" />
+          <attvalue for="4" value="0.001020408163265306" />
+          <attvalue for="5" value="0.039627377638582297" />
+        </attvalues>
+      </node>
+      <node id="EDUCATION" label="EDUCATION">
+        <attvalues>
+          <attvalue for="0" value="30" />
+          <attvalue for="1" value="2" />
+          <attvalue for="2" value="19" />
+          <attvalue for="3" value="83" />
+          <attvalue for="4" value="0.016528757967833596" />
+          <attvalue for="5" value="0.010840867014253384" />
+        </attvalues>
+      </node>
+      <node id="BUSINESS" label="BUSINESS">
+        <attvalues>
+          <attvalue for="0" value="74" />
+          <attvalue for="1" value="0" />
+          <attvalue for="2" value="42" />
+          <attvalue for="3" value="291" />
+          <attvalue for="4" value="0.007908696903669892" />
+          <attvalue for="5" value="0.030550879325562826" />
+        </attvalues>
+      </node>
+      <node id="DIGITALIZATION" label="DIGITALIZATION">
+        <attvalues>
+          <attvalue for="0" value="37" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="34" />
+          <attvalue for="3" value="142" />
+          <attvalue for="4" value="0.018931254861251856" />
+          <attvalue for="5" value="0.016783661843669216" />
+        </attvalues>
+      </node>
+      <node id="CAPABILITIES" label="CAPABILITIES">
+        <attvalues>
+          <attvalue for="0" value="23" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="31" />
+          <attvalue for="3" value="111" />
+          <attvalue for="4" value="0.025053037434865165" />
+          <attvalue for="5" value="0.013521735015247189" />
+        </attvalues>
+      </node>
+      <node id="FIRMS" label="FIRMS">
+        <attvalues>
+          <attvalue for="0" value="22" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="21" />
+          <attvalue for="3" value="86" />
+          <attvalue for="4" value="0.010704898842653946" />
+          <attvalue for="5" value="0.010967930674804076" />
+        </attvalues>
+      </node>
+      <node id="INFORMATION" label="INFORMATION">
+        <attvalues>
+          <attvalue for="0" value="34" />
+          <attvalue for="1" value="0" />
+          <attvalue for="2" value="28" />
+          <attvalue for="3" value="136" />
+          <attvalue for="4" value="0.007499813112058009" />
+          <attvalue for="5" value="0.01585264591811012" />
+        </attvalues>
+      </node>
+      <node id="DETERMINANTS" label="DETERMINANTS">
+        <attvalues>
+          <attvalue for="0" value="23" />
+          <attvalue for="1" value="0" />
+          <attvalue for="2" value="24" />
+          <attvalue for="3" value="87" />
+          <attvalue for="4" value="0.028592420776169282" />
+          <attvalue for="5" value="0.011027896758318351" />
+        </attvalues>
+      </node>
+      <node id="MANAGEMENT" label="MANAGEMENT">
+        <attvalues>
+          <attvalue for="0" value="50" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="39" />
+          <attvalue for="3" value="226" />
+          <attvalue for="4" value="0.004407596371882085" />
+          <attvalue for="5" value="0.024304199115500705" />
+        </attvalues>
+      </node>
+      <node id="CREATION" label="CREATION">
+        <attvalues>
+          <attvalue for="0" value="46" />
+          <attvalue for="1" value="0" />
+          <attvalue for="2" value="37" />
+          <attvalue for="3" value="213" />
+          <attvalue for="4" value="0.012835997494235791" />
+          <attvalue for="5" value="0.02289752952520621" />
+        </attvalues>
+      </node>
+      <node id="STRATEGY" label="STRATEGY">
+        <attvalues>
+          <attvalue for="0" value="28" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="27" />
+          <attvalue for="3" value="115" />
+          <attvalue for="4" value="0.02451773541584466" />
+          <attvalue for="5" value="0.013616491635346997" />
+        </attvalues>
+      </node>
+      <node id="DYNAMIC CAPABILITIES" label="DYNAMIC CAPABILITIES">
+        <attvalues>
+          <attvalue for="0" value="28" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="25" />
+          <attvalue for="3" value="120" />
+          <attvalue for="4" value="0.005217444120505345" />
+          <attvalue for="5" value="0.01424495883757421" />
+        </attvalues>
+      </node>
+      <node id="IMPACT" label="IMPACT">
+        <attvalues>
+          <attvalue for="0" value="79" />
+          <attvalue for="1" value="0" />
+          <attvalue for="2" value="40" />
+          <attvalue for="3" value="312" />
+          <attvalue for="4" value="0.003713151927437641" />
+          <attvalue for="5" value="0.03235559237463592" />
+        </attvalues>
+      </node>
+      <node id="ENTREPRENEURSHIP" label="ENTREPRENEURSHIP">
+        <attvalues>
+          <attvalue for="0" value="136" />
+          <attvalue for="1" value="0" />
+          <attvalue for="2" value="48" />
+          <attvalue for="3" value="471" />
+          <attvalue for="4" value="0.0002024619371558147" />
+          <attvalue for="5" value="0.04809672145893479" />
+        </attvalues>
+      </node>
+      <node id="INTERNET" label="INTERNET">
+        <attvalues>
+          <attvalue for="0" value="24" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="23" />
+          <attvalue for="3" value="96" />
+          <attvalue for="4" value="0.002812564419707277" />
+          <attvalue for="5" value="0.01211296500580485" />
+        </attvalues>
+      </node>
+      <node id="NETWORKS" label="NETWORKS">
+        <attvalues>
+          <attvalue for="0" value="21" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="24" />
+          <attvalue for="3" value="75" />
+          <attvalue for="4" value="0.028565222917338765" />
+          <attvalue for="5" value="0.010136953750243394" />
+        </attvalues>
+      </node>
+      <node id="INFORMATION-SYSTEMS" label="INFORMATION-SYSTEMS">
+        <attvalues>
+          <attvalue for="0" value="29" />
+          <attvalue for="1" value="0" />
+          <attvalue for="2" value="28" />
+          <attvalue for="3" value="148" />
+          <attvalue for="4" value="0.005718954248366013" />
+          <attvalue for="5" value="0.016751663306033397" />
+        </attvalues>
+      </node>
+      <node id="MODELS" label="MODELS">
+        <attvalues>
+          <attvalue for="0" value="29" />
+          <attvalue for="1" value="0" />
+          <attvalue for="2" value="26" />
+          <attvalue for="3" value="114" />
+          <attvalue for="4" value="0.006618480725623582" />
+          <attvalue for="5" value="0.013649913947584339" />
+        </attvalues>
+      </node>
+      <node id="BUSINESS MODELS" label="BUSINESS MODELS">
+        <attvalues>
+          <attvalue for="0" value="53" />
+          <attvalue for="1" value="0" />
+          <attvalue for="2" value="36" />
+          <attvalue for="3" value="226" />
+          <attvalue for="4" value="0.011979962439521262" />
+          <attvalue for="5" value="0.02404563558220976" />
+        </attvalues>
+      </node>
+      <node id="STUDENTS" label="STUDENTS">
+        <attvalues>
+          <attvalue for="0" value="25" />
+          <attvalue for="1" value="2" />
+          <attvalue for="2" value="18" />
+          <attvalue for="3" value="83" />
+          <attvalue for="4" value="0.004039115646258503" />
+          <attvalue for="5" value="0.010789363633106267" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="SUSTAINABILITY" target="DIGITAL ENTREPRENEURSHIP" id="0" weight="11" />
+      <edge source="SUSTAINABILITY" target="PERSPECTIVE" id="1" weight="3" />
+      <edge source="SUSTAINABILITY" target="INFORMATION" id="2" weight="3" />
+      <edge source="SUSTAINABILITY" target="INNOVATION" id="3" weight="7" />
+      <edge source="SUSTAINABILITY" target="TECHNOLOGY" id="4" weight="3" />
+      <edge source="SUSTAINABILITY" target="TRANSFORMATION" id="5" weight="3" />
+      <edge source="SUSTAINABILITY" target="MANAGEMENT" id="6" weight="3" />
+      <edge source="SUSTAINABILITY" target="BUSINESS" id="7" weight="2" />
+      <edge source="SUSTAINABILITY" target="DIGITALIZATION" id="8" weight="2" />
+      <edge source="SUSTAINABILITY" target="DIGITAL TRANSFORMATION" id="9" weight="2" />
+      <edge source="SUSTAINABILITY" target="ECOSYSTEM" id="10" weight="2" />
+      <edge source="SUSTAINABILITY" target="ENTREPRENEURSHIP" id="11" weight="3" />
+      <edge source="SUSTAINABILITY" target="IMPACT" id="12" weight="2" />
+      <edge source="SELF-EFFICACY" target="INNOVATION" id="13" weight="7" />
+      <edge source="SELF-EFFICACY" target="MODELS" id="14" weight="3" />
+      <edge source="SELF-EFFICACY" target="BUSINESS" id="15" weight="4" />
+      <edge source="SELF-EFFICACY" target="DIGITAL ENTREPRENEURSHIP" id="16" weight="9" />
+      <edge source="SELF-EFFICACY" target="EDUCATION" id="17" weight="2" />
+      <edge source="SELF-EFFICACY" target="INTERNET" id="18" weight="4" />
+      <edge source="SELF-EFFICACY" target="SOCIAL MEDIA" id="19" weight="3" />
+      <edge source="SELF-EFFICACY" target="STUDENTS" id="20" weight="3" />
+      <edge source="SELF-EFFICACY" target="GENDER" id="21" weight="3" />
+      <edge source="SELF-EFFICACY" target="IMPACT" id="22" weight="4" />
+      <edge source="SELF-EFFICACY" target="PERFORMANCE" id="23" weight="5" />
+      <edge source="SELF-EFFICACY" target="SMES" id="24" weight="2" />
+      <edge source="SELF-EFFICACY" target="ENTREPRENEURSHIP" id="25" weight="3" />
+      <edge source="SELF-EFFICACY" target="PERSPECTIVE" id="26" weight="4" />
+      <edge source="SELF-EFFICACY" target="MODEL" id="27" weight="2" />
+      <edge source="PLATFORMS" target="AGENDA" id="28" weight="6" />
+      <edge source="PLATFORMS" target="BUSINESS MODELS" id="29" weight="8" />
+      <edge source="PLATFORMS" target="INFORMATION-TECHNOLOGY" id="30" weight="2" />
+      <edge source="PLATFORMS" target="INNOVATION" id="31" weight="19" />
+      <edge source="PLATFORMS" target="PERSPECTIVE" id="32" weight="4" />
+      <edge source="PLATFORMS" target="DIGITAL ENTREPRENEURSHIP" id="33" weight="25" />
+      <edge source="PLATFORMS" target="DIGITAL TRANSFORMATION" id="34" weight="5" />
+      <edge source="PLATFORMS" target="INFORMATION" id="35" weight="7" />
+      <edge source="PLATFORMS" target="TRANSFORMATION" id="36" weight="8" />
+      <edge source="PLATFORMS" target="BUSINESS" id="37" weight="4" />
+      <edge source="PLATFORMS" target="CREATION" id="38" weight="9" />
+      <edge source="PLATFORMS" target="MANAGEMENT" id="39" weight="2" />
+      <edge source="PLATFORMS" target="ADOPTION" id="40" weight="3" />
+      <edge source="PLATFORMS" target="DIGITAL TECHNOLOGY" id="41" weight="3" />
+      <edge source="PLATFORMS" target="GROWTH" id="42" weight="2" />
+      <edge source="PLATFORMS" target="MODELS" id="43" weight="2" />
+      <edge source="PLATFORMS" target="PERFORMANCE" id="44" weight="3" />
+      <edge source="PLATFORMS" target="SMES" id="45" weight="2" />
+      <edge source="PLATFORMS" target="SOCIAL MEDIA" id="46" weight="2" />
+      <edge source="PLATFORMS" target="DETERMINANTS" id="47" weight="2" />
+      <edge source="PLATFORMS" target="KNOWLEDGE" id="48" weight="4" />
+      <edge source="PLATFORMS" target="INFORMATION-SYSTEMS" id="49" weight="3" />
+      <edge source="PLATFORMS" target="TECHNOLOGIES" id="50" weight="3" />
+      <edge source="PLATFORMS" target="TECHNOLOGY" id="51" weight="5" />
+      <edge source="PLATFORMS" target="DYNAMIC CAPABILITIES" id="52" weight="4" />
+      <edge source="PLATFORMS" target="ENTREPRENEURIAL ORIENTATION" id="53" weight="2" />
+      <edge source="PLATFORMS" target="STRATEGY" id="54" weight="5" />
+      <edge source="PLATFORMS" target="ECOSYSTEM" id="55" weight="3" />
+      <edge source="PLATFORMS" target="FRAMEWORK" id="56" weight="4" />
+      <edge source="PLATFORMS" target="NETWORKS" id="57" weight="3" />
+      <edge source="PLATFORMS" target="STRATEGIES" id="58" weight="5" />
+      <edge source="PLATFORMS" target="ENTREPRENEURSHIP" id="59" weight="8" />
+      <edge source="PLATFORMS" target="MODEL" id="60" weight="2" />
+      <edge source="PLATFORMS" target="SYSTEMS" id="61" weight="4" />
+      <edge source="PLATFORMS" target="IMPACT" id="62" weight="4" />
+      <edge source="PERSPECTIVE" target="BUSINESS" id="63" weight="9" />
+      <edge source="PERSPECTIVE" target="DIGITAL ENTREPRENEURSHIP" id="64" weight="49" />
+      <edge source="PERSPECTIVE" target="IMPACT" id="65" weight="15" />
+      <edge source="PERSPECTIVE" target="MODELS" id="66" weight="7" />
+      <edge source="PERSPECTIVE" target="STUDENTS" id="67" weight="3" />
+      <edge source="PERSPECTIVE" target="AGENDA" id="68" weight="8" />
+      <edge source="PERSPECTIVE" target="BUSINESS MODELS" id="69" weight="6" />
+      <edge source="PERSPECTIVE" target="INFORMATION-TECHNOLOGY" id="70" weight="2" />
+      <edge source="PERSPECTIVE" target="INNOVATION" id="71" weight="26" />
+      <edge source="PERSPECTIVE" target="EDUCATION" id="72" weight="4" />
+      <edge source="PERSPECTIVE" target="ENTREPRENEURSHIP" id="73" weight="19" />
+      <edge source="PERSPECTIVE" target="MODEL" id="74" weight="6" />
+      <edge source="PERSPECTIVE" target="GENDER" id="75" weight="8" />
+      <edge source="PERSPECTIVE" target="MANAGEMENT" id="76" weight="8" />
+      <edge source="PERSPECTIVE" target="TECHNOLOGY" id="77" weight="17" />
+      <edge source="PERSPECTIVE" target="EFFECTUATION" id="78" weight="5" />
+      <edge source="PERSPECTIVE" target="INFORMATION-SYSTEMS" id="79" weight="4" />
+      <edge source="PERSPECTIVE" target="PERFORMANCE" id="80" weight="12" />
+      <edge source="PERSPECTIVE" target="INTERNET" id="81" weight="3" />
+      <edge source="PERSPECTIVE" target="ADOPTION" id="82" weight="2" />
+      <edge source="PERSPECTIVE" target="TRANSFORMATION" id="83" weight="4" />
+      <edge source="PERSPECTIVE" target="INFORMATION" id="84" weight="6" />
+      <edge source="PERSPECTIVE" target="NETWORKS" id="85" weight="2" />
+      <edge source="PERSPECTIVE" target="CREATION" id="86" weight="6" />
+      <edge source="PERSPECTIVE" target="DIGITAL INNOVATION" id="87" weight="4" />
+      <edge source="PERSPECTIVE" target="KNOWLEDGE" id="88" weight="6" />
+      <edge source="PERSPECTIVE" target="TECHNOLOGIES" id="89" weight="2" />
+      <edge source="PERSPECTIVE" target="SYSTEMS" id="90" weight="4" />
+      <edge source="PERSPECTIVE" target="SOCIAL MEDIA" id="91" weight="3" />
+      <edge source="PERSPECTIVE" target="DETERMINANTS" id="92" weight="2" />
+      <edge source="PERSPECTIVE" target="CAPABILITIES" id="93" weight="5" />
+      <edge source="PERSPECTIVE" target="STRATEGY" id="94" weight="4" />
+      <edge source="PERSPECTIVE" target="DIGITALIZATION" id="95" weight="2" />
+      <edge source="PERSPECTIVE" target="ENTREPRENEURIAL ORIENTATION" id="96" weight="2" />
+      <edge source="PERSPECTIVE" target="FIRMS" id="97" weight="2" />
+      <edge source="PERSPECTIVE" target="GROWTH" id="98" weight="7" />
+      <edge source="PERSPECTIVE" target="WORK" id="99" weight="3" />
+      <edge source="PERSPECTIVE" target="DIGITAL TECHNOLOGY" id="100" weight="2" />
+      <edge source="PERSPECTIVE" target="SMES" id="101" weight="2" />
+      <edge source="PERSPECTIVE" target="DYNAMIC CAPABILITIES" id="102" weight="2" />
+      <edge source="STRATEGIES" target="IMPACT" id="103" weight="4" />
+      <edge source="STRATEGIES" target="INNOVATION" id="104" weight="11" />
+      <edge source="STRATEGIES" target="DIGITAL ENTREPRENEURSHIP" id="105" weight="16" />
+      <edge source="STRATEGIES" target="ECOSYSTEM" id="106" weight="4" />
+      <edge source="STRATEGIES" target="FRAMEWORK" id="107" weight="3" />
+      <edge source="STRATEGIES" target="NETWORKS" id="108" weight="3" />
+      <edge source="STRATEGIES" target="E-COMMERCE" id="109" weight="2" />
+      <edge source="STRATEGIES" target="INFORMATION-SYSTEMS" id="110" weight="3" />
+      <edge source="STRATEGIES" target="BUSINESS" id="111" weight="2" />
+      <edge source="STRATEGIES" target="CREATION" id="112" weight="3" />
+      <edge source="STRATEGIES" target="SOCIAL MEDIA" id="113" weight="3" />
+      <edge source="STRATEGIES" target="TECHNOLOGY" id="114" weight="6" />
+      <edge source="STRATEGIES" target="INFORMATION" id="115" weight="3" />
+      <edge source="STRATEGIES" target="TECHNOLOGIES" id="116" weight="3" />
+      <edge source="STRATEGIES" target="TRANSFORMATION" id="117" weight="3" />
+      <edge source="STRATEGIES" target="BUSINESS MODELS" id="118" weight="5" />
+      <edge source="STRATEGIES" target="DETERMINANTS" id="119" weight="2" />
+      <edge source="STRATEGIES" target="FIRMS" id="120" weight="3" />
+      <edge source="STRATEGIES" target="MANAGEMENT" id="121" weight="2" />
+      <edge source="STRATEGIES" target="PERFORMANCE" id="122" weight="6" />
+      <edge source="STRATEGIES" target="DYNAMIC CAPABILITIES" id="123" weight="3" />
+      <edge source="STRATEGIES" target="EFFECTUATION" id="124" weight="2" />
+      <edge source="STRATEGIES" target="ENTREPRENEURSHIP" id="125" weight="3" />
+      <edge source="STRATEGIES" target="SMES" id="126" weight="2" />
+      <edge source="STRATEGIES" target="INTERNET" id="127" weight="2" />
+      <edge source="SYSTEMS" target="AGENDA" id="128" weight="3" />
+      <edge source="SYSTEMS" target="BUSINESS MODELS" id="129" weight="3" />
+      <edge source="SYSTEMS" target="DIGITAL ENTREPRENEURSHIP" id="130" weight="13" />
+      <edge source="SYSTEMS" target="ECOSYSTEM" id="131" weight="4" />
+      <edge source="SYSTEMS" target="TRANSFORMATION" id="132" weight="4" />
+      <edge source="SYSTEMS" target="ENTREPRENEURSHIP" id="133" weight="9" />
+      <edge source="SYSTEMS" target="INNOVATION" id="134" weight="11" />
+      <edge source="SYSTEMS" target="BUSINESS" id="135" weight="4" />
+      <edge source="SYSTEMS" target="MODELS" id="136" weight="3" />
+      <edge source="SYSTEMS" target="MANAGEMENT" id="137" weight="3" />
+      <edge source="SYSTEMS" target="CREATION" id="138" weight="3" />
+      <edge source="SYSTEMS" target="EFFECTUATION" id="139" weight="2" />
+      <edge source="SYSTEMS" target="PERFORMANCE" id="140" weight="4" />
+      <edge source="SYSTEMS" target="TECHNOLOGY" id="141" weight="5" />
+      <edge source="SYSTEMS" target="INFORMATION" id="142" weight="2" />
+      <edge source="SYSTEMS" target="KNOWLEDGE" id="143" weight="4" />
+      <edge source="SYSTEMS" target="STRATEGY" id="144" weight="2" />
+      <edge source="INFORMATION-TECHNOLOGY" target="BUSINESS MODELS" id="145" weight="2" />
+      <edge source="INFORMATION-TECHNOLOGY" target="INNOVATION" id="146" weight="13" />
+      <edge source="INFORMATION-TECHNOLOGY" target="ADOPTION" id="147" weight="2" />
+      <edge source="INFORMATION-TECHNOLOGY" target="BUSINESS" id="148" weight="4" />
+      <edge source="INFORMATION-TECHNOLOGY" target="DIGITAL ENTREPRENEURSHIP" id="149" weight="13" />
+      <edge source="INFORMATION-TECHNOLOGY" target="DIGITALIZATION" id="150" weight="2" />
+      <edge source="INFORMATION-TECHNOLOGY" target="MANAGEMENT" id="151" weight="7" />
+      <edge source="INFORMATION-TECHNOLOGY" target="TECHNOLOGY" id="152" weight="2" />
+      <edge source="INFORMATION-TECHNOLOGY" target="ENTREPRENEURSHIP" id="153" weight="5" />
+      <edge source="INFORMATION-TECHNOLOGY" target="CREATION" id="154" weight="2" />
+      <edge source="INFORMATION-TECHNOLOGY" target="DYNAMIC CAPABILITIES" id="155" weight="5" />
+      <edge source="INFORMATION-TECHNOLOGY" target="ENTREPRENEURIAL ORIENTATION" id="156" weight="3" />
+      <edge source="INFORMATION-TECHNOLOGY" target="STRATEGY" id="157" weight="2" />
+      <edge source="INFORMATION-TECHNOLOGY" target="SOCIAL MEDIA" id="158" weight="2" />
+      <edge source="INFORMATION-TECHNOLOGY" target="DIGITAL TRANSFORMATION" id="159" weight="4" />
+      <edge source="INFORMATION-TECHNOLOGY" target="E-COMMERCE" id="160" weight="3" />
+      <edge source="INFORMATION-TECHNOLOGY" target="PERFORMANCE" id="161" weight="6" />
+      <edge source="INFORMATION-TECHNOLOGY" target="CAPABILITIES" id="162" weight="2" />
+      <edge source="INFORMATION-TECHNOLOGY" target="IMPACT" id="163" weight="2" />
+      <edge source="DIGITAL INNOVATION" target="DIGITAL ENTREPRENEURSHIP" id="164" weight="19" />
+      <edge source="DIGITAL INNOVATION" target="INNOVATION" id="165" weight="7" />
+      <edge source="DIGITAL INNOVATION" target="TECHNOLOGY" id="166" weight="8" />
+      <edge source="DIGITAL INNOVATION" target="PERFORMANCE" id="167" weight="6" />
+      <edge source="DIGITAL INNOVATION" target="AGENDA" id="168" weight="2" />
+      <edge source="DIGITAL INNOVATION" target="TRANSFORMATION" id="169" weight="2" />
+      <edge source="DIGITAL INNOVATION" target="ENTREPRENEURSHIP" id="170" weight="6" />
+      <edge source="DIGITAL INNOVATION" target="FIRMS" id="171" weight="2" />
+      <edge source="DIGITAL INNOVATION" target="INFORMATION-SYSTEMS" id="172" weight="6" />
+      <edge source="DIGITAL INNOVATION" target="DIGITAL TECHNOLOGY" id="173" weight="3" />
+      <edge source="DIGITAL INNOVATION" target="DIGITAL TRANSFORMATION" id="174" weight="3" />
+      <edge source="DIGITAL INNOVATION" target="FRAMEWORK" id="175" weight="2" />
+      <edge source="DIGITAL INNOVATION" target="MANAGEMENT" id="176" weight="3" />
+      <edge source="DIGITAL INNOVATION" target="STRATEGY" id="177" weight="3" />
+      <edge source="DIGITAL INNOVATION" target="CAPABILITIES" id="178" weight="4" />
+      <edge source="DIGITAL INNOVATION" target="GROWTH" id="179" weight="2" />
+      <edge source="DIGITAL TRANSFORMATION" target="ADOPTION" id="180" weight="4" />
+      <edge source="DIGITAL TRANSFORMATION" target="BUSINESS MODELS" id="181" weight="6" />
+      <edge source="DIGITAL TRANSFORMATION" target="DIGITAL ENTREPRENEURSHIP" id="182" weight="26" />
+      <edge source="DIGITAL TRANSFORMATION" target="INNOVATION" id="183" weight="15" />
+      <edge source="DIGITAL TRANSFORMATION" target="INFORMATION" id="184" weight="3" />
+      <edge source="DIGITAL TRANSFORMATION" target="TRANSFORMATION" id="185" weight="9" />
+      <edge source="DIGITAL TRANSFORMATION" target="IMPACT" id="186" weight="10" />
+      <edge source="DIGITAL TRANSFORMATION" target="MANAGEMENT" id="187" weight="5" />
+      <edge source="DIGITAL TRANSFORMATION" target="TECHNOLOGY" id="188" weight="7" />
+      <edge source="DIGITAL TRANSFORMATION" target="E-COMMERCE" id="189" weight="3" />
+      <edge source="DIGITAL TRANSFORMATION" target="SOCIAL MEDIA" id="190" weight="3" />
+      <edge source="DIGITAL TRANSFORMATION" target="MODEL" id="191" weight="3" />
+      <edge source="DIGITAL TRANSFORMATION" target="STUDENTS" id="192" weight="3" />
+      <edge source="DIGITAL TRANSFORMATION" target="BUSINESS" id="193" weight="6" />
+      <edge source="DIGITAL TRANSFORMATION" target="ENTREPRENEURSHIP" id="194" weight="4" />
+      <edge source="DIGITAL TRANSFORMATION" target="DYNAMIC CAPABILITIES" id="195" weight="5" />
+      <edge source="DIGITAL TRANSFORMATION" target="PERFORMANCE" id="196" weight="4" />
+      <edge source="DIGITAL TRANSFORMATION" target="DIGITAL TECHNOLOGY" id="197" weight="2" />
+      <edge source="DIGITAL TRANSFORMATION" target="DIGITALIZATION" id="198" weight="4" />
+      <edge source="DIGITAL TRANSFORMATION" target="FRAMEWORK" id="199" weight="5" />
+      <edge source="DIGITAL TRANSFORMATION" target="STRATEGY" id="200" weight="2" />
+      <edge source="DIGITAL TRANSFORMATION" target="DIGITAL ECONOMY" id="201" weight="2" />
+      <edge source="DIGITAL TRANSFORMATION" target="CREATION" id="202" weight="2" />
+      <edge source="DIGITAL TRANSFORMATION" target="ECOSYSTEM" id="203" weight="2" />
+      <edge source="DIGITAL TRANSFORMATION" target="SMES" id="204" weight="4" />
+      <edge source="DIGITAL TRANSFORMATION" target="INTERNET" id="205" weight="2" />
+      <edge source="DIGITAL TRANSFORMATION" target="ENTREPRENEURIAL ORIENTATION" id="206" weight="2" />
+      <edge source="DIGITAL TRANSFORMATION" target="TECHNOLOGIES" id="207" weight="2" />
+      <edge source="DIGITAL TRANSFORMATION" target="FIRMS" id="208" weight="2" />
+      <edge source="DIGITAL TRANSFORMATION" target="CAPABILITIES" id="209" weight="2" />
+      <edge source="DIGITAL TRANSFORMATION" target="NETWORKS" id="210" weight="2" />
+      <edge source="TECHNOLOGY" target="DIGITAL ENTREPRENEURSHIP" id="211" weight="62" />
+      <edge source="TECHNOLOGY" target="DIGITALIZATION" id="212" weight="4" />
+      <edge source="TECHNOLOGY" target="FIRMS" id="213" weight="7" />
+      <edge source="TECHNOLOGY" target="GROWTH" id="214" weight="6" />
+      <edge source="TECHNOLOGY" target="INNOVATION" id="215" weight="45" />
+      <edge source="TECHNOLOGY" target="ENTREPRENEURSHIP" id="216" weight="23" />
+      <edge source="TECHNOLOGY" target="KNOWLEDGE" id="217" weight="8" />
+      <edge source="TECHNOLOGY" target="BUSINESS MODELS" id="218" weight="9" />
+      <edge source="TECHNOLOGY" target="E-COMMERCE" id="219" weight="5" />
+      <edge source="TECHNOLOGY" target="INFORMATION-SYSTEMS" id="220" weight="8" />
+      <edge source="TECHNOLOGY" target="PERFORMANCE" id="221" weight="16" />
+      <edge source="TECHNOLOGY" target="BUSINESS" id="222" weight="15" />
+      <edge source="TECHNOLOGY" target="ECOSYSTEM" id="223" weight="2" />
+      <edge source="TECHNOLOGY" target="ADOPTION" id="224" weight="4" />
+      <edge source="TECHNOLOGY" target="MANAGEMENT" id="225" weight="13" />
+      <edge source="TECHNOLOGY" target="WORK" id="226" weight="3" />
+      <edge source="TECHNOLOGY" target="GENDER" id="227" weight="5" />
+      <edge source="TECHNOLOGY" target="INTERNET" id="228" weight="4" />
+      <edge source="TECHNOLOGY" target="AGENDA" id="229" weight="6" />
+      <edge source="TECHNOLOGY" target="IMPACT" id="230" weight="14" />
+      <edge source="TECHNOLOGY" target="TRANSFORMATION" id="231" weight="10" />
+      <edge source="TECHNOLOGY" target="INFORMATION" id="232" weight="7" />
+      <edge source="TECHNOLOGY" target="SMES" id="233" weight="3" />
+      <edge source="TECHNOLOGY" target="CREATION" id="234" weight="13" />
+      <edge source="TECHNOLOGY" target="SOCIAL MEDIA" id="235" weight="5" />
+      <edge source="TECHNOLOGY" target="MODELS" id="236" weight="3" />
+      <edge source="TECHNOLOGY" target="STUDENTS" id="237" weight="5" />
+      <edge source="TECHNOLOGY" target="FRAMEWORK" id="238" weight="4" />
+      <edge source="TECHNOLOGY" target="MODEL" id="239" weight="6" />
+      <edge source="TECHNOLOGY" target="DETERMINANTS" id="240" weight="4" />
+      <edge source="TECHNOLOGY" target="DYNAMIC CAPABILITIES" id="241" weight="6" />
+      <edge source="TECHNOLOGY" target="EFFECTUATION" id="242" weight="5" />
+      <edge source="TECHNOLOGY" target="STRATEGY" id="243" weight="6" />
+      <edge source="TECHNOLOGY" target="NETWORKS" id="244" weight="4" />
+      <edge source="TECHNOLOGY" target="DIGITAL TECHNOLOGY" id="245" weight="2" />
+      <edge source="TECHNOLOGY" target="ENTREPRENEURIAL ORIENTATION" id="246" weight="2" />
+      <edge source="TECHNOLOGY" target="CAPABILITIES" id="247" weight="6" />
+      <edge source="TECHNOLOGY" target="EDUCATION" id="248" weight="2" />
+      <edge source="TECHNOLOGIES" target="CREATION" id="249" weight="4" />
+      <edge source="TECHNOLOGIES" target="DIGITAL ENTREPRENEURSHIP" id="250" weight="18" />
+      <edge source="TECHNOLOGIES" target="DIGITAL TECHNOLOGY" id="251" weight="2" />
+      <edge source="TECHNOLOGIES" target="BUSINESS MODELS" id="252" weight="2" />
+      <edge source="TECHNOLOGIES" target="CAPABILITIES" id="253" weight="2" />
+      <edge source="TECHNOLOGIES" target="INFORMATION-SYSTEMS" id="254" weight="7" />
+      <edge source="TECHNOLOGIES" target="INNOVATION" id="255" weight="12" />
+      <edge source="TECHNOLOGIES" target="KNOWLEDGE" id="256" weight="2" />
+      <edge source="TECHNOLOGIES" target="MODELS" id="257" weight="5" />
+      <edge source="TECHNOLOGIES" target="PERFORMANCE" id="258" weight="6" />
+      <edge source="TECHNOLOGIES" target="INFORMATION" id="259" weight="4" />
+      <edge source="TECHNOLOGIES" target="AGENDA" id="260" weight="3" />
+      <edge source="TECHNOLOGIES" target="BUSINESS" id="261" weight="4" />
+      <edge source="TECHNOLOGIES" target="TRANSFORMATION" id="262" weight="2" />
+      <edge source="TECHNOLOGIES" target="GENDER" id="263" weight="2" />
+      <edge source="TECHNOLOGIES" target="DIGITALIZATION" id="264" weight="3" />
+      <edge source="TECHNOLOGIES" target="EFFECTUATION" id="265" weight="2" />
+      <edge source="TECHNOLOGIES" target="ENTREPRENEURSHIP" id="266" weight="10" />
+      <edge source="TECHNOLOGIES" target="SOCIAL MEDIA" id="267" weight="2" />
+      <edge source="TECHNOLOGIES" target="ECOSYSTEM" id="268" weight="2" />
+      <edge source="TECHNOLOGIES" target="DIGITAL ECONOMY" id="269" weight="2" />
+      <edge source="TECHNOLOGIES" target="GROWTH" id="270" weight="3" />
+      <edge source="TECHNOLOGIES" target="MANAGEMENT" id="271" weight="3" />
+      <edge source="KNOWLEDGE" target="BUSINESS MODELS" id="272" weight="8" />
+      <edge source="KNOWLEDGE" target="CAPABILITIES" id="273" weight="4" />
+      <edge source="KNOWLEDGE" target="INFORMATION-SYSTEMS" id="274" weight="4" />
+      <edge source="KNOWLEDGE" target="INNOVATION" id="275" weight="22" />
+      <edge source="KNOWLEDGE" target="DIGITAL ENTREPRENEURSHIP" id="276" weight="20" />
+      <edge source="KNOWLEDGE" target="ENTREPRENEURSHIP" id="277" weight="8" />
+      <edge source="KNOWLEDGE" target="EDUCATION" id="278" weight="3" />
+      <edge source="KNOWLEDGE" target="MODELS" id="279" weight="4" />
+      <edge source="KNOWLEDGE" target="AGENDA" id="280" weight="4" />
+      <edge source="KNOWLEDGE" target="DETERMINANTS" id="281" weight="3" />
+      <edge source="KNOWLEDGE" target="DIGITALIZATION" id="282" weight="2" />
+      <edge source="KNOWLEDGE" target="SMES" id="283" weight="2" />
+      <edge source="KNOWLEDGE" target="STRATEGY" id="284" weight="2" />
+      <edge source="KNOWLEDGE" target="BUSINESS" id="285" weight="7" />
+      <edge source="KNOWLEDGE" target="GROWTH" id="286" weight="4" />
+      <edge source="KNOWLEDGE" target="TRANSFORMATION" id="287" weight="3" />
+      <edge source="KNOWLEDGE" target="MODEL" id="288" weight="4" />
+      <edge source="KNOWLEDGE" target="IMPACT" id="289" weight="9" />
+      <edge source="KNOWLEDGE" target="STUDENTS" id="290" weight="3" />
+      <edge source="KNOWLEDGE" target="PERFORMANCE" id="291" weight="4" />
+      <edge source="KNOWLEDGE" target="CREATION" id="292" weight="3" />
+      <edge source="KNOWLEDGE" target="EFFECTUATION" id="293" weight="3" />
+      <edge source="KNOWLEDGE" target="INFORMATION" id="294" weight="5" />
+      <edge source="KNOWLEDGE" target="ENTREPRENEURIAL ORIENTATION" id="295" weight="2" />
+      <edge source="KNOWLEDGE" target="ECOSYSTEM" id="296" weight="2" />
+      <edge source="GROWTH" target="BUSINESS" id="297" weight="4" />
+      <edge source="GROWTH" target="DIGITAL ENTREPRENEURSHIP" id="298" weight="16" />
+      <edge source="GROWTH" target="DIGITALIZATION" id="299" weight="3" />
+      <edge source="GROWTH" target="FIRMS" id="300" weight="5" />
+      <edge source="GROWTH" target="INNOVATION" id="301" weight="18" />
+      <edge source="GROWTH" target="ADOPTION" id="302" weight="3" />
+      <edge source="GROWTH" target="DIGITAL TECHNOLOGY" id="303" weight="2" />
+      <edge source="GROWTH" target="MODELS" id="304" weight="2" />
+      <edge source="GROWTH" target="PERFORMANCE" id="305" weight="10" />
+      <edge source="GROWTH" target="SMES" id="306" weight="2" />
+      <edge source="GROWTH" target="ENTREPRENEURSHIP" id="307" weight="13" />
+      <edge source="GROWTH" target="TRANSFORMATION" id="308" weight="3" />
+      <edge source="GROWTH" target="AGENDA" id="309" weight="2" />
+      <edge source="GROWTH" target="BUSINESS MODELS" id="310" weight="2" />
+      <edge source="GROWTH" target="MANAGEMENT" id="311" weight="2" />
+      <edge source="GROWTH" target="IMPACT" id="312" weight="7" />
+      <edge source="GROWTH" target="DETERMINANTS" id="313" weight="2" />
+      <edge source="GROWTH" target="GENDER" id="314" weight="2" />
+      <edge source="GROWTH" target="STRATEGY" id="315" weight="3" />
+      <edge source="GROWTH" target="CAPABILITIES" id="316" weight="2" />
+      <edge source="AGENDA" target="BUSINESS MODELS" id="317" weight="13" />
+      <edge source="AGENDA" target="INNOVATION" id="318" weight="20" />
+      <edge source="AGENDA" target="DIGITAL ENTREPRENEURSHIP" id="319" weight="32" />
+      <edge source="AGENDA" target="ECOSYSTEM" id="320" weight="3" />
+      <edge source="AGENDA" target="TRANSFORMATION" id="321" weight="8" />
+      <edge source="AGENDA" target="EDUCATION" id="322" weight="2" />
+      <edge source="AGENDA" target="ENTREPRENEURSHIP" id="323" weight="8" />
+      <edge source="AGENDA" target="BUSINESS" id="324" weight="3" />
+      <edge source="AGENDA" target="CREATION" id="325" weight="6" />
+      <edge source="AGENDA" target="INFORMATION-SYSTEMS" id="326" weight="9" />
+      <edge source="AGENDA" target="DIGITAL ECONOMY" id="327" weight="2" />
+      <edge source="AGENDA" target="DIGITALIZATION" id="328" weight="3" />
+      <edge source="AGENDA" target="MANAGEMENT" id="329" weight="4" />
+      <edge source="AGENDA" target="MODELS" id="330" weight="6" />
+      <edge source="AGENDA" target="SMES" id="331" weight="2" />
+      <edge source="AGENDA" target="INFORMATION" id="332" weight="3" />
+      <edge source="AGENDA" target="WORK" id="333" weight="2" />
+      <edge source="AGENDA" target="IMPACT" id="334" weight="4" />
+      <edge source="AGENDA" target="STUDENTS" id="335" weight="2" />
+      <edge source="AGENDA" target="STRATEGY" id="336" weight="2" />
+      <edge source="AGENDA" target="GENDER" id="337" weight="4" />
+      <edge source="AGENDA" target="CAPABILITIES" id="338" weight="2" />
+      <edge source="AGENDA" target="EFFECTUATION" id="339" weight="2" />
+      <edge source="AGENDA" target="PERFORMANCE" id="340" weight="2" />
+      <edge source="AGENDA" target="SOCIAL MEDIA" id="341" weight="2" />
+      <edge source="INNOVATION" target="BUSINESS MODELS" id="342" weight="26" />
+      <edge source="INNOVATION" target="ADOPTION" id="343" weight="8" />
+      <edge source="INNOVATION" target="DIGITAL ENTREPRENEURSHIP" id="344" weight="139" />
+      <edge source="INNOVATION" target="DIGITALIZATION" id="345" weight="14" />
+      <edge source="INNOVATION" target="FIRMS" id="346" weight="9" />
+      <edge source="INNOVATION" target="CAPABILITIES" id="347" weight="9" />
+      <edge source="INNOVATION" target="INFORMATION-SYSTEMS" id="348" weight="15" />
+      <edge source="INNOVATION" target="ENTREPRENEURSHIP" id="349" weight="52" />
+      <edge source="INNOVATION" target="E-COMMERCE" id="350" weight="9" />
+      <edge source="INNOVATION" target="PERFORMANCE" id="351" weight="41" />
+      <edge source="INNOVATION" target="BUSINESS" id="352" weight="31" />
+      <edge source="INNOVATION" target="ECOSYSTEM" id="353" weight="12" />
+      <edge source="INNOVATION" target="IMPACT" id="354" weight="36" />
+      <edge source="INNOVATION" target="CREATION" id="355" weight="17" />
+      <edge source="INNOVATION" target="MANAGEMENT" id="356" weight="19" />
+      <edge source="INNOVATION" target="DIGITAL TECHNOLOGY" id="357" weight="6" />
+      <edge source="INNOVATION" target="MODELS" id="358" weight="10" />
+      <edge source="INNOVATION" target="SMES" id="359" weight="9" />
+      <edge source="INNOVATION" target="SOCIAL MEDIA" id="360" weight="9" />
+      <edge source="INNOVATION" target="DETERMINANTS" id="361" weight="10" />
+      <edge source="INNOVATION" target="TRANSFORMATION" id="362" weight="18" />
+      <edge source="INNOVATION" target="STUDENTS" id="363" weight="5" />
+      <edge source="INNOVATION" target="EDUCATION" id="364" weight="8" />
+      <edge source="INNOVATION" target="DIGITAL ECONOMY" id="365" weight="5" />
+      <edge source="INNOVATION" target="INFORMATION" id="366" weight="14" />
+      <edge source="INNOVATION" target="WORK" id="367" weight="4" />
+      <edge source="INNOVATION" target="GENDER" id="368" weight="7" />
+      <edge source="INNOVATION" target="DYNAMIC CAPABILITIES" id="369" weight="13" />
+      <edge source="INNOVATION" target="NETWORKS" id="370" weight="5" />
+      <edge source="INNOVATION" target="MODEL" id="371" weight="10" />
+      <edge source="INNOVATION" target="EFFECTUATION" id="372" weight="12" />
+      <edge source="INNOVATION" target="ENTREPRENEURIAL ORIENTATION" id="373" weight="6" />
+      <edge source="INNOVATION" target="FRAMEWORK" id="374" weight="6" />
+      <edge source="INNOVATION" target="STRATEGY" id="375" weight="14" />
+      <edge source="INNOVATION" target="INTERNET" id="376" weight="6" />
+      <edge source="ECOSYSTEM" target="BUSINESS MODELS" id="377" weight="3" />
+      <edge source="ECOSYSTEM" target="DIGITAL ENTREPRENEURSHIP" id="378" weight="17" />
+      <edge source="ECOSYSTEM" target="TRANSFORMATION" id="379" weight="2" />
+      <edge source="ECOSYSTEM" target="BUSINESS" id="380" weight="2" />
+      <edge source="ECOSYSTEM" target="INFORMATION" id="381" weight="3" />
+      <edge source="ECOSYSTEM" target="SMES" id="382" weight="2" />
+      <edge source="ECOSYSTEM" target="ENTREPRENEURSHIP" id="383" weight="6" />
+      <edge source="ECOSYSTEM" target="INFORMATION-SYSTEMS" id="384" weight="3" />
+      <edge source="ECOSYSTEM" target="DYNAMIC CAPABILITIES" id="385" weight="2" />
+      <edge source="E-COMMERCE" target="BUSINESS MODELS" id="386" weight="4" />
+      <edge source="E-COMMERCE" target="DIGITAL ENTREPRENEURSHIP" id="387" weight="17" />
+      <edge source="E-COMMERCE" target="FIRMS" id="388" weight="2" />
+      <edge source="E-COMMERCE" target="INFORMATION-SYSTEMS" id="389" weight="3" />
+      <edge source="E-COMMERCE" target="PERFORMANCE" id="390" weight="6" />
+      <edge source="E-COMMERCE" target="SOCIAL MEDIA" id="391" weight="4" />
+      <edge source="E-COMMERCE" target="DYNAMIC CAPABILITIES" id="392" weight="3" />
+      <edge source="E-COMMERCE" target="TRANSFORMATION" id="393" weight="2" />
+      <edge source="E-COMMERCE" target="BUSINESS" id="394" weight="4" />
+      <edge source="E-COMMERCE" target="INTERNET" id="395" weight="4" />
+      <edge source="E-COMMERCE" target="ADOPTION" id="396" weight="2" />
+      <edge source="E-COMMERCE" target="ENTREPRENEURSHIP" id="397" weight="4" />
+      <edge source="E-COMMERCE" target="IMPACT" id="398" weight="4" />
+      <edge source="E-COMMERCE" target="SMES" id="399" weight="2" />
+      <edge source="E-COMMERCE" target="DIGITALIZATION" id="400" weight="2" />
+      <edge source="ENTREPRENEURIAL ORIENTATION" target="CREATION" id="401" weight="2" />
+      <edge source="ENTREPRENEURIAL ORIENTATION" target="DIGITAL ENTREPRENEURSHIP" id="402" weight="15" />
+      <edge source="ENTREPRENEURIAL ORIENTATION" target="DYNAMIC CAPABILITIES" id="403" weight="6" />
+      <edge source="ENTREPRENEURIAL ORIENTATION" target="STRATEGY" id="404" weight="3" />
+      <edge source="ENTREPRENEURIAL ORIENTATION" target="BUSINESS MODELS" id="405" weight="2" />
+      <edge source="ENTREPRENEURIAL ORIENTATION" target="CAPABILITIES" id="406" weight="4" />
+      <edge source="ENTREPRENEURIAL ORIENTATION" target="DIGITALIZATION" id="407" weight="4" />
+      <edge source="ENTREPRENEURIAL ORIENTATION" target="MANAGEMENT" id="408" weight="2" />
+      <edge source="ENTREPRENEURIAL ORIENTATION" target="SOCIAL MEDIA" id="409" weight="5" />
+      <edge source="ENTREPRENEURIAL ORIENTATION" target="PERFORMANCE" id="410" weight="8" />
+      <edge source="ENTREPRENEURIAL ORIENTATION" target="FRAMEWORK" id="411" weight="2" />
+      <edge source="ENTREPRENEURIAL ORIENTATION" target="DETERMINANTS" id="412" weight="2" />
+      <edge source="ENTREPRENEURIAL ORIENTATION" target="IMPACT" id="413" weight="2" />
+      <edge source="ENTREPRENEURIAL ORIENTATION" target="SMES" id="414" weight="2" />
+      <edge source="WORK" target="BUSINESS" id="415" weight="4" />
+      <edge source="WORK" target="DIGITAL ENTREPRENEURSHIP" id="416" weight="13" />
+      <edge source="WORK" target="DIGITALIZATION" id="417" weight="3" />
+      <edge source="WORK" target="INFORMATION" id="418" weight="4" />
+      <edge source="WORK" target="SMES" id="419" weight="2" />
+      <edge source="WORK" target="ENTREPRENEURSHIP" id="420" weight="3" />
+      <edge source="WORK" target="GENDER" id="421" weight="5" />
+      <edge source="WORK" target="CREATION" id="422" weight="2" />
+      <edge source="WORK" target="NETWORKS" id="423" weight="2" />
+      <edge source="MODEL" target="EDUCATION" id="424" weight="6" />
+      <edge source="MODEL" target="DIGITAL ENTREPRENEURSHIP" id="425" weight="22" />
+      <edge source="MODEL" target="GENDER" id="426" weight="2" />
+      <edge source="MODEL" target="ADOPTION" id="427" weight="2" />
+      <edge source="MODEL" target="STUDENTS" id="428" weight="5" />
+      <edge source="MODEL" target="BUSINESS" id="429" weight="5" />
+      <edge source="MODEL" target="IMPACT" id="430" weight="7" />
+      <edge source="MODEL" target="FIRMS" id="431" weight="4" />
+      <edge source="MODEL" target="PERFORMANCE" id="432" weight="6" />
+      <edge source="MODEL" target="FRAMEWORK" id="433" weight="3" />
+      <edge source="MODEL" target="CAPABILITIES" id="434" weight="4" />
+      <edge source="MODEL" target="NETWORKS" id="435" weight="4" />
+      <edge source="MODEL" target="ENTREPRENEURSHIP" id="436" weight="6" />
+      <edge source="MODEL" target="INTERNET" id="437" weight="3" />
+      <edge source="MODEL" target="STRATEGY" id="438" weight="2" />
+      <edge source="MODEL" target="CREATION" id="439" weight="2" />
+      <edge source="MODEL" target="SMES" id="440" weight="2" />
+      <edge source="MODEL" target="MANAGEMENT" id="441" weight="3" />
+      <edge source="MODEL" target="EFFECTUATION" id="442" weight="2" />
+      <edge source="DIGITAL TECHNOLOGY" target="CREATION" id="443" weight="4" />
+      <edge source="DIGITAL TECHNOLOGY" target="DIGITAL ENTREPRENEURSHIP" id="444" weight="12" />
+      <edge source="DIGITAL TECHNOLOGY" target="MODELS" id="445" weight="2" />
+      <edge source="DIGITAL TECHNOLOGY" target="PERFORMANCE" id="446" weight="3" />
+      <edge source="DIGITAL TECHNOLOGY" target="SMES" id="447" weight="2" />
+      <edge source="DIGITAL TECHNOLOGY" target="SOCIAL MEDIA" id="448" weight="2" />
+      <edge source="DIGITAL TECHNOLOGY" target="ENTREPRENEURSHIP" id="449" weight="6" />
+      <edge source="DIGITAL TECHNOLOGY" target="MANAGEMENT" id="450" weight="3" />
+      <edge source="DIGITAL TECHNOLOGY" target="STRATEGY" id="451" weight="2" />
+      <edge source="DIGITAL TECHNOLOGY" target="INFORMATION-SYSTEMS" id="452" weight="4" />
+      <edge source="DIGITAL TECHNOLOGY" target="TRANSFORMATION" id="453" weight="2" />
+      <edge source="DIGITAL TECHNOLOGY" target="BUSINESS" id="454" weight="2" />
+      <edge source="DIGITAL TECHNOLOGY" target="DYNAMIC CAPABILITIES" id="455" weight="2" />
+      <edge source="DIGITAL TECHNOLOGY" target="CAPABILITIES" id="456" weight="2" />
+      <edge source="GENDER" target="DIGITAL ENTREPRENEURSHIP" id="457" weight="20" />
+      <edge source="GENDER" target="MANAGEMENT" id="458" weight="5" />
+      <edge source="GENDER" target="BUSINESS" id="459" weight="5" />
+      <edge source="GENDER" target="ENTREPRENEURSHIP" id="460" weight="10" />
+      <edge source="GENDER" target="INTERNET" id="461" weight="3" />
+      <edge source="GENDER" target="DIGITALIZATION" id="462" weight="3" />
+      <edge source="GENDER" target="PERFORMANCE" id="463" weight="3" />
+      <edge source="GENDER" target="CREATION" id="464" weight="3" />
+      <edge source="GENDER" target="BUSINESS MODELS" id="465" weight="4" />
+      <edge source="GENDER" target="FRAMEWORK" id="466" weight="2" />
+      <edge source="GENDER" target="SOCIAL MEDIA" id="467" weight="3" />
+      <edge source="GENDER" target="IMPACT" id="468" weight="4" />
+      <edge source="GENDER" target="STUDENTS" id="469" weight="4" />
+      <edge source="GENDER" target="DETERMINANTS" id="470" weight="2" />
+      <edge source="TRANSFORMATION" target="BUSINESS MODELS" id="471" weight="7" />
+      <edge source="TRANSFORMATION" target="DIGITAL ENTREPRENEURSHIP" id="472" weight="26" />
+      <edge source="TRANSFORMATION" target="INFORMATION" id="473" weight="6" />
+      <edge source="TRANSFORMATION" target="CREATION" id="474" weight="7" />
+      <edge source="TRANSFORMATION" target="DYNAMIC CAPABILITIES" id="475" weight="5" />
+      <edge source="TRANSFORMATION" target="IMPACT" id="476" weight="9" />
+      <edge source="TRANSFORMATION" target="MANAGEMENT" id="477" weight="5" />
+      <edge source="TRANSFORMATION" target="NETWORKS" id="478" weight="2" />
+      <edge source="TRANSFORMATION" target="BUSINESS" id="479" weight="5" />
+      <edge source="TRANSFORMATION" target="INFORMATION-SYSTEMS" id="480" weight="3" />
+      <edge source="TRANSFORMATION" target="DIGITALIZATION" id="481" weight="5" />
+      <edge source="TRANSFORMATION" target="INTERNET" id="482" weight="3" />
+      <edge source="TRANSFORMATION" target="SMES" id="483" weight="7" />
+      <edge source="TRANSFORMATION" target="ENTREPRENEURSHIP" id="484" weight="8" />
+      <edge source="TRANSFORMATION" target="PERFORMANCE" id="485" weight="2" />
+      <edge source="TRANSFORMATION" target="DETERMINANTS" id="486" weight="2" />
+      <edge source="TRANSFORMATION" target="CAPABILITIES" id="487" weight="2" />
+      <edge source="TRANSFORMATION" target="FRAMEWORK" id="488" weight="2" />
+      <edge source="TRANSFORMATION" target="STRATEGY" id="489" weight="3" />
+      <edge source="TRANSFORMATION" target="SOCIAL MEDIA" id="490" weight="2" />
+      <edge source="DIGITAL ECONOMY" target="DIGITAL ENTREPRENEURSHIP" id="491" weight="7" />
+      <edge source="DIGITAL ECONOMY" target="ENTREPRENEURSHIP" id="492" weight="7" />
+      <edge source="DIGITAL ECONOMY" target="DIGITALIZATION" id="493" weight="4" />
+      <edge source="DIGITAL ECONOMY" target="EDUCATION" id="494" weight="2" />
+      <edge source="SMES" target="ADOPTION" id="495" weight="2" />
+      <edge source="SMES" target="DIGITAL ENTREPRENEURSHIP" id="496" weight="14" />
+      <edge source="SMES" target="MODELS" id="497" weight="3" />
+      <edge source="SMES" target="PERFORMANCE" id="498" weight="7" />
+      <edge source="SMES" target="SOCIAL MEDIA" id="499" weight="4" />
+      <edge source="SMES" target="DIGITALIZATION" id="500" weight="3" />
+      <edge source="SMES" target="INTERNET" id="501" weight="6" />
+      <edge source="SMES" target="MANAGEMENT" id="502" weight="3" />
+      <edge source="SMES" target="BUSINESS MODELS" id="503" weight="3" />
+      <edge source="SMES" target="INFORMATION" id="504" weight="2" />
+      <edge source="SMES" target="DYNAMIC CAPABILITIES" id="505" weight="5" />
+      <edge source="SMES" target="IMPACT" id="506" weight="5" />
+      <edge source="SMES" target="FIRMS" id="507" weight="2" />
+      <edge source="SMES" target="BUSINESS" id="508" weight="2" />
+      <edge source="SMES" target="CAPABILITIES" id="509" weight="2" />
+      <edge source="SMES" target="CREATION" id="510" weight="2" />
+      <edge source="SMES" target="ENTREPRENEURSHIP" id="511" weight="2" />
+      <edge source="EFFECTUATION" target="BUSINESS" id="512" weight="9" />
+      <edge source="EFFECTUATION" target="DIGITAL ENTREPRENEURSHIP" id="513" weight="19" />
+      <edge source="EFFECTUATION" target="INFORMATION-SYSTEMS" id="514" weight="2" />
+      <edge source="EFFECTUATION" target="PERFORMANCE" id="515" weight="6" />
+      <edge source="EFFECTUATION" target="BUSINESS MODELS" id="516" weight="2" />
+      <edge source="EFFECTUATION" target="CAPABILITIES" id="517" weight="2" />
+      <edge source="EFFECTUATION" target="CREATION" id="518" weight="6" />
+      <edge source="EFFECTUATION" target="ENTREPRENEURSHIP" id="519" weight="6" />
+      <edge source="EFFECTUATION" target="DYNAMIC CAPABILITIES" id="520" weight="2" />
+      <edge source="EFFECTUATION" target="SOCIAL MEDIA" id="521" weight="2" />
+      <edge source="EFFECTUATION" target="MANAGEMENT" id="522" weight="2" />
+      <edge source="EFFECTUATION" target="IMPACT" id="523" weight="2" />
+      <edge source="SOCIAL MEDIA" target="ADOPTION" id="524" weight="3" />
+      <edge source="SOCIAL MEDIA" target="DIGITAL ENTREPRENEURSHIP" id="525" weight="29" />
+      <edge source="SOCIAL MEDIA" target="MODELS" id="526" weight="2" />
+      <edge source="SOCIAL MEDIA" target="PERFORMANCE" id="527" weight="9" />
+      <edge source="SOCIAL MEDIA" target="BUSINESS" id="528" weight="5" />
+      <edge source="SOCIAL MEDIA" target="CREATION" id="529" weight="3" />
+      <edge source="SOCIAL MEDIA" target="IMPACT" id="530" weight="5" />
+      <edge source="SOCIAL MEDIA" target="MANAGEMENT" id="531" weight="5" />
+      <edge source="SOCIAL MEDIA" target="INFORMATION-SYSTEMS" id="532" weight="2" />
+      <edge source="SOCIAL MEDIA" target="DIGITALIZATION" id="533" weight="3" />
+      <edge source="SOCIAL MEDIA" target="FRAMEWORK" id="534" weight="4" />
+      <edge source="SOCIAL MEDIA" target="DETERMINANTS" id="535" weight="2" />
+      <edge source="SOCIAL MEDIA" target="EDUCATION" id="536" weight="2" />
+      <edge source="SOCIAL MEDIA" target="INTERNET" id="537" weight="3" />
+      <edge source="SOCIAL MEDIA" target="STUDENTS" id="538" weight="2" />
+      <edge source="SOCIAL MEDIA" target="NETWORKS" id="539" weight="3" />
+      <edge source="SOCIAL MEDIA" target="ENTREPRENEURSHIP" id="540" weight="6" />
+      <edge source="SOCIAL MEDIA" target="CAPABILITIES" id="541" weight="2" />
+      <edge source="DIGITAL ENTREPRENEURSHIP" target="BUSINESS" id="542" weight="49" />
+      <edge source="DIGITAL ENTREPRENEURSHIP" target="IMPACT" id="543" weight="42" />
+      <edge source="DIGITAL ENTREPRENEURSHIP" target="MODELS" id="544" weight="19" />
+      <edge source="DIGITAL ENTREPRENEURSHIP" target="STUDENTS" id="545" weight="17" />
+      <edge source="DIGITAL ENTREPRENEURSHIP" target="CREATION" id="546" weight="33" />
+      <edge source="DIGITAL ENTREPRENEURSHIP" target="BUSINESS MODELS" id="547" weight="37" />
+      <edge source="DIGITAL ENTREPRENEURSHIP" target="ADOPTION" id="548" weight="15" />
+      <edge source="DIGITAL ENTREPRENEURSHIP" target="INFORMATION" id="549" weight="19" />
+      <edge source="DIGITAL ENTREPRENEURSHIP" target="ENTREPRENEURSHIP" id="550" weight="60" />
+      <edge source="DIGITAL ENTREPRENEURSHIP" target="DIGITALIZATION" id="551" weight="18" />
+      <edge source="DIGITAL ENTREPRENEURSHIP" target="FIRMS" id="552" weight="13" />
+      <edge source="DIGITAL ENTREPRENEURSHIP" target="PERFORMANCE" id="553" weight="55" />
+      <edge source="DIGITAL ENTREPRENEURSHIP" target="INFORMATION-SYSTEMS" id="554" weight="26" />
+      <edge source="DIGITAL ENTREPRENEURSHIP" target="MANAGEMENT" id="555" weight="34" />
+      <edge source="DIGITAL ENTREPRENEURSHIP" target="EDUCATION" id="556" weight="16" />
+      <edge source="DIGITAL ENTREPRENEURSHIP" target="DETERMINANTS" id="557" weight="16" />
+      <edge source="DIGITAL ENTREPRENEURSHIP" target="INTERNET" id="558" weight="11" />
+      <edge source="DIGITAL ENTREPRENEURSHIP" target="FRAMEWORK" id="559" weight="11" />
+      <edge source="DIGITAL ENTREPRENEURSHIP" target="DYNAMIC CAPABILITIES" id="560" weight="18" />
+      <edge source="DIGITAL ENTREPRENEURSHIP" target="STRATEGY" id="561" weight="14" />
+      <edge source="DIGITAL ENTREPRENEURSHIP" target="NETWORKS" id="562" weight="11" />
+      <edge source="DIGITAL ENTREPRENEURSHIP" target="CAPABILITIES" id="563" weight="12" />
+      <edge source="ADOPTION" target="BUSINESS MODELS" id="564" weight="2" />
+      <edge source="ADOPTION" target="BUSINESS" id="565" weight="3" />
+      <edge source="ADOPTION" target="DIGITALIZATION" id="566" weight="2" />
+      <edge source="ADOPTION" target="MANAGEMENT" id="567" weight="6" />
+      <edge source="ADOPTION" target="MODELS" id="568" weight="2" />
+      <edge source="ADOPTION" target="PERFORMANCE" id="569" weight="5" />
+      <edge source="ADOPTION" target="INFORMATION-SYSTEMS" id="570" weight="2" />
+      <edge source="ADOPTION" target="INTERNET" id="571" weight="2" />
+      <edge source="ADOPTION" target="IMPACT" id="572" weight="3" />
+      <edge source="ADOPTION" target="NETWORKS" id="573" weight="2" />
+      <edge source="ADOPTION" target="ENTREPRENEURSHIP" id="574" weight="3" />
+      <edge source="ADOPTION" target="STRATEGY" id="575" weight="2" />
+      <edge source="FRAMEWORK" target="ENTREPRENEURSHIP" id="576" weight="5" />
+      <edge source="FRAMEWORK" target="CREATION" id="577" weight="4" />
+      <edge source="FRAMEWORK" target="DIGITALIZATION" id="578" weight="4" />
+      <edge source="FRAMEWORK" target="NETWORKS" id="579" weight="2" />
+      <edge source="FRAMEWORK" target="BUSINESS" id="580" weight="2" />
+      <edge source="FRAMEWORK" target="BUSINESS MODELS" id="581" weight="3" />
+      <edge source="FRAMEWORK" target="MANAGEMENT" id="582" weight="3" />
+      <edge source="FRAMEWORK" target="DETERMINANTS" id="583" weight="2" />
+      <edge source="PERFORMANCE" target="MODELS" id="584" weight="5" />
+      <edge source="PERFORMANCE" target="BUSINESS MODELS" id="585" weight="10" />
+      <edge source="PERFORMANCE" target="FIRMS" id="586" weight="7" />
+      <edge source="PERFORMANCE" target="INFORMATION-SYSTEMS" id="587" weight="5" />
+      <edge source="PERFORMANCE" target="DIGITALIZATION" id="588" weight="5" />
+      <edge source="PERFORMANCE" target="BUSINESS" id="589" weight="10" />
+      <edge source="PERFORMANCE" target="MANAGEMENT" id="590" weight="17" />
+      <edge source="PERFORMANCE" target="DYNAMIC CAPABILITIES" id="591" weight="8" />
+      <edge source="PERFORMANCE" target="STRATEGY" id="592" weight="8" />
+      <edge source="PERFORMANCE" target="CREATION" id="593" weight="8" />
+      <edge source="PERFORMANCE" target="ENTREPRENEURSHIP" id="594" weight="21" />
+      <edge source="PERFORMANCE" target="INTERNET" id="595" weight="9" />
+      <edge source="PERFORMANCE" target="CAPABILITIES" id="596" weight="9" />
+      <edge source="PERFORMANCE" target="INFORMATION" id="597" weight="4" />
+      <edge source="PERFORMANCE" target="DETERMINANTS" id="598" weight="4" />
+      <edge source="PERFORMANCE" target="EDUCATION" id="599" weight="3" />
+      <edge source="PERFORMANCE" target="IMPACT" id="600" weight="13" />
+      <edge source="PERFORMANCE" target="NETWORKS" id="601" weight="3" />
+      <edge source="PERFORMANCE" target="STUDENTS" id="602" weight="2" />
+      <edge source="EDUCATION" target="ENTREPRENEURSHIP" id="603" weight="6" />
+      <edge source="EDUCATION" target="MODELS" id="604" weight="3" />
+      <edge source="EDUCATION" target="BUSINESS" id="605" weight="4" />
+      <edge source="EDUCATION" target="STUDENTS" id="606" weight="7" />
+      <edge source="EDUCATION" target="DETERMINANTS" id="607" weight="3" />
+      <edge source="EDUCATION" target="DIGITALIZATION" id="608" weight="2" />
+      <edge source="EDUCATION" target="BUSINESS MODELS" id="609" weight="2" />
+      <edge source="EDUCATION" target="IMPACT" id="610" weight="6" />
+      <edge source="BUSINESS" target="IMPACT" id="611" weight="11" />
+      <edge source="BUSINESS" target="MODELS" id="612" weight="8" />
+      <edge source="BUSINESS" target="STUDENTS" id="613" weight="6" />
+      <edge source="BUSINESS" target="DIGITALIZATION" id="614" weight="4" />
+      <edge source="BUSINESS" target="MANAGEMENT" id="615" weight="4" />
+      <edge source="BUSINESS" target="CREATION" id="616" weight="10" />
+      <edge source="BUSINESS" target="ENTREPRENEURSHIP" id="617" weight="16" />
+      <edge source="BUSINESS" target="INFORMATION-SYSTEMS" id="618" weight="5" />
+      <edge source="BUSINESS" target="INTERNET" id="619" weight="3" />
+      <edge source="BUSINESS" target="NETWORKS" id="620" weight="2" />
+      <edge source="BUSINESS" target="DETERMINANTS" id="621" weight="6" />
+      <edge source="BUSINESS" target="INFORMATION" id="622" weight="4" />
+      <edge source="BUSINESS" target="FIRMS" id="623" weight="2" />
+      <edge source="DIGITALIZATION" target="FIRMS" id="624" weight="3" />
+      <edge source="DIGITALIZATION" target="MANAGEMENT" id="625" weight="5" />
+      <edge source="DIGITALIZATION" target="STRATEGY" id="626" weight="3" />
+      <edge source="DIGITALIZATION" target="MODELS" id="627" weight="3" />
+      <edge source="DIGITALIZATION" target="INTERNET" id="628" weight="2" />
+      <edge source="DIGITALIZATION" target="ENTREPRENEURSHIP" id="629" weight="11" />
+      <edge source="DIGITALIZATION" target="BUSINESS MODELS" id="630" weight="4" />
+      <edge source="DIGITALIZATION" target="CAPABILITIES" id="631" weight="2" />
+      <edge source="DIGITALIZATION" target="INFORMATION" id="632" weight="3" />
+      <edge source="DIGITALIZATION" target="IMPACT" id="633" weight="5" />
+      <edge source="CAPABILITIES" target="BUSINESS MODELS" id="634" weight="2" />
+      <edge source="CAPABILITIES" target="INFORMATION-SYSTEMS" id="635" weight="2" />
+      <edge source="CAPABILITIES" target="INFORMATION" id="636" weight="5" />
+      <edge source="CAPABILITIES" target="DETERMINANTS" id="637" weight="3" />
+      <edge source="CAPABILITIES" target="NETWORKS" id="638" weight="3" />
+      <edge source="CAPABILITIES" target="IMPACT" id="639" weight="4" />
+      <edge source="CAPABILITIES" target="FIRMS" id="640" weight="2" />
+      <edge source="CAPABILITIES" target="CREATION" id="641" weight="2" />
+      <edge source="CAPABILITIES" target="ENTREPRENEURSHIP" id="642" weight="3" />
+      <edge source="CAPABILITIES" target="MANAGEMENT" id="643" weight="4" />
+      <edge source="CAPABILITIES" target="DYNAMIC CAPABILITIES" id="644" weight="2" />
+      <edge source="FIRMS" target="BUSINESS MODELS" id="645" weight="2" />
+      <edge source="FIRMS" target="INFORMATION-SYSTEMS" id="646" weight="2" />
+      <edge source="FIRMS" target="ENTREPRENEURSHIP" id="647" weight="5" />
+      <edge source="FIRMS" target="INTERNET" id="648" weight="4" />
+      <edge source="FIRMS" target="NETWORKS" id="649" weight="2" />
+      <edge source="FIRMS" target="IMPACT" id="650" weight="6" />
+      <edge source="INFORMATION" target="BUSINESS MODELS" id="651" weight="5" />
+      <edge source="INFORMATION" target="CREATION" id="652" weight="4" />
+      <edge source="INFORMATION" target="IMPACT" id="653" weight="7" />
+      <edge source="INFORMATION" target="MANAGEMENT" id="654" weight="3" />
+      <edge source="INFORMATION" target="NETWORKS" id="655" weight="4" />
+      <edge source="INFORMATION" target="DETERMINANTS" id="656" weight="2" />
+      <edge source="INFORMATION" target="MODELS" id="657" weight="2" />
+      <edge source="INFORMATION" target="ENTREPRENEURSHIP" id="658" weight="2" />
+      <edge source="DETERMINANTS" target="BUSINESS MODELS" id="659" weight="4" />
+      <edge source="DETERMINANTS" target="CREATION" id="660" weight="2" />
+      <edge source="DETERMINANTS" target="STUDENTS" id="661" weight="3" />
+      <edge source="DETERMINANTS" target="ENTREPRENEURSHIP" id="662" weight="5" />
+      <edge source="DETERMINANTS" target="IMPACT" id="663" weight="2" />
+      <edge source="DETERMINANTS" target="MANAGEMENT" id="664" weight="2" />
+      <edge source="MANAGEMENT" target="CREATION" id="665" weight="4" />
+      <edge source="MANAGEMENT" target="DYNAMIC CAPABILITIES" id="666" weight="3" />
+      <edge source="MANAGEMENT" target="IMPACT" id="667" weight="5" />
+      <edge source="MANAGEMENT" target="ENTREPRENEURSHIP" id="668" weight="13" />
+      <edge source="MANAGEMENT" target="INTERNET" id="669" weight="3" />
+      <edge source="MANAGEMENT" target="MODELS" id="670" weight="4" />
+      <edge source="MANAGEMENT" target="BUSINESS MODELS" id="671" weight="3" />
+      <edge source="MANAGEMENT" target="INFORMATION-SYSTEMS" id="672" weight="4" />
+      <edge source="MANAGEMENT" target="STRATEGY" id="673" weight="7" />
+      <edge source="CREATION" target="DYNAMIC CAPABILITIES" id="674" weight="5" />
+      <edge source="CREATION" target="IMPACT" id="675" weight="10" />
+      <edge source="CREATION" target="NETWORKS" id="676" weight="2" />
+      <edge source="CREATION" target="INFORMATION-SYSTEMS" id="677" weight="3" />
+      <edge source="CREATION" target="MODELS" id="678" weight="4" />
+      <edge source="CREATION" target="STRATEGY" id="679" weight="3" />
+      <edge source="CREATION" target="ENTREPRENEURSHIP" id="680" weight="12" />
+      <edge source="CREATION" target="INTERNET" id="681" weight="3" />
+      <edge source="CREATION" target="BUSINESS MODELS" id="682" weight="5" />
+      <edge source="STRATEGY" target="INFORMATION-SYSTEMS" id="683" weight="2" />
+      <edge source="STRATEGY" target="DYNAMIC CAPABILITIES" id="684" weight="2" />
+      <edge source="STRATEGY" target="BUSINESS MODELS" id="685" weight="4" />
+      <edge source="STRATEGY" target="ENTREPRENEURSHIP" id="686" weight="10" />
+      <edge source="STRATEGY" target="NETWORKS" id="687" weight="2" />
+      <edge source="STRATEGY" target="IMPACT" id="688" weight="3" />
+      <edge source="DYNAMIC CAPABILITIES" target="IMPACT" id="689" weight="6" />
+      <edge source="DYNAMIC CAPABILITIES" target="NETWORKS" id="690" weight="2" />
+      <edge source="DYNAMIC CAPABILITIES" target="BUSINESS MODELS" id="691" weight="4" />
+      <edge source="DYNAMIC CAPABILITIES" target="ENTREPRENEURSHIP" id="692" weight="5" />
+      <edge source="DYNAMIC CAPABILITIES" target="INFORMATION-SYSTEMS" id="693" weight="2" />
+      <edge source="IMPACT" target="MODELS" id="694" weight="4" />
+      <edge source="IMPACT" target="STUDENTS" id="695" weight="6" />
+      <edge source="IMPACT" target="NETWORKS" id="696" weight="4" />
+      <edge source="IMPACT" target="ENTREPRENEURSHIP" id="697" weight="15" />
+      <edge source="IMPACT" target="INTERNET" id="698" weight="5" />
+      <edge source="IMPACT" target="BUSINESS MODELS" id="699" weight="6" />
+      <edge source="ENTREPRENEURSHIP" target="BUSINESS MODELS" id="700" weight="12" />
+      <edge source="ENTREPRENEURSHIP" target="STUDENTS" id="701" weight="4" />
+      <edge source="ENTREPRENEURSHIP" target="INTERNET" id="702" weight="8" />
+      <edge source="ENTREPRENEURSHIP" target="INFORMATION-SYSTEMS" id="703" weight="11" />
+      <edge source="ENTREPRENEURSHIP" target="NETWORKS" id="704" weight="3" />
+      <edge source="ENTREPRENEURSHIP" target="MODELS" id="705" weight="3" />
+      <edge source="INTERNET" target="NETWORKS" id="706" weight="3" />
+      <edge source="INFORMATION-SYSTEMS" target="BUSINESS MODELS" id="707" weight="6" />
+      <edge source="INFORMATION-SYSTEMS" target="MODELS" id="708" weight="2" />
+      <edge source="MODELS" target="STUDENTS" id="709" weight="3" />
+    </edges>
+  </graph>
+</gexf>
