@@ -1,0 +1,158 @@
+# The Digital Invisible: Semantic Frontiers and the Multilevel Evolution of Academic Entrepreneurship (1988–2025)
+
+## Introduction
+
+Academic entrepreneurship has emerged as a defining phenomenon of contemporary higher education, fundamentally reshaping the relationship between universities and economic development (Etzkowitz, 2003; Guerrero & Urbano, 2015). Over the past three decades, scholars have documented how academic scientists transform knowledge into commercial ventures (O'Shea et al., 2005; Bercovitz & Feldman, 2008), how technology transfer offices (TTOs) orchestrate licensing (Siegel et al., 2003; Lockett & Wright, 2005), and how university spinoffs contribute to regional innovation (Walter et al., 2006; Wennberg et al., 2011). Our analysis identifies 1,294 unique publications spanning 1988 to 2025, accumulating 44,190 citations across 497 journals. While this indicates scientific maturity (Perkmann et al., 2013; Grimaldi et al., 2011), it presents a significant managerial challenge: as the field consolidates, the traditional frameworks used by administrators to monitor the research-to-market pipeline are becoming increasingly ill-equipped to handle the volatility of the digital age.
+
+Beneath the consolidation mentioned above lies a troubling paradox with profound managerial implications. Despite intensifying policy mandates for digital transformation, our semantic analysis reveals that Digital Academic Entrepreneurship remains a peripheral semantic cluster, accounting for only 2% of the scholarly corpus—a weak signal that is nearly invisible within the dominant thematic architecture. This finding resonates with warnings that digitalization fundamentally challenges established organizational logics and performance metrics (Rippa & Secundo, 2019; Secundo et al., 2020). As highlighted by Ciampi et al. (2022) and Urbinati et al. (2020), while digital technologies enable organizational agility and open innovation, their specific impact on university-centered ecosystems remains empirically underexplored (Hayter, 2018; Miller et al., 2018). This creates an Invisibility Paradox: the very phenomena most likely to reshape academic commercialization remain systematically undertheorized, leaving university managers without evidence-based guidance precisely when they need it most.
+
+The scholarly development of academic entrepreneurship reflects a productive tension between competing institutional logics. The academic logic—emphasizing open science, peer recognition, and knowledge as a public good—has historically contested the entrepreneurial logic—prioritizing market orientation, proprietary protection, and commercial value capture (Fini & Toschi, 2016; Jain et al., 2009). Contemporary research suggests that these logics have progressively hybridized (Perkmann & Walsh, 2007), with universities developing selective coupling mechanisms that enable simultaneous pursuit of scientific excellence and commercial engagement (Perkmann et al., 2013; Bercovitz & Feldman, 2008; Bouncken & Kraus, 2022).
+
+However, this very integration generates an unintended consequence with direct implications for management practice: the systematic obscuring of emergent phenomena. When established logics successfully hybridize, their shared terminological space absorbs and diffuses new concepts before they can crystallize into distinct research streams. Digital transformation enters academic entrepreneurship discourse not as a rival logic but as a parasitic logic—occupying familiar terminological niches (innovation, technology transfer, platforms) while fundamentally altering their semantic meaning (Clarysse et al., 2014). The digital frontier remains invisible precisely because it speaks the language of the established order.
+
+We pose three interconnected research questions to address the gap described above:
+
+**RQ1**: How does the hybridization of institutional logics manifest in the semantic structure of academic entrepreneurship literature?
+
+**RQ2**: What explains the emergence of Digital Academic Entrepreneurship as a weak signal—visible to transformer-based semantic embeddings (BERTopic) yet dispersed and undetectable through probabilistic topic modeling (LDA)?
+
+**RQ3**: How can multilevel theory illuminate the dynamics through which a nascent digital logic is entering the established hybrid space?
+
+These questions respond to the call for multilevel research. Our analysis spans the micro-level (individual scientist motivations; Goethner et al., 2012; Huyghe & Knockaert, 2015), the meso-level (TTOs as digital orchestrators; Clarysse et al., 2011; Rasmussen & Wright, 2015), and the macro-level (innovation ecosystems; Clarysse et al., 2014; Guerrero & Urbano, 2016). We demonstrate how macro-level institutional shifts toward platforms alter meso-level coordination by TTOs, which in turn redefine micro-level career trajectories for PhD students—who often act as digital bridge-builders between scientific code and platform-based ventures (Hayter, 2016; Hayter et al., 2017; Boh et al., 2016).
+
+Along these lines, this study offers four distinct contributions that respond to both scholarly and managerial imperatives. Theoretically, we extend institutional logics theory (Jain et al., 2009; Fisher et al., 2016) by demonstrating how successful logic hybridization can paradoxically obscure emergent phenomena, introducing the concept of parasitic logics that occupy established semantic spaces while transforming their fundamental meaning. Also, our multilevel framework demonstrates how the macro-level institutional shift toward digital platforms alters meso-level organizational orchestration by TTOs and accelerators (Rasmussen et al., 2011; 2014), ultimately redefining micro-level individual career paths of PhD students. Methodologically, we develop and validate a triangulation framework for weak signal detection, demonstrating the comparative advantages of transformer-based semantic analysis over frequency-based approaches. This offers management scholars a replicable protocol for detecting emergent phenomena before they achieve sufficient lexical distinctiveness for conventional detection. Empirically, we provide the most comprehensive bibliometric analysis of academic entrepreneurship to date (building on Perkmann et al., 2013; Grimaldi et al., 2011; Siegel & Wright, 2015), spanning 37 years of scholarly production across 1,294 publications. Managerially, our study exposes a success trap in university management, in which traditional monitoring tools inadvertently mask disruptive shifts. By contrasting frequency-based metrics with semantic-based insights, we demonstrate that emerging digital initiatives are often misclassified within consolidated organizational buckets, such as traditional university spin-offs (Clarysse et al., 2004; Vohora et al., 2004) or standard technology transfer protocols. This misclassification creates a false sense of thematic continuity, leading university managers to over-invest in physical infrastructures (e.g., traditional wet labs or brick-and-mortar incubators) while remaining blind to the specific infrastructural and regulatory needs of platform-mediated ventures.
+
+In order to make the contributions described above, the manuscript proceeds as follows. Section 2 develops our theoretical framework within institutional logics and weak signals theories. Section 3 details our methodological approach, including network analysis, historical trajectory mapping, and contrastive semantic analysis. Section 4 presents results. Section 5 discusses theoretical and managerial implications. Section 6 concludes with contributions, limitations, and a future research agenda.
+
+---
+
+## 2. Intellectual Foundations and Knowledge Trajectories
+
+The evolution of academic entrepreneurship as a scholarly domain cannot be understood in isolation from its intellectual antecedents (Grimaldi et al., 2011; Siegel & Wright, 2015). This section employs two complementary bibliometric techniques—Reference Publication Year Spectroscopy (RPYS) and Main Path Analysis (MPA)—to trace the field's historical foundations and map the central trajectory of knowledge accumulation. Our analysis reveals a field that has achieved remarkable integration (Perkmann et al., 2013), yet this very maturity creates conditions that systematically obscure emergent phenomena such as digitalization (Rippa & Secundo, 2019).
+
+### 2.1 Historical Roots: A Reference Publication Year Spectroscopy Analysis
+
+To identify the intellectual foundations upon which contemporary academic entrepreneurship scholarship rests, we conducted Reference Publication Year Spectroscopy (RPYS) analysis of 90,252 cited references extracted from our corpus of 1,294 source documents. RPYS identifies root works by detecting years in which cited references significantly exceed expected citation frequencies, revealing the seminal contributions that anchored subsequent theoretical development. As shown in Table 1, the field's foundations are deeply rooted in Schumpeterian dynamics of creative destruction (Block et al., 2017), subsequently enriched by network theory and behavioral psychology.
+
+**Table 1: Intellectual Foundations of Academic Entrepreneurship (RPYS Analysis)**
+
+| Year | # of Citations | Seminal Work | Key Contribution | Theoretical Domain |
+|------|----------------|--------------|------------------|-------------------|
+| 1912/1934 | 59 | Schumpeter – *Theory of Economic Development* | Entrepreneur as agent of creative destruction | Innovation Economics |
+| 1945 | 18 | Bush – *Science, The Endless Frontier* | Linear model; university as innovation engine | Science Policy |
+| 1962 | 70 | Arrow – *Rate of Invention* | Knowledge as a public good; appropriability problem | Economics of Innovation |
+| 1973 | 118 | Granovetter – *Strength of Weak Ties* | Bridging ties enable knowledge diffusion | Network Theory |
+| 1986 | 390 | Kenney – *Biotechnology: University-Industrial Complex* | University-industry relations in biotech | Industrial Organization |
+| 1991 | 764 | Ajzen – *Theory of Planned Behavior*; Barney – *RBV* | Intentions, capabilities, resources | Behavioral/Strategic Management |
+
+*Note: Based on analysis of 90,252 cited references. Citation counts represent aggregate references to works published in each peak year.*
+
+The trajectory revealed in Table 1 demonstrates a clear intellectual evolution from macro-level economic theory toward meso-level organizational dynamics and, ultimately, micro-level behavioral analysis. Schumpeter's foundational conceptualization of the entrepreneur as the disruptive agent of economic transformation established the theoretical vocabulary that continues to underpin research on academic commercialization (Block et al., 2017; Etzkowitz, 2003). Vannevar Bush's 1945 report to President Truman articulated the linear model of innovation, wherein basic research conducted in universities cascades through applied research to commercial application (Goldfarb & Henrekson, 2003), providing the policy architecture within which academic entrepreneurship would eventually flourish.
+
+The mid-century contributions of Arrow and Granovetter deserve particular attention for their contemporary relevance. Arrow's analysis of knowledge as a public good, characterized by non-rivalry in consumption and imperfect appropriability, continues to inform debates about intellectual property and open science (Agarwal & Shah, 2014). Granovetter's network-theoretic insight that bridging ties connecting otherwise disconnected communities are disproportionately valuable for knowledge diffusion directly informs our finding that the keyword co-occurrence network exhibits exceptional density (0.8424). This remarkable density reflects the extent to which Granovetter's relational perspective has permeated the field (Walter et al., 2006; Clarysse et al., 2014), creating an integrated terminological space in which thematic boundaries have dissolved.
+
+The biotechnology revolution of the 1980s, documented by Kenney (1986), catalyzed unprecedented engagement between research universities and commercial enterprises, generating the institutional innovations—from the Bayh-Dole Act (Grimaldi et al., 2011; Thursby & Thursby, 2011) to the proliferation of TTOs (Clarysse et al., 2011; Muscio, 2010)—that define contemporary academic entrepreneurship. The theoretical infrastructure for studying individual-level entrepreneurial behavior arrived with Ajzen's 1991 Theory of Planned Behavior, which provided the psychological scaffolding for investigating entrepreneurial intentions and identity formation among academic scientists (Goethner et al., 2012; Miranda et al., 2017; Obschonka et al., 2012).
+
+### 2.2 The Main Path: From Descriptive Accounts to Theoretical Frameworks
+
+While RPYS identifies the field's intellectual roots, Main Path Analysis (MPA) reveals the central trajectory of knowledge accumulation within the citing literature itself. Using the Search Path Count (SPC) methodology applied to 231 internal citations among our 1,294 source documents, we identified 20 key papers that constitute the backbone of knowledge flow in academic entrepreneurship. Table 2 synthesizes this trajectory, revealing a clear progression through four distinct phases that culminate at the threshold of digital transformation.
+
+**Table 2: The Knowledge Backbone – Main Path Evolution**
+
+| Phase | Period | Key Authors | Representative Works | Citations | Core Focus |
+|-------|--------|-------------|---------------------|-----------|------------|
+| I. Emergence | 2001–2007 | Anonymous; Toole & Czarnitzki | SBIR program analysis; descriptive spinoff accounts | 75 | Policy mechanisms; phenomenological documentation |
+| II. Theoretical Consolidation | 2008–2009 | Wright, M.; Clarysse, B.; Lockett, A. | Mid-range universities; Business schools | 420 | Knowledge transfer frameworks; intermediary roles |
+| III. Behavioral Turn | 2011–2017 | Hayter, C.S.; Hmieleski, K.M. | Motivations; graduate students; psychological foundations | 271 | Individual agency; identity; non-profit motivations |
+| IV. Digital & Diversification | 2019–2021 | Secundo, G.; Meijer, L.; Doanh, D.C. | Digital Academic Entrepreneurship; sustainability | 168 | Digitalization; emerging economies; sustainable tech |
+
+*Note: Citations represent aggregate counts for phase-defining works on the main path. Phase boundaries determined by thematic shifts in SPC-weighted citation flows.*
+
+As Table 2 illustrates, the main path terminates precisely at the threshold of digital transformation. The earliest entries (Phase I) consist primarily of descriptive accounts documenting the phenomenological emergence of university spinoffs (Pirnay et al., 2003; Ndonzuau et al., 2002) and policy instruments such as the SBIR program. Theory remained underdeveloped during this period.
+
+The main path undergoes a decisive theoretical turn with the contributions of Wright and colleagues (Phase II). Wright, Clarysse, Lockett, and Knockaert's 2008 *Research Policy* article (333 citations—the most-cited paper on the main path) analyzed how "mid-range universities" contribute to industrial change through diverse knowledge-transfer mechanisms (Wright et al., 2008), introducing the distinction between tacit and codified knowledge flows. Their 2009 follow-up examined the role of business schools in academic entrepreneurship through resource-based and institutional lenses. Collectively, these contributions—building on earlier work by Lockett and Wright (2005), Clarysse et al. (2004), and O'Shea et al. (2005)—established the theoretical vocabulary (knowledge transfer mechanisms, university-industry linkages, intermediary roles) that continues to structure scholarly discourse.
+
+Phase III reflects a marked shift toward individual-level analysis (Bercovitz & Feldman, 2008; Jain et al., 2009). Hayter's 2011 study (112 citations), "In search of the profit-maximizing actor," challenged the assumption that academic entrepreneurs are motivated primarily by financial gain, revealing a complex mosaic of motivations including intellectual curiosity and social impact (Hayter, 2011). His 2017 contribution with Lubynsky and Maroulis (103 citations) identified graduate students as critical but overlooked agents in university spinoff development (Hayter et al., 2017)—a finding that foreshadows our identification of PhD students as emerging digital bridge-builders. Hmieleski and Powell's 2018 review consolidated the psychological foundations of academic entrepreneurship, while Fisher et al.'s (2016) work on identity and legitimacy extended theory to examine how academic entrepreneurs navigate role tensions (Fisher et al., 2016; O'Kane et al., 2015).
+
+The Digital & Diversification phase (Phase IV) marks the transition currently underway. Secundo, Rippa, and Cerchione's 2020 structured literature review on "Digital Academic Entrepreneurship" (110 citations) represents the first systematic attempt to theorize the impact of digital technologies on university-based knowledge commercialization (Secundo et al., 2020). Rippa and Secundo's 2019 article (234 citations) explored the potential of digital technologies in academic contexts, providing conceptual grounding for understanding how AI, big data, and platformization are transforming the entrepreneurial landscape (Rippa & Secundo, 2019)—yet, as our semantic analysis demonstrates, this stream remains a peripheral signal within the consolidated core.
+
+### 2.3 The Contemporary Turn: Diversification and the Digital Frontier
+
+The temporal evolution revealed by RPYS and MPA must be situated within the contemporary landscape of keyword bursts and thematic shifts detected in the 2024–2025 publication window. Our burst detection analysis, comparing recent keyword frequencies with historical baselines using the Z-score methodology, reveals significant emerging themes that signal the future trajectory of academic entrepreneurship research. Table 3 presents the most pronounced keyword bursts, providing empirical grounding for emerging research fronts.
+
+**Table 3: Emerging Research Fronts and Keyword Bursts (2024–2025)**
+
+| Rank | Keyword | Z-Score | Emergence Pattern | Multilevel Interpretation |
+|------|---------|---------|-------------------|--------------------------|
+| 1 | Sustainable Entrepreneurship | 8.96 | Sharp acceleration | Macro: Policy alignment with SDGs |
+| 2 | Ecosystems | 7.35 | Steady growth | Macro/Meso: Systems perspective on innovation |
+| 3 | Sustainability | 8.03 | Sustained presence | Macro: Grand challenges integration |
+| 4 | **PhD Students / Doctoral Students** | **5.92** | **Breakthrough** | **Micro: New entrepreneurial agents** |
+| 5 | Lean Startup | 5.92 | Methodological adoption | Meso: Agile commercialization practices |
+| 6 | Accelerators | 5.92 | Infrastructure expansion | Meso: Intermediary diversification |
+| 7 | Resilience | 5.92 | Post-pandemic emphasis | Micro/Meso: Adaptive capacity focus |
+
+*Note: Z-scores calculated against 2019–2023 baseline frequencies. Values >3.0 indicate statistically significant bursts at p<0.01.*
+
+As shown in Table 3, the emergence of PhD Students and Doctoral Students as bursting keywords (Z = 5.92) warrants particular attention. When triangulated with Hayter et al.'s (2017) identification of graduate students as critical entrepreneurial agents and Boh et al.'s (2016) analysis of doctoral student entrepreneurship, this signal suggests that early-career researchers are increasingly recognized as pivotal actors in academic entrepreneurship. Our multilevel framework posits that PhD students occupy a unique structural position: they possess both the technical depth to develop platform-based ventures and the career flexibility to navigate the tensions between scientific credibility and entrepreneurial agility (Hayter, 2016). As digital natives operating at the interface of academic research and code-based innovation, doctoral students may represent the "armed wing" of the digital transformation our analysis detects.
+
+The sustainability-related bursts (Z = 8.96 for Sustainable Entrepreneurship; Z = 8.03 for Sustainability) reflect the integration of environmental and social concerns into academic discourse on commercialization, aligning university knowledge transfer with the Sustainable Development Goals (Klofsten et al., 2019; Compagnucci & Spigarelli, 2020). The emergence of "Ecosystems" (Z = 7.35) signals growing adoption of systems-level perspectives that situate university spinoffs within broader innovation networks (Clarysse et al., 2014; Guerrero & Urbano, 2016; Hayter, 2018)—a conceptual shift that enables analysis of how digital platforms reconfigure the architecture of academic commercialization.
+
+#### 2.3.1 The Parasitic Logic Thesis
+
+The preceding analysis reveals a paradox that motivates our methodological approach. Academic entrepreneurship has achieved unprecedented theoretical maturity and empirical consolidation—evidenced by the exceptionally low network modularity (0.0408) indicating minimal thematic fragmentation (Perkmann et al., 2013, 2021). Yet this very integration creates conditions that obscure emergent phenomena. When a field's keyword network becomes so densely interconnected that nearly all terms co-occur with all others, novel concepts lack the distinctive lexical signatures that enable their identification.
+
+Digital transformation enters academic entrepreneurship discourse not as an external shock generating new terminology, but as a parasitic logic that colonizes existing terms—"innovation," "platforms," "technology transfer"—while fundamentally altering their semantic referents (Rippa & Secundo, 2019). This thesis explains why Digital Academic Entrepreneurship, despite its transformative potential (Secundo et al., 2020; Lamine et al., 2018), remains a peripheral semantic cluster comprising only 2% of the corpus in our BERTopic analysis. The digital frontier is invisible not because it is absent, but because it speaks the language of the established order.
+
+Traditional bibliometric methods, dependent on frequency-based keyword differentiation, cannot detect signals embedded within consolidated terminological spaces. The methodological implications are clear: identifying emergent logics within mature, hybridized fields requires analytical tools capable of semantic discrimination beyond lexical frequency—a requirement that motivates our contrastive deployment of transformer-based topic modeling, to which we now turn.
+
+---
+
+## References (Inline Citations from the 1,294 Article Corpus, >100 Citations)
+
+- Agarwal, R., & Shah, S.K. (2014). Knowledge sources of entrepreneurship. *Research Policy*, 43(7), 1109-1133. [208 citations]
+- Bercovitz, J., & Feldman, M. (2008). Academic entrepreneurs: Organizational change at the individual level. *Organization Science*, 19(1), 69-89. [590 citations]
+- Block, J.H., Fisch, C.O., & van Praag, M. (2017). The Schumpeterian entrepreneur: A review. *Journal of Institutional Economics*, 13(4), 835-866. [210 citations]
+- Boh, W.F., De-Haan, U., & Strom, R. (2016). University technology transfer through entrepreneurship. *Journal of Technology Transfer*, 41(6), 1175-1233. [146 citations]
+- Clarysse, B., & Moray, N. (2004). A process study of entrepreneurial team formation. *Journal of Business Venturing*, 19(1), 55-79. [341 citations]
+- Clarysse, B., Wright, M., Bruneel, J., & Mahajan, A. (2014). Creating value in ecosystems. *Research Policy*, 43(7), 1164-1176. [562 citations]
+- Clarysse, B., Tartari, V., & Salter, A. (2011). The impact of entrepreneurial capacity. *Research Policy*, 40(8), 1084-1093. [302 citations]
+- Compagnucci, L., & Spigarelli, F. (2020). The Third Mission of the university. *Technovation*, 90-91, 102120. [418 citations]
+- Etzkowitz, H. (2003). Research groups as 'quasi-firms'. *Research Policy*, 32(1), 109-121. [879 citations]
+- Fini, R., Grimaldi, R., & Sobrero, M. (2011). Complements or substitutes? *Research Policy*, 40(8), 1113-1127. [238 citations]
+- Fisher, G., Kotha, S., & Lahiri, A. (2016). Changing with the times: Identity, legitimacy, and new ventures. *Academy of Management Review*, 41(3), 383-409. [411 citations]
+- Goethner, M., Obschonka, M., Silbereisen, R.K., & Cantner, U. (2012). Scientists' transition to academic entrepreneurship. *Research Policy*, 41(8), 1521-1531. [202 citations]
+- Goldfarb, B., & Henrekson, M. (2003). Bottom-up versus top-down policies. *Research Policy*, 32(4), 639-658. [300 citations]
+- Grimaldi, R., Kenney, M., Siegel, D.S., & Wright, M. (2011). 30 years after Bayh-Dole. *Research Policy*, 40(8), 1045-1057. [560 citations]
+- Guerrero, M., & Urbano, D. (2015). Economic impact of entrepreneurial universities' activities. *Research Policy*, 44(3), 748-764. [361 citations]
+- Guerrero, M., & Urbano, D. (2016). Entrepreneurial universities: Emerging models. *Small Business Economics*, 47(3), 551-563. [298 citations]
+- Gulbrandsen, M., & Smeby, J.-C. (2005). Industry funding and university professors' research performance. *Research Policy*, 34(6), 932-950. [501 citations]
+- Hayter, C.S. (2011). In search of the profit-maximizing actor. *Journal of Technology Transfer*, 36(3), 340-352. [112 citations]
+- Hayter, C.S. (2016). A trajectory of early-stage spinoff success. *Journal of Technology Transfer*, 41(4), 820-835. [178 citations]
+- Hayter, C.S. (2018). Conceptualizing academic entrepreneurship ecosystems. *Journal of Technology Transfer*, 43(4), 809-825. [187 citations]
+- Hayter, C.S., Lubynsky, R., & Maroulis, S. (2017). Who is the academic entrepreneur? *Journal of Technology Transfer*, 42(6), 1237-1254. [103 citations]
+- Huyghe, A., & Knockaert, M. (2015). The influence of organizational culture. *Journal of Technology Transfer*, 40(1), 138-160. [142 citations]
+- Jain, S., George, G., & Maltarich, M. (2009). Academics or entrepreneurs? *Academy of Management Journal*, 52(5), 922-947. [448 citations]
+- Klofsten, M., Fayolle, A., Guerrero, M., et al. (2019). The entrepreneurial university as driver for economic growth. *Technological Forecasting and Social Change*, 141, 149-158. [290 citations]
+- Lockett, A., & Wright, M. (2005). Resources, capabilities, risk capital and the creation of university spin-out companies. *Research Policy*, 34(7), 1043-1057. [337 citations]
+- Miller, K., McAdam, R., & McAdam, M. (2018). A systematic literature review of university technology transfer. *Journal of Technology Transfer*, 43(4), 859-903. [216 citations]
+- Miranda, F.J., Chamorro-Mera, A., & Rubio, S. (2017). Academic entrepreneurship in Spanish universities. *Technovation*, 66-67, 1-11. [185 citations]
+- Ndonzuau, F.N., Pirnay, F., & Surlemont, B. (2002). A stage model of academic spin-off creation. *Technovation*, 22(5), 281-289. [204 citations]
+- O'Kane, C., Mangematin, V., Geoghegan, W., & Fitzgerald, C. (2015). University technology transfer offices. *Research Policy*, 44(2), 432-448. [159 citations]
+- O'Shea, R.P., Allen, T.J., Chevalier, A., & Roche, F. (2005). Entrepreneurial orientation, technology transfer. *Research Policy*, 34(7), 994-1009. [620 citations]
+- Obschonka, M., Goethner, M., Silbereisen, R.K., & Cantner, U. (2012). Social identity and the transition to entrepreneurship. *Journal of Vocational Behavior*, 80(1), 137-147. [125 citations]
+- Perkmann, M., Tartari, V., McKelvey, M., et al. (2013). Academic engagement and commercialisation: A review. *Research Policy*, 42(2), 423-442. [1565 citations]
+- Perkmann, M., Salandra, R., Tartari, V., McKelvey, M., & Hughes, A. (2021). Academic engagement: A review 2011-2019. *Research Policy*, 50(1), 104114. [331 citations]
+- Pirnay, F., Surlemont, B., & Nlemvo, F. (2003). Toward a typology of university spin-offs. *Small Business Economics*, 21(4), 355-369. [248 citations]
+- Powers, J.B., & McDougall, P.P. (2005). University start-up formation and technology licensing. *Journal of Business Venturing*, 20(3), 291-311. [399 citations]
+- Rasmussen, E., & Wright, M. (2015). How can universities facilitate academic spin-offs? *Journal of Technology Transfer*, 40(5), 782-799. [176 citations]
+- Rasmussen, E., Mosey, S., & Wright, M. (2011). The evolution of entrepreneurial competencies. *Journal of Management Studies*, 48(6), 1314-1345. [312 citations]
+- Rasmussen, E., Mosey, S., & Wright, M. (2014). The influence of university departments. *Research Policy*, 43(1), 92-106. [184 citations]
+- Rippa, P., & Secundo, G. (2019). Digital academic entrepreneurship. *Technological Forecasting and Social Change*, 146, 900-911. [234 citations]
+- Secundo, G., Rippa, P., & Cerchione, R. (2020). Digital Academic Entrepreneurship: A structured literature review. *Technological Forecasting and Social Change*, 157, 120118. [110 citations]
+- Siegel, D.S., & Wright, M. (2015). Academic Entrepreneurship: Time for a Rethink? *British Journal of Management*, 26(4), 582-595. [439 citations]
+- Van Looy, B., Landoni, P., Callaert, J., van Pottelsberghe, B., Sapsalis, E., & Debackere, K. (2011). Entrepreneurial effectiveness of European universities. *Research Policy*, 40(4), 553-564. [210 citations]
+- Vohora, A., Wright, M., & Lockett, A. (2004). Critical junctures in the development of university high-tech spinout companies. *Research Policy*, 33(1), 147-175. [171 citations]
+- Walter, A., Auer, M., & Ritter, T. (2006). The impact of network capabilities. *Research Policy*, 35(8), 1248-1263. [759 citations]
+- Wennberg, K., Wiklund, J., & Wright, M. (2011). The effectiveness of university knowledge spillovers. *Journal of Business Venturing*, 26(4), 458-473. [220 citations]
+- Wright, M., Clarysse, B., Lockett, A., & Knockaert, M. (2008). Mid-range universities' linkages with industry. *Research Policy*, 37(8), 1205-1223. [333 citations]
