@@ -1,0 +1,129 @@
+{
+  "project": {
+    "title": "Hybridizing Logics in Academic Entrepreneurship: A Multilevel Analysis of Emerging Digital Frontiers",
+    "target_journal": "Review of Managerial Science (RMS)",
+    "paper_type": "Bibliometric and Semantic Analysis",
+    "word_target": 8000,
+    "submission_type": "Special Issue"
+  },
+  "dataset": {
+    "source": "Web of Science",
+    "n_records": 1294,
+    "time_span": {
+      "start": 1988,
+      "end": 2025
+    },
+    "total_citations": 44190,
+    "avg_citations_per_doc": 34.15,
+    "unique_authors": 2711,
+    "unique_sources": 497
+  },
+  "semantic_analysis": {
+    "bertopic": {
+      "abstracts_analyzed": 1238,
+      "topics_identified": 2,
+      "main_topic": {
+        "id": 1,
+        "name": "Core Academic Entrepreneurship",
+        "documents": 1213,
+        "percentage": 98
+      },
+      "frontier_topic": {
+        "id": 0,
+        "name": "Digital Academic Entrepreneurship",
+        "documents": 25,
+        "percentage": 2,
+        "status": "FRONTIER",
+        "bibliometric_overlap_pct": 10
+      }
+    },
+    "lda_confirmatory": {
+      "k5": {
+        "topics": 5,
+        "herfindahl_index": 0.645,
+        "digital_isolation": "FAILED",
+        "topics_with_digital_signal": 3
+      },
+      "k10": {
+        "topics": 10,
+        "herfindahl_index": 0.536,
+        "digital_isolation": "FAILED",
+        "topics_with_digital_signal": 4
+      },
+      "conclusion": "LDA failed to isolate Digital theme - validates WEAK SIGNAL thesis"
+    }
+  },
+  "network_analysis": {
+    "keyword_cooccurrence": {
+      "nodes": 50,
+      "edges": 1032,
+      "density": 0.8424,
+      "modularity": 0.0408
+    },
+    "bibliographic_coupling_backbone": {
+      "nodes": 372,
+      "edges": 1093,
+      "modularity": 0.8303,
+      "communities_detected": 30
+    }
+  },
+  "main_path": {
+    "papers_in_trajectory": 20,
+    "internal_citations": 231,
+    "key_works": [
+      {
+        "authors": "Wright, M., Clarysse, B., Lockett, A., & Knockaert, M.",
+        "year": 2008,
+        "title": "Mid-range universities' linkages with industry",
+        "journal": "Research Policy",
+        "citations": 333,
+        "doi": "10.1016/j.respol.2008.04.021"
+      },
+      {
+        "authors": "Hayter, C. S.",
+        "year": 2011,
+        "title": "In search of the profit-maximizing actor",
+        "journal": "Journal of Technology Transfer",
+        "citations": 112,
+        "doi": "10.1007/s10961-010-9196-1"
+      },
+      {
+        "authors": "Secundo, G., Rippa, P., & Cerchione, R.",
+        "year": 2020,
+        "title": "Digital Academic Entrepreneurship",
+        "journal": "Technological Forecasting and Social Change",
+        "citations": 110,
+        "doi": "10.1016/j.techfore.2020.120118"
+      }
+    ]
+  },
+  "top_authors": [
+    {"name": "WRIGHT, M", "citations": 4865, "papers": 26},
+    {"name": "FINI, R", "citations": 2582, "papers": 13},
+    {"name": "GRIMALDI, R", "citations": 2535, "papers": 8},
+    {"name": "TARTARI, V", "citations": 2476, "papers": 7},
+    {"name": "PERKMANN, M", "citations": 2356, "papers": 7}
+  ],
+  "historical_roots": {
+    "peak_years": [
+      {"year": 2011, "citations": 4422, "deviation": 840},
+      {"year": 2007, "citations": 4121, "deviation": 829},
+      {"year": 1998, "citations": 1481, "deviation": 385}
+    ],
+    "foundational_works": [
+      {"year": 1912, "author": "Schumpeter", "work": "Theory of Economic Development"},
+      {"year": 1945, "author": "Bush", "work": "Science, the Endless Frontier"},
+      {"year": 1973, "author": "Granovetter", "work": "Strength of Weak Ties"},
+      {"year": 1991, "author": "Ajzen", "work": "Theory of Planned Behavior"}
+    ]
+  },
+  "writing_rules": {
+    "data_driven_only": true,
+    "never_invent_numbers": true,
+    "source_of_truth": "/data/",
+    "academic_tone": "formal, sophisticated, critical - Q1 standard",
+    "theoretical_focus": ["institutional logics hybridization", "multilevel theory", "weak signals"],
+    "citation_style": "APA 7th"
+  },
+  "generated_at": "2026-01-30T11:06:49-03:00"
+}
