@@ -55,6 +55,27 @@ except ImportError:
     print("Error: scipy library not installed. Run: pip install scipy")
     sys.exit(1)
 
+try:
+    import matplotlib
+    matplotlib.use('Agg')  # Non-interactive backend for PDF export
+    import matplotlib.pyplot as plt
+    MATPLOTLIB_AVAILABLE = True
+except ImportError:
+    print("Warning: matplotlib not installed. Plots will not be generated.")
+    plt = None
+    MATPLOTLIB_AVAILABLE = False
+
+import re
+
+# Try importing BERTopic (optional, for semantic analysis)
+try:
+    from bertopic import BERTopic
+    from umap import UMAP
+    from hdbscan import HDBSCAN
+    BERTOPIC_AVAILABLE = True
+except ImportError:
+    BERTOPIC_AVAILABLE = False
+
 
 # =============================================================================
 # CONFIGURATION
@@ -1055,6 +1076,573 @@ def calculate_network_statistics(networks: dict, output_dir: str) -> pd.DataFram
 
 
 # =============================================================================
+# RPYS - REFERENCE PUBLICATION YEAR SPECTROSCOPY
+# =============================================================================
+
+def extract_reference_year(ref_string: str) -> int:
+    """
+    Extract publication year from a WoS reference string.
+    Format: "AUTHOR, YEAR, JOURNAL, VOLUME, PAGE" or similar
+    """
+    if pd.isna(ref_string) or not ref_string:
+        return None
+    
+    # Look for 4-digit year pattern (typically 19xx or 20xx)
+    year_match = re.search(r'\b(19\d{2}|20\d{2})\b', str(ref_string))
+    if year_match:
+        year = int(year_match.group(1))
+        # Validate reasonable range
+        if 1900 <= year <= 2025:
+            return year
+    return None
+
+
+def analyze_rpys(df: pd.DataFrame, output_dir: str) -> pd.DataFrame:
+    """
+    Reference Publication Year Spectroscopy (RPYS).
+    
+    Analyzes the publication years of cited references to identify
+    historical roots and seminal works in the field.
+    
+    Based on: Marx et al. (2014) - Detecting the historical roots of research fields
+    """
+    print("\n" + "=" * 70)
+    print("RPYS - REFERENCE PUBLICATION YEAR SPECTROSCOPY")
+    print("=" * 70)
+    
+    # Extract all reference years
+    ref_years = []
+    ref_by_year = defaultdict(list)
+    
+    for _, row in df.iterrows():
+        cr_field = row.get('CR', '')
+        if pd.isna(cr_field) or not cr_field:
+            continue
+        
+        refs = str(cr_field).split(';')
+        for ref in refs:
+            ref = ref.strip()
+            if not ref:
+                continue
+            year = extract_reference_year(ref)
+            if year:
+                ref_years.append(year)
+                # Store first 80 chars of reference for later identification
+                ref_by_year[year].append(ref[:80])
+    
+    if len(ref_years) < 100:
+        print("  Insufficient reference data for RPYS analysis")
+        return pd.DataFrame()
+    
+    print(f"  Total cited references analyzed: {len(ref_years)}")
+    
+    # Count references per year
+    year_counts = Counter(ref_years)
+    min_year = min(year_counts.keys())
+    max_year = max(year_counts.keys())
+    
+    # Create continuous year series
+    years = list(range(min_year, max_year + 1))
+    counts = [year_counts.get(y, 0) for y in years]
+    
+    # Calculate 5-year moving median
+    window = 5
+    median_values = []
+    for i in range(len(counts)):
+        start = max(0, i - window // 2)
+        end = min(len(counts), i + window // 2 + 1)
+        median_values.append(np.median(counts[start:end]))
+    
+    # Calculate deviation (spectroscopy signal)
+    deviations = [counts[i] - median_values[i] for i in range(len(counts))]
+    
+    # Identify peaks (years with deviation > mean + 1.5*std)
+    dev_mean = np.mean(deviations)
+    dev_std = np.std(deviations)
+    peak_threshold = dev_mean + 1.5 * dev_std
+    
+    # Build results dataframe
+    results = []
+    for i, year in enumerate(years):
+        is_peak = deviations[i] > peak_threshold
+        top_refs = ref_by_year.get(year, [])[:3]  # Top 3 references for that year
+        
+        results.append({
+            'Year': year,
+            'N_Citations': counts[i],
+            'Median_5yr': round(median_values[i], 1),
+            'Deviation': round(deviations[i], 1),
+            'Is_Peak': is_peak,
+            'Top_References': ' | '.join(top_refs) if top_refs else ''
+        })
+    
+    rpys_df = pd.DataFrame(results)
+    
+    # Export CSV
+    csv_path = os.path.join(output_dir, 'historical_roots.csv')
+    rpys_df.to_csv(csv_path, index=False)
+    print(f"\n  ✓ Historical roots exported to: {csv_path}")
+    
+    # Identify peak years
+    peaks = rpys_df[rpys_df['Is_Peak'] == True].sort_values('Deviation', ascending=False)
+    print(f"\n  Peak Years (Historical Roots):")
+    for _, row in peaks.head(10).iterrows():
+        print(f"    {int(row['Year'])}: {int(row['N_Citations'])} citations (deviation: +{row['Deviation']:.0f})")
+    
+    # Generate plot if matplotlib available
+    if MATPLOTLIB_AVAILABLE:
+        try:
+            fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(14, 10), sharex=True)
+            
+            # Plot 1: Number of cited references per year
+            ax1.bar(years, counts, color='steelblue', alpha=0.7, label='Cited References')
+            ax1.plot(years, median_values, color='red', linewidth=2, label='5-year Median')
+            ax1.set_ylabel('Number of Cited References', fontsize=12)
+            ax1.set_title('RPYS - Reference Publication Year Spectroscopy', fontsize=14, fontweight='bold')
+            ax1.legend(loc='upper left')
+            ax1.grid(axis='y', alpha=0.3)
+            
+            # Plot 2: Deviation (spectroscopy signal)
+            colors = ['red' if d > peak_threshold else 'steelblue' for d in deviations]
+            ax2.bar(years, deviations, color=colors, alpha=0.7)
+            ax2.axhline(y=peak_threshold, color='red', linestyle='--', linewidth=1, 
+                       label=f'Peak Threshold ({peak_threshold:.1f})')
+            ax2.axhline(y=0, color='black', linewidth=0.5)
+            ax2.set_xlabel('Publication Year of Cited Reference', fontsize=12)
+            ax2.set_ylabel('Deviation from 5-year Median', fontsize=12)
+            ax2.set_title('Spectroscopy Signal - Peaks indicate Historical Roots', fontsize=12)
+            ax2.legend(loc='upper left')
+            ax2.grid(axis='y', alpha=0.3)
+            
+            # Add annotations for top peaks
+            for _, row in peaks.head(5).iterrows():
+                ax2.annotate(str(int(row['Year'])), 
+                            xy=(row['Year'], row['Deviation']),
+                            xytext=(0, 10), textcoords='offset points',
+                            ha='center', fontsize=9, fontweight='bold')
+            
+            plt.tight_layout()
+            pdf_path = os.path.join(output_dir, 'rpys_spectroscopy.pdf')
+            plt.savefig(pdf_path, format='pdf', dpi=150, bbox_inches='tight')
+            plt.close()
+            print(f"  ✓ Spectroscopy plot saved to: {pdf_path}")
+        except Exception as e:
+            print(f"  Warning: Could not generate RPYS plot: {e}")
+    
+    return rpys_df
+
+
+# =============================================================================
+# MAIN PATH ANALYSIS
+# =============================================================================
+
+def match_reference_to_paper(ref_string: str, papers_index: dict) -> str:
+    """
+    Try to match a reference string to a paper in the dataset.
+    Returns paper ID (UT) if matched, None otherwise.
+    """
+    if pd.isna(ref_string) or not ref_string:
+        return None
+    
+    ref_upper = str(ref_string).upper()
+    
+    # Extract author and year from reference
+    year_match = re.search(r'\b(19\d{2}|20\d{2})\b', ref_upper)
+    if not year_match:
+        return None
+    year = year_match.group(1)
+    
+    # Try to match first author
+    parts = ref_upper.split(',')
+    if len(parts) < 2:
+        return None
+    
+    first_author = parts[0].strip()
+    
+    # Look for matching paper
+    key = f"{first_author}_{year}"
+    return papers_index.get(key)
+
+
+def analyze_main_path(df: pd.DataFrame, output_dir: str, n_papers: int = 20) -> pd.DataFrame:
+    """
+    Main Path Analysis using citation network.
+    
+    Identifies the main trajectory of knowledge flow through the field
+    by analyzing which papers cite which others.
+    
+    Based on: Hummon & Dereian (1989), Liu & Lu (2012)
+    """
+    print("\n" + "=" * 70)
+    print("MAIN PATH ANALYSIS")
+    print("=" * 70)
+    
+    # Build paper index for matching
+    papers_index = {}
+    paper_info = {}
+    
+    for _, row in df.iterrows():
+        ut = row.get('UT', '')
+        if pd.isna(ut) or not ut:
+            continue
+        
+        authors = parse_authors(row.get('AU', ''))
+        try:
+            year = int(float(row.get('PY', 0)))
+        except:
+            year = 0
+        
+        title = str(row.get('TI', ''))[:100] if pd.notna(row.get('TI')) else ''
+        
+        try:
+            citations = int(float(row.get('TC', 0))) if pd.notna(row.get('TC')) else 0
+        except:
+            citations = 0
+        
+        paper_info[ut] = {
+            'authors': authors,
+            'year': year,
+            'title': title,
+            'citations': citations,
+            'first_author': authors[0] if authors else ''
+        }
+        
+        # Index by first author + year for matching
+        if authors and year:
+            key = f"{authors[0]}_{year}"
+            papers_index[key] = ut
+    
+    print(f"  Papers indexed: {len(paper_info)}")
+    
+    # Build directed citation network
+    # Edge: (citing_paper) -> (cited_paper)
+    G = nx.DiGraph()
+    
+    for node_id, info in paper_info.items():
+        G.add_node(node_id, **info)
+    
+    citation_count = 0
+    for _, row in df.iterrows():
+        citing_ut = row.get('UT', '')
+        if pd.isna(citing_ut) or not citing_ut or citing_ut not in paper_info:
+            continue
+        
+        cr_field = row.get('CR', '')
+        if pd.isna(cr_field) or not cr_field:
+            continue
+        
+        refs = str(cr_field).split(';')
+        for ref in refs:
+            cited_ut = match_reference_to_paper(ref.strip(), papers_index)
+            if cited_ut and cited_ut in paper_info and cited_ut != citing_ut:
+                G.add_edge(citing_ut, cited_ut)
+                citation_count += 1
+    
+    print(f"  Internal citations found: {citation_count}")
+    print(f"  Citation network: {G.number_of_nodes()} nodes, {G.number_of_edges()} edges")
+    
+    if G.number_of_edges() < 10:
+        print("  Insufficient internal citations for main path analysis")
+        return pd.DataFrame()
+    
+    # Calculate node importance using multiple metrics
+    # Combine: in-degree (citations), out-degree (references), betweenness
+    in_degree = dict(G.in_degree())
+    out_degree = dict(G.out_degree())
+    
+    try:
+        betweenness = nx.betweenness_centrality(G)
+    except:
+        betweenness = {n: 0 for n in G.nodes()}
+    
+    # Calculate combined score (normalized)
+    max_in = max(in_degree.values()) if in_degree else 1
+    max_out = max(out_degree.values()) if out_degree else 1
+    max_bet = max(betweenness.values()) if betweenness else 1
+    
+    node_scores = {}
+    for node in G.nodes():
+        info = paper_info.get(node, {})
+        in_norm = in_degree.get(node, 0) / max_in if max_in > 0 else 0
+        out_norm = out_degree.get(node, 0) / max_out if max_out > 0 else 0
+        bet_norm = betweenness.get(node, 0) / max_bet if max_bet > 0 else 0
+        
+        # Weight: citations most important, then betweenness, then out-degree
+        score = 0.5 * in_norm + 0.3 * bet_norm + 0.2 * out_norm
+        node_scores[node] = score
+    
+    # Select top papers by score
+    top_papers = sorted(node_scores.items(), key=lambda x: x[1], reverse=True)[:n_papers]
+    
+    # Sort chronologically
+    main_path_papers = []
+    for ut, score in top_papers:
+        info = paper_info.get(ut, {})
+        main_path_papers.append({
+            'UT': ut,
+            'Year': info.get('year', 0),
+            'First_Author': info.get('first_author', ''),
+            'Title': info.get('title', ''),
+            'Citations': info.get('citations', 0),
+            'In_Degree': in_degree.get(ut, 0),
+            'Out_Degree': out_degree.get(ut, 0),
+            'Betweenness': round(betweenness.get(ut, 0), 4),
+            'Path_Score': round(score, 4)
+        })
+    
+    main_path_df = pd.DataFrame(main_path_papers)
+    main_path_df = main_path_df.sort_values('Year', ascending=True).reset_index(drop=True)
+    main_path_df.insert(0, 'Rank', range(1, len(main_path_df) + 1))
+    
+    # Export CSV
+    csv_path = os.path.join(output_dir, 'main_path_papers.csv')
+    main_path_df.to_csv(csv_path, index=False)
+    print(f"\n  ✓ Main path papers exported to: {csv_path}")
+    
+    # Print main path
+    print(f"\n  Main Path Evolution ({n_papers} key papers):")
+    for _, row in main_path_df.iterrows():
+        print(f"    {int(row['Year'])}: {row['First_Author'][:20]:20} - {row['Title'][:45]}...")
+    
+    # Generate chronological plot
+    if MATPLOTLIB_AVAILABLE and len(main_path_df) > 0:
+        try:
+            fig, ax = plt.subplots(figsize=(14, 10))
+            
+            years = main_path_df['Year'].values
+            scores = main_path_df['Path_Score'].values
+            citations = main_path_df['Citations'].values
+            
+            # Normalize citation sizes for bubble plot
+            max_cite = max(citations) if max(citations) > 0 else 1
+            sizes = [(c / max_cite) * 1000 + 100 for c in citations]
+            
+            # Create scatter plot
+            scatter = ax.scatter(years, range(len(years)), s=sizes, 
+                               c=scores, cmap='YlOrRd', alpha=0.7, edgecolors='black')
+            
+            # Add paper labels
+            for i, row in main_path_df.iterrows():
+                label = f"{row['First_Author'][:15]} ({int(row['Year'])})"
+                ax.annotate(label, xy=(row['Year'], i), xytext=(5, 0),
+                           textcoords='offset points', fontsize=8, va='center')
+            
+            # Draw connections between consecutive papers
+            for i in range(len(years) - 1):
+                ax.plot([years[i], years[i+1]], [i, i+1], 
+                       'k-', alpha=0.3, linewidth=1)
+            
+            ax.set_xlabel('Publication Year', fontsize=12)
+            ax.set_ylabel('Chronological Position', fontsize=12)
+            ax.set_title(f'Main Path Evolution - Top {n_papers} Influential Papers', 
+                        fontsize=14, fontweight='bold')
+            ax.set_yticks([])
+            
+            # Add colorbar
+            cbar = plt.colorbar(scatter)
+            cbar.set_label('Path Importance Score', fontsize=10)
+            
+            plt.tight_layout()
+            pdf_path = os.path.join(output_dir, 'main_path_evolution.pdf')
+            plt.savefig(pdf_path, format='pdf', dpi=150, bbox_inches='tight')
+            plt.close()
+            print(f"  ✓ Main path plot saved to: {pdf_path}")
+        except Exception as e:
+            print(f"  Warning: Could not generate main path plot: {e}")
+    
+    return main_path_df
+
+
+# =============================================================================
+# SEMANTIC FRONTIER ANALYSIS (BERTopic)
+# =============================================================================
+
+def analyze_semantic_frontier(df: pd.DataFrame, output_dir: str, 
+                              bibliometric_keywords: set = None) -> pd.DataFrame:
+    """
+    Semantic Frontier Analysis using BERTopic.
+    
+    Identifies latent themes in abstracts that may not be captured by
+    traditional keyword-based bibliometric analysis.
+    
+    Args:
+        df: DataFrame with paper data
+        output_dir: Directory for output files
+        bibliometric_keywords: Set of keywords from bibliometric analysis for comparison
+    """
+    print("\n" + "=" * 70)
+    print("SEMANTIC FRONTIER ANALYSIS (BERTopic)")
+    print("=" * 70)
+    
+    if not BERTOPIC_AVAILABLE:
+        print("  BERTopic not available. Install: pip install bertopic umap-learn hdbscan")
+        return pd.DataFrame()
+    
+    # Extract and clean abstracts
+    abstracts = []
+    valid_indices = []
+    
+    for idx, row in df.iterrows():
+        abstract = row.get('AB', '')
+        if pd.notna(abstract) and len(str(abstract).strip()) > 100:
+            abstracts.append(str(abstract).strip())
+            valid_indices.append(idx)
+    
+    if len(abstracts) < 50:
+        print("  Insufficient abstracts for topic modeling (need at least 50)")
+        return pd.DataFrame()
+    
+    print(f"  Abstracts available: {len(abstracts)}")
+    
+    # Configure UMAP for dimensionality reduction
+    umap_model = UMAP(
+        n_neighbors=15,
+        n_components=5,
+        min_dist=0.0,
+        metric='cosine',
+        random_state=42
+    )
+    
+    # Configure HDBSCAN for clustering (reduced parameters for more granular topics)
+    hdbscan_model = HDBSCAN(
+        min_cluster_size=8,
+        min_samples=3,
+        metric='euclidean',
+        prediction_data=True
+    )
+    
+    print("  Training BERTopic model (this may take a few minutes)...")
+    
+    try:
+        # Configure vectorizer to remove stopwords
+        from sklearn.feature_extraction.text import CountVectorizer
+        vectorizer_model = CountVectorizer(
+            stop_words='english',
+            ngram_range=(1, 1)
+        )
+        
+        # Create BERTopic model
+        topic_model = BERTopic(
+            umap_model=umap_model,
+            hdbscan_model=hdbscan_model,
+            vectorizer_model=vectorizer_model,
+            embedding_model="all-MiniLM-L6-v2",
+            top_n_words=10,
+            nr_topics=15,  # Force 15 topics for granularity
+            verbose=False
+        )
+        
+        # Fit model
+        topics, probs = topic_model.fit_transform(abstracts)
+        
+        # Get topic info
+        topic_info = topic_model.get_topic_info()
+        n_topics = len(topic_info[topic_info['Topic'] != -1])
+        outliers = topic_info[topic_info['Topic'] == -1]['Count'].sum() if -1 in topic_info['Topic'].values else 0
+        
+        print(f"  Topics identified: {n_topics}")
+        print(f"  Outlier documents: {outliers}")
+        
+    except Exception as e:
+        print(f"  Error in BERTopic modeling: {e}")
+        return pd.DataFrame()
+    
+    # Build results DataFrame
+    results = []
+    
+    for _, row in topic_info.iterrows():
+        topic_id = row['Topic']
+        if topic_id == -1:
+            continue  # Skip outlier topic
+        
+        topic_words = topic_model.get_topic(topic_id)
+        keywords = [word for word, _ in topic_words[:10]] if topic_words else []
+        
+        # Get representative documents
+        try:
+            rep_docs = topic_model.get_representative_docs(topic_id)
+            rep_docs_text = [doc[:200] + "..." for doc in rep_docs[:3]] if rep_docs else []
+        except:
+            rep_docs_text = []
+        
+        # Compare with bibliometric keywords
+        overlap_pct = 0
+        frontier_status = "Unknown"
+        if bibliometric_keywords:
+            topic_kw_set = set(kw.upper() for kw in keywords)
+            overlap = topic_kw_set & bibliometric_keywords
+            overlap_pct = len(overlap) / len(topic_kw_set) * 100 if topic_kw_set else 0
+            
+            if overlap_pct < 30:
+                frontier_status = "FRONTIER"  # Latent theme not in bibliometrics
+            elif overlap_pct < 60:
+                frontier_status = "EMERGING"
+            else:
+                frontier_status = "ESTABLISHED"
+        
+        results.append({
+            'Topic_ID': topic_id,
+            'Topic_Name': row.get('Name', f'Topic_{topic_id}'),
+            'Count': row['Count'],
+            'Keywords': ', '.join(keywords),
+            'Bibliometric_Overlap_%': round(overlap_pct, 1),
+            'Frontier_Status': frontier_status,
+            'Representative_Doc_1': rep_docs_text[0] if len(rep_docs_text) > 0 else '',
+            'Representative_Doc_2': rep_docs_text[1] if len(rep_docs_text) > 1 else '',
+            'Representative_Doc_3': rep_docs_text[2] if len(rep_docs_text) > 2 else ''
+        })
+    
+    results_df = pd.DataFrame(results)
+    results_df = results_df.sort_values('Count', ascending=False).reset_index(drop=True)
+    
+    # Export CSV
+    csv_path = os.path.join(output_dir, 'semantic_topics.csv')
+    results_df.to_csv(csv_path, index=False)
+    print(f"\n  ✓ Semantic topics exported to: {csv_path}")
+    
+    # Print topic summary
+    print(f"\n  Topic Summary:")
+    for _, row in results_df.head(10).iterrows():
+        status_icon = "🌟" if row['Frontier_Status'] == 'FRONTIER' else "📊"
+        print(f"    {status_icon} Topic {row['Topic_ID']}: {row['Count']} docs - {row['Keywords'][:60]}...")
+    
+    # Identify frontier topics (latent themes)
+    frontier_topics = results_df[results_df['Frontier_Status'] == 'FRONTIER']
+    if len(frontier_topics) > 0:
+        print(f"\n  FRONTIER TOPICS (latent themes not in bibliometrics):")
+        for _, row in frontier_topics.iterrows():
+            print(f"    • Topic {row['Topic_ID']}: {row['Keywords'][:80]}...")
+    
+    # Generate visualizations
+    try:
+        # Intertopic distance map
+        fig_distance = topic_model.visualize_topics()
+        distance_path = os.path.join(output_dir, 'semantic_intertopic_distance.html')
+        fig_distance.write_html(distance_path)
+        print(f"  ✓ Intertopic distance map saved to: {distance_path}")
+        
+        # Topic barchart
+        fig_barchart = topic_model.visualize_barchart(top_n_topics=min(15, n_topics))
+        barchart_path = os.path.join(output_dir, 'semantic_topics_barchart.html')
+        fig_barchart.write_html(barchart_path)
+        print(f"  ✓ Topic barchart saved to: {barchart_path}")
+        
+        # Hierarchy visualization
+        try:
+            fig_hierarchy = topic_model.visualize_hierarchy()
+            hierarchy_path = os.path.join(output_dir, 'semantic_topics_hierarchy.html')
+            fig_hierarchy.write_html(hierarchy_path)
+            print(f"  ✓ Topic hierarchy saved to: {hierarchy_path}")
+        except:
+            pass
+            
+    except Exception as e:
+        print(f"  Warning: Could not generate some visualizations: {e}")
+    
+    return results_df
+
+
+# =============================================================================
 # OUTPUT MODULE
 # =============================================================================
 
@@ -1206,6 +1794,19 @@ def main():
     }
     stats_df = calculate_network_statistics(networks, args.output_dir)
     
+    # 10. RPYS - Historical Roots Analysis
+    rpys_df = analyze_rpys(df, args.output_dir)
+    
+    # 11. Main Path Analysis
+    main_path_df = analyze_main_path(df, args.output_dir, n_papers=20)
+    
+    # 12. Semantic Frontier Analysis (BERTopic)
+    # Collect bibliometric keywords for comparison
+    bibliometric_keywords = set()
+    for node in keyword_network.nodes():
+        bibliometric_keywords.add(node.upper())
+    semantic_df = analyze_semantic_frontier(df, args.output_dir, bibliometric_keywords)
+    
     # Final message
     print("\n" + "=" * 70)
     print("ANALYSIS COMPLETE")
@@ -1219,6 +1820,15 @@ def main():
     print("    - core_authors_by_cluster.csv")
     print("    - keyword_bursts.csv")
     print("    - network_statistics.csv")
+    print("    - historical_roots.csv (RPYS)")
+    print("    - main_path_papers.csv")
+    print("    - semantic_topics.csv (BERTopic)")
+    print("\n  Visualization files:")
+    print("    - rpys_spectroscopy.pdf")
+    print("    - main_path_evolution.pdf")
+    print("    - semantic_intertopic_distance.html")
+    print("    - semantic_topics_barchart.html")
+    print("    - semantic_topics_hierarchy.html")
     print("\nOpen .gexf files in Gephi for network visualization.")
     print("=" * 70 + "\n")
 
