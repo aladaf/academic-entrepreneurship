@@ -97,40 +97,207 @@ TOP_AUTHORS_PER_CLUSTER = 10
 # DATA LOADING MODULE
 # =============================================================================
 
-def load_wos_data(data_dir: str) -> pd.DataFrame:
-    """Load all Web of Science .txt files from the specified directory."""
-    print("\n" + "=" * 70)
-    print("DATA LOADING")
-    print("=" * 70)
-    
-    txt_files = [f for f in os.listdir(data_dir) if f.endswith('.txt')]
+def load_wos_files(data_dir: str) -> pd.DataFrame:
+    """Load all Web of Science .txt files (data-wos-*.txt) from the specified directory."""
+    # Only load files matching data-wos-*.txt pattern
+    txt_files = [f for f in os.listdir(data_dir) if f.startswith('data-wos-') and f.endswith('.txt')]
     
     if not txt_files:
-        print(f"Error: No .txt files found in {data_dir}")
-        sys.exit(1)
+        return pd.DataFrame()
     
-    print(f"Found {len(txt_files)} WoS files: {', '.join(txt_files)}")
+    print(f"  Found {len(txt_files)} WoS files")
     
     all_dfs = []
     
-    for filename in txt_files:
+    for filename in sorted(txt_files):
         filepath = os.path.join(data_dir, filename)
         try:
             df = pd.read_csv(filepath, sep='\t', encoding='utf-8', 
                            dtype=str, on_bad_lines='skip')
-            print(f"  ✓ {filename}: {len(df)} records loaded")
+            df['_source'] = 'WoS'
+            print(f"    ✓ {filename}: {len(df)} records")
             all_dfs.append(df)
         except Exception as e:
-            print(f"  ✗ {filename}: Failed - {str(e)[:50]}")
+            print(f"    ✗ {filename}: Failed - {str(e)[:50]}")
     
     if not all_dfs:
-        print("Error: No records could be loaded.")
-        sys.exit(1)
+        return pd.DataFrame()
     
     combined_df = pd.concat(all_dfs, ignore_index=True)
-    print(f"\nTotal records loaded: {len(combined_df)}")
+    return combined_df
+
+
+def load_scopus_files(data_dir: str) -> pd.DataFrame:
+    """Load all Scopus .csv files (data-scopus-*.csv) and normalize to WoS schema."""
+    csv_files = [f for f in os.listdir(data_dir) if f.startswith('data-scopus-') and f.endswith('.csv')]
+    
+    if not csv_files:
+        return pd.DataFrame()
+    
+    print(f"  Found {len(csv_files)} Scopus files")
+    
+    all_dfs = []
+    
+    for filename in sorted(csv_files):
+        filepath = os.path.join(data_dir, filename)
+        try:
+            df = pd.read_csv(filepath, encoding='utf-8', dtype=str, on_bad_lines='skip')
+            print(f"    ✓ {filename}: {len(df)} records")
+            all_dfs.append(df)
+        except Exception as e:
+            print(f"    ✗ {filename}: Failed - {str(e)[:50]}")
+    
+    if not all_dfs:
+        return pd.DataFrame()
+    
+    scopus_df = pd.concat(all_dfs, ignore_index=True)
+    
+    # Normalize Scopus columns to WoS schema
+    column_mapping = {
+        'Title': 'TI',
+        'Authors': 'AU',
+        'Year': 'PY',
+        'Abstract': 'AB',
+        'Author Keywords': 'DE',
+        'Index Keywords': 'ID',
+        'Source title': 'SO',
+        'Cited by': 'TC',
+        'Authors with affiliations': 'C1',
+        'References': 'CR',
+        'Document Type': 'DT',
+        'EID': 'UT',  # Use EID as unique identifier
+        'DOI': 'DI',
+        'Publisher': 'PU',
+        'Volume': 'VL',
+        'Issue': 'IS',
+        'Page start': 'BP',
+        'Page end': 'EP',
+        'Language of Original Document': 'LA',
+    }
+    
+    # Rename columns that exist
+    for scopus_col, wos_col in column_mapping.items():
+        if scopus_col in scopus_df.columns:
+            scopus_df = scopus_df.rename(columns={scopus_col: wos_col})
+    
+    # Convert Scopus author format (Name1; Name2) - already semicolon separated
+    # Convert Scopus references format - already semicolon separated
+    
+    scopus_df['_source'] = 'Scopus'
+    
+    return scopus_df
+
+
+def normalize_doi(doi_value) -> str:
+    """Normalize DOI for deduplication: lowercase, strip spaces."""
+    if pd.isna(doi_value) or not doi_value:
+        return None
+    doi = str(doi_value).strip().lower()
+    # Remove common DOI prefixes
+    if doi.startswith('https://doi.org/'):
+        doi = doi[16:]
+    elif doi.startswith('http://doi.org/'):
+        doi = doi[15:]
+    elif doi.startswith('doi:'):
+        doi = doi[4:]
+    return doi if doi else None
+
+
+def normalize_title(title_value) -> str:
+    """Normalize title for secondary deduplication."""
+    if pd.isna(title_value) or not title_value:
+        return None
+    # Lowercase, remove punctuation and extra spaces
+    title = str(title_value).strip().lower()
+    title = re.sub(r'[^\w\s]', '', title)
+    title = ' '.join(title.split())
+    return title if len(title) > 10 else None
+
+
+def load_combined_data(data_dir: str) -> pd.DataFrame:
+    """
+    Load and combine WoS and Scopus data with deduplication.
+    
+    Deduplication strategy:
+    1. Primary: Match by normalized DOI
+    2. Secondary: Match by normalized title (for records without DOI)
+    When duplicate found: Keep WoS record (richer metadata)
+    """
+    print("\n" + "=" * 70)
+    print("DATA LOADING (WoS + Scopus)")
+    print("=" * 70)
+    
+    # Load both sources
+    print("\n  Loading Web of Science data...")
+    wos_df = load_wos_files(data_dir)
+    wos_count = len(wos_df) if not wos_df.empty else 0
+    
+    print("\n  Loading Scopus data...")
+    scopus_df = load_scopus_files(data_dir)
+    scopus_count = len(scopus_df) if not scopus_df.empty else 0
+    
+    # Handle case where only one source is available
+    if wos_df.empty and scopus_df.empty:
+        print("\nError: No WoS or Scopus data files found.")
+        print("  Looking for: data-wos-*.txt and data-scopus-*.csv")
+        sys.exit(1)
+    
+    if wos_df.empty:
+        print(f"\n  Only Scopus data found: {scopus_count} records")
+        return scopus_df
+    
+    if scopus_df.empty:
+        print(f"\n  Only WoS data found: {wos_count} records")
+        return wos_df
+    
+    print(f"\n  Raw totals: WoS={wos_count}, Scopus={scopus_count}, Combined={wos_count + scopus_count}")
+    
+    # Add normalized DOI and title for deduplication
+    wos_df['_doi_norm'] = wos_df['DI'].apply(normalize_doi)
+    wos_df['_title_norm'] = wos_df['TI'].apply(normalize_title)
+    
+    scopus_df['_doi_norm'] = scopus_df['DI'].apply(normalize_doi)
+    scopus_df['_title_norm'] = scopus_df['TI'].apply(normalize_title)
+    
+    # Get DOIs and titles from WoS (these will be kept)
+    wos_dois = set(wos_df['_doi_norm'].dropna())
+    wos_titles = set(wos_df['_title_norm'].dropna())
+    
+    # Filter Scopus: remove records that match WoS by DOI or title
+    initial_scopus = len(scopus_df)
+    
+    # Remove Scopus records with DOI matching WoS
+    doi_duplicates = scopus_df['_doi_norm'].isin(wos_dois) & scopus_df['_doi_norm'].notna()
+    scopus_unique_by_doi = scopus_df[~doi_duplicates].copy()
+    doi_removed = initial_scopus - len(scopus_unique_by_doi)
+    
+    # For remaining Scopus records without DOI, check title
+    no_doi_mask = scopus_unique_by_doi['_doi_norm'].isna()
+    title_duplicates = scopus_unique_by_doi['_title_norm'].isin(wos_titles) & no_doi_mask
+    scopus_unique = scopus_unique_by_doi[~title_duplicates].copy()
+    title_removed = len(scopus_unique_by_doi) - len(scopus_unique)
+    
+    print(f"\n  Deduplication:")
+    print(f"    Scopus records with DOI matching WoS: {doi_removed}")
+    print(f"    Scopus records with title matching WoS: {title_removed}")
+    print(f"    Unique Scopus records to add: {len(scopus_unique)}")
+    
+    # Combine: WoS first (priority), then unique Scopus
+    combined_df = pd.concat([wos_df, scopus_unique], ignore_index=True)
+    
+    # Clean up temporary columns
+    combined_df = combined_df.drop(columns=['_doi_norm', '_title_norm'], errors='ignore')
+    
+    print(f"\n  Final combined dataset: {len(combined_df)} unique records")
+    print(f"    From WoS: {wos_count}")
+    print(f"    From Scopus (unique): {len(scopus_unique)}")
     
     return combined_df
+
+
+def load_wos_data(data_dir: str) -> pd.DataFrame:
+    """Legacy function - now calls load_combined_data for backwards compatibility."""
+    return load_combined_data(data_dir)
 
 
 # =============================================================================
@@ -1236,32 +1403,66 @@ def analyze_rpys(df: pd.DataFrame, output_dir: str) -> pd.DataFrame:
 # MAIN PATH ANALYSIS
 # =============================================================================
 
-def match_reference_to_paper(ref_string: str, papers_index: dict) -> str:
+def match_reference_to_paper(ref_string: str, papers_index: dict, doi_index: dict = None) -> str:
     """
     Try to match a reference string to a paper in the dataset.
     Returns paper ID (UT) if matched, None otherwise.
+    
+    Handles both WoS format: "Amit R, 1998, J BUS VENTURING, V13, P441, DOI 10.1016/..."
+    And Scopus format: "Abreu, Maria A., The entrepreneurial university..."
     """
     if pd.isna(ref_string) or not ref_string:
         return None
     
-    ref_upper = str(ref_string).upper()
+    ref_str = str(ref_string)
+    ref_upper = ref_str.upper()
     
-    # Extract author and year from reference
+    # Strategy 1: Try to match by DOI (most reliable)
+    if doi_index:
+        doi_match = re.search(r'10\.\d{4,}/[^\s,;]+', ref_str, re.IGNORECASE)
+        if doi_match:
+            doi_normalized = doi_match.group(0).lower().strip()
+            if doi_normalized in doi_index:
+                return doi_index[doi_normalized]
+    
+    # Strategy 2: Extract year from reference
     year_match = re.search(r'\b(19\d{2}|20\d{2})\b', ref_upper)
     if not year_match:
         return None
     year = year_match.group(1)
     
-    # Try to match first author
+    # Strategy 3: Try multiple author extraction patterns
     parts = ref_upper.split(',')
-    if len(parts) < 2:
+    if len(parts) < 1:
         return None
     
-    first_author = parts[0].strip()
+    # Pattern A: WoS format "LASTNAME INITIALS"
+    first_part = parts[0].strip()
     
-    # Look for matching paper
-    key = f"{first_author}_{year}"
-    return papers_index.get(key)
+    # Try direct match with first part
+    key = f"{first_part}_{year}"
+    if key in papers_index:
+        return papers_index[key]
+    
+    # Pattern B: Extract just the surname (before any initials/spaces)
+    surname_match = re.match(r'^([A-Z][A-Z\'\-]+)', first_part)
+    if surname_match:
+        surname = surname_match.group(1)
+        # Try with just surname
+        for idx_key in papers_index:
+            if idx_key.startswith(surname) and idx_key.endswith(f"_{year}"):
+                return papers_index[idx_key]
+    
+    # Pattern C: Scopus format "Lastname, Firstname"
+    if len(parts) >= 2:
+        # In Scopus, format might be "Abreu, Maria A." where Abreu is surname
+        potential_surname = first_part.strip()
+        if potential_surname:
+            for idx_key in papers_index:
+                if idx_key.startswith(potential_surname) and idx_key.endswith(f"_{year}"):
+                    return papers_index[idx_key]
+    
+    return None
 
 
 def analyze_main_path(df: pd.DataFrame, output_dir: str, n_papers: int = 20) -> pd.DataFrame:
@@ -1279,6 +1480,7 @@ def analyze_main_path(df: pd.DataFrame, output_dir: str, n_papers: int = 20) -> 
     
     # Build paper index for matching
     papers_index = {}
+    doi_index = {}  # New: DOI-based index for more reliable matching
     paper_info = {}
     
     for _, row in df.iterrows():
@@ -1299,6 +1501,12 @@ def analyze_main_path(df: pd.DataFrame, output_dir: str, n_papers: int = 20) -> 
         except:
             citations = 0
         
+        # Get DOI for index
+        doi = row.get('DI', '')
+        if pd.notna(doi) and doi:
+            doi_normalized = str(doi).lower().strip()
+            doi_index[doi_normalized] = ut
+        
         paper_info[ut] = {
             'authors': authors,
             'year': year,
@@ -1311,8 +1519,16 @@ def analyze_main_path(df: pd.DataFrame, output_dir: str, n_papers: int = 20) -> 
         if authors and year:
             key = f"{authors[0]}_{year}"
             papers_index[key] = ut
+            
+            # Also add surname-only key for better Scopus matching
+            if authors[0]:
+                surname = authors[0].split()[0] if ' ' in authors[0] else authors[0]
+                surname_key = f"{surname}_{year}"
+                if surname_key not in papers_index:
+                    papers_index[surname_key] = ut
     
     print(f"  Papers indexed: {len(paper_info)}")
+    print(f"  DOI index entries: {len(doi_index)}")
     
     # Build directed citation network
     # Edge: (citing_paper) -> (cited_paper)
@@ -1333,7 +1549,7 @@ def analyze_main_path(df: pd.DataFrame, output_dir: str, n_papers: int = 20) -> 
         
         refs = str(cr_field).split(';')
         for ref in refs:
-            cited_ut = match_reference_to_paper(ref.strip(), papers_index)
+            cited_ut = match_reference_to_paper(ref.strip(), papers_index, doi_index)
             if cited_ut and cited_ut in paper_info and cited_ut != citing_ut:
                 G.add_edge(citing_ut, cited_ut)
                 citation_count += 1
@@ -1728,7 +1944,8 @@ def main():
     os.makedirs(args.output_dir, exist_ok=True)
     
     print("\n" + "=" * 70)
-    print("   ADVANCED BIBLIOMETRIC ANALYSIS - DIGITAL ENTREPRENEURSHIP")
+    print("   ADVANCED BIBLIOMETRIC ANALYSIS - ACADEMIC ENTREPRENEURSHIP")
+    print("   Web of Science + Scopus Consolidated Analysis")
     print("=" * 70)
     
     # 1. Load data

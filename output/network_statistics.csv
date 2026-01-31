@@ -1,4 +1,4 @@
 Network,Nodes,Edges,Density,Diameter,Avg_Clustering,Modularity,Giant_Component_%,Avg_Degree
-Keywords_Cooccurrence,50,1032,0.8424,2,0.0444,0.0408,100.0,41.28
-Bibliographic_Coupling_Raw,511,95107,0.7299,4,0.052,N/A,98.6,372.24
-Bibliographic_Coupling_Backbone,372,1093,0.0158,16,0.2438,0.8303,100.0,5.88
+Keywords_Cooccurrence,50,1058,0.8637,2,0.057,0.0553,100.0,42.32
+Bibliographic_Coupling_Raw,949,143285,0.3185,4,0.0734,N/A,64.4,301.97
+Bibliographic_Coupling_Backbone,468,1501,0.0137,11,0.2256,0.8292,100.0,6.41

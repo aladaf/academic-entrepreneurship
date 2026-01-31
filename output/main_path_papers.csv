@@ -1,21 +1,21 @@
 Rank,UT,Year,First_Author,Title,Citations,In_Degree,Out_Degree,Betweenness,Path_Score
-1,WOS:000172825200004,2001,[ANONYMOUS],University spin-offs on the rise,0,28,0,0.0,0.2979
-2,WOS:000182247300012,2003,[ANONYMOUS],University spin-off firms growing fast,0,45,0,0.0,0.4787
-3,WOS:000224611400004,2004,[ANONYMOUS],Oxford University spin-off company aimed at personalized management of smoking cessation,0,27,0,0.0,0.2872
-4,WOS:000247581100007,2007,"TOOLE, AA",Biomedical academic entrepreneurship through the SBIR program,75,0,2,0.0,0.1333
-5,WOS:000254837700016,2007,[ANONYMOUS],University spin-off launches novel power source for sensors,0,34,0,0.0,0.3617
-6,WOS:000259129300005,2008,"WRIGHT, M",Mid-range universities' linkages with industry: Knowledge types and the role of intermediaries,333,0,2,0.0,0.1333
-7,WOS:000270435800002,2009,"WRIGHT, M",Academic entrepreneurship and business schools,87,0,2,0.0,0.1333
-8,WOS:000264736300029,2009,[ANONYMOUS],GSK PARTNERS WITH UNIVERSITY SPIN-OFF,0,47,0,0.0,0.5
-9,WOS:000290268000006,2011,"HAYTER, CS",In search of the profit-maximizing actor: motivations and definitions of success from nascent academ,112,0,3,0.0,0.2
-10,WOS:000389624000002,2016,"ZAINOL, ZA",Academic Entrepreneurship in Asia: An Examination of Some Key Issues,0,0,2,0.0,0.1333
-11,WOS:000371154100005,2016,"ROSSANO, S",The Relevance of Problem-based Learning for Policy Development in University-Business Cooperation,31,0,2,0.0,0.1333
-12,WOS:000414436600001,2017,"HAYTER, CS",Who is the academic entrepreneur? The role of graduate students in the development of university spi,103,0,2,0.0,0.1333
-13,WOS:000405714300002,2017,"MERCELIS, J","Commercializing science: nineteenth- and twentieth-century academic scientists as consultants, paten",19,0,3,0.0,0.2
-14,WOS:000450502900001,2018,[ANONYMOUS],Forum on academic entrepreneurship in historical perspective,0,36,0,0.0,0.383
-15,WOS:000428015300004,2018,"HMIELESKI, KM",THE PSYCHOLOGICAL FOUNDATIONS OF UNIVERSITY SCIENCE COMMERCIALIZATION: A REVIEW OF THE LITERATURE AN,56,0,2,0.0,0.1333
-16,WOS:000450634400003,2019,"CORSI, C",Growth of KIBS and non-KIBS firms: evidences from university spin-offs,6,0,2,0.0,0.1333
-17,WOS:000467094500001,2019,"RUIZ-RUANO, AM",Modelling academic entrepreneurial intention with Bayesian networks / Modelado de la intencion empre,2,0,2,0.0,0.1333
-18,WOS:000474208400009,2019,"MEIJER, LLJ",Barriers and drivers for technology commercialization by SMEs in the Dutch sustainable energy sector,51,0,2,0.0,0.1333
-19,WOS:000540275500036,2020,"SECUNDO, G",Digital Academic Entrepreneurship: A structured literature review and avenue for a research agenda,110,0,2,0.0,0.1333
-20,WOS:000698625900002,2021,"DOANH, DC",ACADEMIC ENTREPRENEURSHIP: AN EMPIRICAL RESEARCH OF INVENTION COMMERCIALISATION,7,0,2,0.0,0.1333
+1,2-s2.0-54649084139,1998,"CLARK, B.R.",The entrepreneurial university: Demand and response1,107,266,0,0.0,0.2854
+2,WOS:000085125700016,2000,"ETZKOWITZ, H",The future of the university and the university of the future: evolution of ivory tower to entrepren,1413,466,3,0.0004,0.5251
+3,WOS:000252985400005,2008,"BERCOVITZ, J",Academic entrepreneurs: Organizational change at the individual level,590,254,2,0.0001,0.2812
+4,WOS:000295068500001,2011,"GRIMALDI, R",30 years after Bayh-Dole: Reassessing academic entrepreneurship,560,220,19,0.0009,0.312
+5,WOS:000290268000005,2011,"D'ESTE, P",Why do academics engage with industry? The entrepreneurial university and individual motivations,678,184,11,0.0006,0.2466
+6,WOS:000299508200003,2012,"GUERRERO, M",The development of an entrepreneurial university,469,213,20,0.001,0.3132
+7,WOS:000316530400010,2013,"PERKMANN, M",Academic engagement and commercialisation: A review of the literature on university-industry relatio,1566,314,31,0.0018,0.4832
+8,WOS:000316530400009,2013,"ABREU, M",The nature of academic entrepreneurship in the UK: Widening the focus on entrepreneurial activities,357,232,18,0.001,0.3303
+9,WOS:000335756600002,2014,"AUDRETSCH, DB",From the entrepreneurial university to the university for the entrepreneurial society,532,208,5,0.0002,0.2407
+10,WOS:000365402400002,2015,"SIEGEL, DS",Academic Entrepreneurship: Time for a Rethink?,439,229,21,0.0014,0.3552
+11,WOS:000350837800014,2015,"GUERRERO, M",Economic impact of entrepreneurial universities' activities: An exploratory study of the United King,361,179,20,0.0009,0.2702
+12,WOS:000384440900001,2016,"GUERRERO, M",Entrepreneurial universities: emerging models in the new social and economic landscape,298,125,30,0.0017,0.272
+13,WOS:000432550900006,2018,"CLAUSS, T",Entrepreneurial university: a stakeholder-based conceptualisation of the current state and an agenda,43,28,106,0.0038,0.4002
+14,WOS:000437468500010,2018,"MIRANDA, FJ",Re-thinking university spin-off: a critical literature review and a research agenda,69,38,88,0.0017,0.2687
+15,WOS:000428015300002,2018,"FINI, R",RETHINKING THE COMMERCIALIZATION OF PUBLIC SCIENCE: FROM ENTREPRENEURIAL OUTCOMES TO SOCIETAL IMPACT,163,83,34,0.002,0.2492
+16,WOS:000437468500011,2018,"HAYTER, CS","Conceptualizing academic entrepreneurship ecosystems: a review, analysis and extension of the litera",187,107,129,0.0053,0.5997
+17,WOS:000495370100011,2019,"MATHISEN, MT","The development, growth, and performance of university spin-offs: a critical review",112,61,105,0.0017,0.3175
+18,WOS:000460990700015,2019,"KLOFSTEN, M",The entrepreneurial university as driver for economic growth and social change - Key strategic chall,290,139,46,0.0055,0.5183
+19,WOS:000460990700017,2019,"CENTOBELLI, P",Exploration and exploitation in the development of more entrepreneurial universities: A twisting lea,81,28,84,0.0018,0.2552
+20,WOS:000597124800024,2020,"COMPAGNUCCI, L",The Third Mission of the university: A systematic literature review on potentials and constraints,418,74,86,0.0019,0.315

@@ -1,5 +1,5 @@
 # Bibliometric Analysis Report: Academic Entrepreneurship
-## Web of Science Data Analysis
+## Web of Science + Scopus Consolidated Analysis
 
 ---
 
@@ -7,40 +7,41 @@
 
 | Metric | Value |
 |--------|-------|
-| **Data Sources** | 3 WoS export files (data-academic01.txt, data-academic02.txt, data-academic03.txt) |
-| **Total Records Loaded** | 1,300 |
-| **Duplicates Removed** | 0 |
-| **Records from 2026 Excluded** | 6 |
-| **Final Unique Records** | 1,294 |
-| **Time Span** | 1988 - 2025 |
-| **Sources (Journals)** | 497 |
-| **Unique Authors** | 2,711 |
-| **Total Citations** | 44,190 |
-| **Average Citations/Document** | 34.15 |
+| **Data Sources** | 4 WoS files (data-wos-01 to 04.txt) + 1 Scopus file (data-scopus-01.csv) |
+| **WoS Records** | 1,606 |
+| **Scopus Records** | 2,423 |
+| **Duplicates Removed (by DOI)** | 1,206 |
+| **Duplicates Removed (by Title)** | 8 |
+| **Records from 2026 Excluded** | 20 |
+| **Final Unique Records** | 2,795 |
+| **Time Span** | 1972 - 2025 |
+| **Sources (Journals)** | 976 |
+| **Unique Authors** | 5,877 |
+| **Total Citations** | 94,128 |
+| **Average Citations/Document** | 33.68 |
 
 ---
 
 ## 2. Annual Scientific Production
 
-The field shows clear growth patterns:
+The field shows clear exponential growth patterns:
 
-| Year | Publications | Year | Publications | Year | Publications |
-|------|-------------|------|-------------|------|-------------|
-| 1988 | 2 | 2005 | 19 | 2016 | 75 |
-| 1991 | 1 | 2006 | 7 | 2017 | 69 |
-| 1992 | 2 | 2007 | 18 | 2018 | 83 |
-| 1993 | 1 | 2008 | 20 | 2019 | 85 |
-| 1996 | 1 | 2009 | 29 | 2020 | 83 |
-| 1997 | 1 | 2010 | 27 | 2021 | 108 |
-| 1998 | 2 | 2011 | 35 | 2022 | 110 |
-| 1999 | 1 | 2012 | 42 | 2023 | 91 |
-| 2000 | 5 | 2013 | 34 | 2024 | 103 |
-| 2001 | 2 | 2014 | 39 | 2025 | 116 |
-| 2002 | 2 | 2015 | 68 | | |
-| 2003 | 9 | | | | |
-| 2004 | 4 | | | | |
+| Year | Pubs | Year | Pubs | Year | Pubs | Year | Pubs |
+|------|------|------|------|------|------|------|------|
+| 1972 | 1 | 1998 | 11 | 2010 | 75 | 2019 | 183 |
+| 1980 | 1 | 1999 | 5 | 2011 | 80 | 2020 | 183 |
+| 1983 | 2 | 2000 | 8 | 2012 | 83 | 2021 | 222 |
+| 1988 | 3 | 2001 | 13 | 2013 | 105 | 2022 | 224 |
+| 1990 | 3 | 2002 | 8 | 2014 | 101 | 2023 | 218 |
+| 1993 | 5 | 2003 | 20 | 2015 | 125 | 2024 | 227 |
+| 1996 | 5 | 2004 | 23 | 2016 | 137 | 2025 | 218 |
+| 1997 | 3 | 2005 | 41 | 2017 | 131 | | |
+| | | 2006 | 41 | 2018 | 151 | | |
+| | | 2007 | 29 | | | | |
+| | | 2008 | 52 | | | | |
+| | | 2009 | 49 | | | | |
 
-**Key Observation**: Exponential growth from 2015 onwards, with peak production in 2025 (116 publications).
+**Key Observation**: Exponential growth from 2010 onwards, with consistent 200+ publications per year since 2021.
 
 ---
 
@@ -48,23 +49,23 @@ The field shows clear growth patterns:
 
 | Rank | Journal | Publications |
 |------|---------|-------------|
-| 1 | Journal of Technology Transfer | 135 |
-| 2 | Research Policy | 61 |
-| 3 | Technovation | 42 |
-| 4 | Technological Forecasting and Social Change | 36 |
-| 5 | Small Business Economics | 32 |
-| 6 | International Entrepreneurship and Management | 25 |
-| 7 | Sustainability | 23 |
-| 8 | Science and Public Policy | 19 |
-| 9 | International Journal of Entrepreneurial Behavior | 18 |
-| 10 | Studies in Higher Education | 16 |
-| 11 | IEEE Transactions on Engineering Management | 13 |
-| 12 | Journal of the Knowledge Economy | 13 |
-| 13 | Journal of Business Venturing | 12 |
-| 14 | International Journal of Technology Management | 12 |
-| 15 | Technology Analysis & Strategic Management | 12 |
+| 1 | Journal of Technology Transfer | 211 |
+| 2 | Industry and Higher Education | 96 |
+| 3 | Research Policy | 92 |
+| 4 | Technovation | 72 |
+| 5 | Technological Forecasting and Social Change | 56 |
+| 6 | Small Business Economics | 51 |
+| 7 | Sustainability | 45 |
+| 8 | Science and Public Policy | 42 |
+| 9 | Studies in Higher Education | 38 |
+| 10 | International Entrepreneurship and Management | 37 |
+| 11 | Journal of the Knowledge Economy | 34 |
+| 12 | International Journal of Technology Management | 28 |
+| 13 | Higher Education | 24 |
+| 14 | Triple Helix | 20 |
+| 15 | International Journal of Entrepreneurial Behavior | 20 |
 
-**Key Observation**: Journal of Technology Transfer dominates with 135 publications (10.4% of total).
+**Key Observation**: Journal of Technology Transfer dominates with 211 publications (7.5% of total).
 
 ---
 
@@ -72,23 +73,23 @@ The field shows clear growth patterns:
 
 | Rank | Author | Total Citations | Papers | Avg Citations/Paper |
 |------|--------|----------------|--------|---------------------|
-| 1 | WRIGHT, M | 4,865 | 26 | 187.1 |
-| 2 | FINI, R | 2,582 | 13 | 198.6 |
-| 3 | GRIMALDI, R | 2,535 | 8 | 316.9 |
-| 4 | TARTARI, V | 2,476 | 7 | 353.7 |
-| 5 | PERKMANN, M | 2,356 | 7 | 336.6 |
-| 6 | SALTER, A | 2,140 | 6 | 356.7 |
-| 7 | HUGHES, A | 2,039 | 3 | 679.7 |
-| 8 | D'ESTE, P | 1,999 | 7 | 285.6 |
-| 9 | MCKELVEY, M | 1,949 | 5 | 389.8 |
-| 10 | CLARYSSE, B | 1,922 | 9 | 213.6 |
-| 11 | RASMUSSEN, E | 1,896 | 21 | 90.3 |
-| 12 | GUERRERO, M | 1,823 | 19 | 95.9 |
-| 13 | SOBRERO, M | 1,803 | 2 | 901.5 |
-| 14 | KRABEL, S | 1,775 | 3 | 591.7 |
-| 15 | KITSON, M | 1,708 | 2 | 854.0 |
+| 1 | ETZKOWITZ, H | 5,583 | 21 | 265.9 |
+| 2 | WRIGHT, M. | 4,893 | 23 | 212.7 |
+| 3 | WRIGHT, M | 4,208 | 22 | 191.3 |
+| 4 | GUERRERO, M | 3,289 | 35 | 94.0 |
+| 5 | PERKMANN, M | 3,037 | 8 | 379.6 |
+| 6 | URBANO, D | 2,872 | 19 | 151.2 |
+| 7 | CLARYSSE, B. | 2,771 | 13 | 213.2 |
+| 8 | D'ESTE, P | 2,678 | 8 | 334.8 |
+| 9 | GRIMALDI, R | 2,650 | 9 | 294.4 |
+| 10 | TARTARI, V | 2,478 | 7 | 354.0 |
+| 11 | FINI, R | 2,433 | 12 | 202.8 |
+| 12 | LOCKETT, A. | 2,327 | 9 | 258.6 |
+| 13 | SALTER, A | 2,141 | 6 | 356.8 |
+| 14 | HUGHES, A | 2,041 | 3 | 680.3 |
+| 15 | MCKELVEY, M | 1,951 | 5 | 390.2 |
 
-**Key Observation**: WRIGHT, M is the most influential author with highest total citations, while SOBRERO, M has the highest average citations per paper (901.5).
+**Key Observation**: ETZKOWITZ, H is now the most cited author (5,583 citations), overtaking WRIGHT, M.
 
 ---
 
@@ -96,26 +97,27 @@ The field shows clear growth patterns:
 
 | Rank | Country | Publications |
 |------|---------|-------------|
-| 1 | UK | 212 |
-| 2 | ITALY | 186 |
-| 3 | SPAIN | 130 |
-| 4 | GERMANY | 102 |
-| 5 | CHINA | 83 |
-| 6 | NETHERLANDS | 77 |
-| 7 | SWEDEN | 77 |
-| 8 | BELGIUM | 55 |
-| 9 | PORTUGAL | 50 |
-| 10 | NORWAY | 49 |
-| 11 | BRAZIL | 45 |
-| 12 | FRANCE | 42 |
-| 13 | CANADA | 41 |
-| 14 | POLAND | 36 |
-| 15 | MALAYSIA | 33 |
-| 16 | AUSTRALIA | 32 |
-| 17 | JAPAN | 27 |
-| 18 | DENMARK | 27 |
+| 1 | ITALY | 348 |
+| 2 | UK | 294 |
+| 3 | SPAIN | 231 |
+| 4 | GERMANY | 204 |
+| 5 | UNITED KINGDOM | 144 |
+| 6 | CHINA | 143 |
+| 7 | SWEDEN | 141 |
+| 8 | USA | 125 |
+| 9 | NETHERLANDS | 124 |
+| 10 | BRAZIL | 110 |
+| 11 | BELGIUM | 99 |
+| 12 | PORTUGAL | 92 |
+| 13 | FRANCE | 87 |
+| 14 | AUSTRALIA | 87 |
+| 15 | NORWAY | 81 |
+| 16 | CANADA | 80 |
+| 17 | MALAYSIA | 74 |
+| 18 | FINLAND | 69 |
+| 19 | DENMARK | 61 |
 
-**Key Observation**: European dominance with UK (212), Italy (186), and Spain (130) leading. Strong representation from Asian countries (China, Malaysia, Japan).
+**Key Observation**: European dominance with Italy (348) and UK (294+144) leading. Strong representation from emerging economies (China, Brazil, Malaysia).
 
 ---
 
@@ -126,335 +128,160 @@ The field shows clear growth patterns:
 | Metric | Value |
 |--------|-------|
 | **Nodes (Keywords)** | 50 |
-| **Edges (Co-occurrences)** | 1,032 |
-| **Density** | 0.8424 (very high) |
+| **Edges (Co-occurrences)** | 1,058 |
+| **Density** | 0.8637 (very high) |
 | **Diameter** | 2 |
-| **Average Clustering** | 0.0444 |
-| **Modularity** | 0.0408 |
+| **Average Clustering** | 0.057 |
+| **Modularity** | 0.055 |
 | **Giant Component %** | 100% |
-| **Average Degree** | 41.28 |
+| **Average Degree** | 42.32 |
 
-**Interpretation**: Extremely dense network where almost all keywords are connected. Low modularity suggests the field is highly integrated rather than fragmented into distinct subcommunities.
+### 6.2. Bibliographic Coupling Network (After Backbone Extraction)
 
-### 6.2. Bibliographic Coupling Network (Raw)
-
-| Metric | Value |
-|--------|-------|
-| **Nodes (Authors)** | 511 |
-| **Edges (Coupling Links)** | 95,107 |
-| **Density** | 0.7299 |
-| **Diameter** | 4 |
-| **Average Clustering** | 0.052 |
-| **Giant Component %** | 98.6% |
-| **Average Degree** | 372.24 |
-
-### 6.3. Bibliographic Coupling Network (After Backbone Extraction)
-
-The **Disparity Filter** (Serrano et al., 2009) with α=0.05 was applied:
-
-| Metric | Before Backbone | After Backbone | Change |
-|--------|-----------------|----------------|--------|
-| **Nodes** | 511 | 372 | -27.2% |
-| **Edges** | 95,107 | 1,093 | -98.9% |
-| **Density** | 0.7299 | 0.0158 | -97.8% |
-| **Diameter** | 4 | 16 | +300% |
-| **Avg Clustering** | 0.052 | 0.2438 | +368.8% |
-| **Modularity** | N/A | 0.8303 | High |
-| **Communities Detected** | - | 30 | - |
-| **Avg Degree** | 372.24 | 5.88 | -98.4% |
-
-**Interpretation**: Backbone extraction reveals clear community structure (modularity = 0.83). The 30 communities represent distinct research schools or intellectual traditions. Higher clustering after filtering indicates tight research groups.
+| Metric | Before Backbone | After Backbone |
+|--------|-----------------|----------------|
+| **Nodes** | 949 | 468 |
+| **Edges** | 143,285 | 1,501 |
+| **Density** | 0.3185 | 0.0137 |
+| **Diameter** | 4 | 11 |
+| **Avg Clustering** | 0.0734 | 0.2256 |
+| **Modularity** | N/A | 0.8292 |
+| **Communities** | - | 30 |
 
 ---
 
-## 7. Temporal Evolution Analysis
+## 7. Core Authors by Thematic Cluster
 
-### 7.1. Time Periods Defined (Volume-Based)
+### Cluster 0: ACADEMIC ENTREPRENEURSHIP (Growing)
+- **Authors**: 2,811
+- **Top Authors**: GUERRERO, M; WRIGHT, M; RASMUSSEN, E; CUNNINGHAM, JA; HAYTER, CS
 
-| Period | Name | Years | Documents |
-|--------|------|-------|-----------|
-| 1 | **Emergência** (Emergence) | 1988-2018 | 598 |
-| 2 | **Consolidação** (Consolidation) | 2019-2019 | 85 |
-| 3 | **Fronteira** (Frontier) | 2020-2025 | 611 |
+### Cluster 1: INNOVATION (Growing)
+- **Authors**: 2,016
+- **Top Authors**: WRIGHT, M; RASMUSSEN, E; RODEIRO-PAZOS, D; VISMARA, S
 
-### 7.2. Thematic Evolution (Sankey Flow)
-
-**Emergence → Consolidation Transitions:**
-
-| From | To | Jaccard | Shared Keywords |
-|------|----|---------|-----------------|
-| ACADEMIC ENTREPRENEURSHIP | ACADEMIC ENTREPRENEURSHIP | 0.300 | ACADEMIC ENTREPRENEURSHIP, COMMERCIALIZATION, SCIENTISTS, KNOWLEDGE TRANSFER, SCIENCE |
-| ACADEMIC ENTREPRENEURSHIP | TECHNOLOGY-TRANSFER | 0.235 | TECHNOLOGY-TRANSFER, UNIVERSITY, UNIVERSITIES, KNOWLEDGE |
-| PERFORMANCE | INNOVATION | 0.368 | ENTREPRENEURSHIP, UNIVERSITY SPIN-OFFS, INNOVATION, NETWORKS |
-
-**Consolidation → Frontier Transitions:**
-
-| From | To | Jaccard | Shared Keywords |
-|------|----|---------|-----------------|
-| INNOVATION | PERFORMANCE | 0.273 | ENTREPRENEURSHIP, UNIVERSITY SPIN-OFFS, NETWORKS, START-UPS, PERFORMANCE |
-| TECHNOLOGY-TRANSFER | ACADEMIC ENTREPRENEURSHIP | 0.176 | TECHNOLOGY-TRANSFER, UNIVERSITY, UNIVERSITIES |
-
-**Key Observation**: ACADEMIC ENTREPRENEURSHIP remains the core theme throughout all periods. INNOVATION and PERFORMANCE become increasingly central in recent years.
+### Cluster 2: DETERMINANTS (Growing)
+- **Authors**: 29
 
 ---
 
-## 8. Core Authors by Thematic Cluster
+## 8. Keyword Burst Detection (2024-2025)
 
-### Cluster 0: ACADEMIC ENTREPRENEURSHIP (Growing Trend)
-- **Keywords**: ACADEMIC ENTREPRENEURSHIP, TECHNOLOGY-TRANSFER, COMMERCIALIZATION, UNIVERSITY, SCIENCE
-- **Contributing Authors**: 1,845
-- **Top 10 Authors**:
-  1. GUERRERO, M (66)
-  2. WRIGHT, M (65)
-  3. RASMUSSEN, E (58)
-  4. CUNNINGHAM, JA (49)
-  5. HAYTER, CS (45)
-  6. FINI, R (45)
-  7. SECUNDO, G (40)
-  8. KLOFSTEN, M (40)
-  9. MEOLI, M (39)
-  10. VISMARA, S (37)
+Top bursting keywords (Z-score > 2.0):
 
-### Cluster 1: INNOVATION (Growing Trend)
-- **Keywords**: INNOVATION, PERFORMANCE, KNOWLEDGE, ENTREPRENEURSHIP, UNIVERSITY SPIN-OFFS
-- **Contributing Authors**: 1,318
-- **Top 10 Authors**:
-  1. WRIGHT, M (75)
-  2. RASMUSSEN, E (67)
-  3. RODEIRO-PAZOS, D (61)
-  4. RODRÍGUEZ-GULÍAS, MJ (61)
-  5. FERNÁNDEZ-LÓPEZ, S (55)
-  6. VISMARA, S (38)
-  7. SMITH, HL (36)
-  8. FINI, R (34)
-  9. HAYTER, CS (33)
-  10. CORSI, C (33)
-
-### Cluster 2: SPIN-OFFS (Growing Trend)
-- **Keywords**: SPIN-OFFS, TECHNOLOGY-TRANSFER OFFICES, RESEARCH-AND-DEVELOPMENT, INTELLECTUAL PROPERTY, BAYH-DOLE ACT
-- **Contributing Authors**: 185
-- **Top 10 Authors**:
-  1. WRIGHT, M (8)
-  2. KENNEY, M (7)
-  3. GRIMALDI, R (7)
-  4. FINI, R (7)
-  5. CUNNINGHAM, JA (7)
-  6. MENTER, M (7)
-  7. SIEGEL, DS (6)
-  8. MCKELVEY, M (6)
-  9. VISMARA, S (5)
-  10. KRABEL, S (5)
-
-**Key Observation**: WRIGHT, M appears in the top of all three clusters, indicating a truly central position in the field. All clusters show "Growing" trend status.
+| Keyword | Z-Score | Trend |
+|---------|---------|-------|
+| L26 | 40.50 | ↑ |
+| I23 | 34.27 | ↑ |
+| O32 | 31.00 | ↑ |
+| INTRAPRENEURSHIP | 13.24 | ↑ |
+| ENTREPRENEURIAL BEHAVIOR | 12.85 | ↑ |
+| SUSTAINABLE DEVELOPMENT GOALS | 12.62 | ↑ |
+| UNIVERSITY TECHNOLOGY TRANSFER | 10.78 | ↑ |
 
 ---
 
-## 9. Keyword Burst Detection
+## 9. Historical Roots (RPYS)
 
-Keywords experiencing significant growth (Z-score > 2.0, comparing 2024-2025 vs. historical baseline 1988-2023):
-
-### Top 30 Bursting Keywords
-
-| Rank | Keyword | Z-Score | Recent Avg | Historical Avg | Trend |
-|------|---------|---------|------------|----------------|-------|
-| 1 | I23 | 33.30 | 5.5 | 0.03 | ↑ Emerging |
-| 2 | L26 | 32.50 | 7.5 | 0.06 | ↑ Emerging |
-| 3 | M13 | 17.22 | 4.0 | 0.06 | ↑ Emerging |
-| 4 | O32 | 17.22 | 4.0 | 0.06 | ↑ Emerging |
-| 5 | NATIONAL SYSTEMS | 15.04 | 2.5 | 0.03 | ↑ Emerging |
-| 6 | ENTREPRENEURIAL BEHAVIOR | 10.67 | 2.5 | 0.06 | ↑ Emerging |
-| 7 | STEM | 8.96 | 1.5 | 0.03 | ↑ Emerging |
-| 8 | RETHINKING | 8.96 | 1.5 | 0.03 | ↑ Emerging |
-| 9 | TECHNOLOGY-BASED COMPANIES | 8.96 | 1.5 | 0.03 | ↑ Emerging |
-| 10 | UNIVERSITY-STUDENTS | 8.96 | 1.5 | 0.03 | ↑ Emerging |
-| 11 | SUSTAINABLE ENTREPRENEURSHIP | 8.96 | 1.5 | 0.03 | ↑ Emerging |
-| 12 | SUSTAINABILITY | 8.03 | 3.5 | 0.14 | ↑ Emerging |
-| 13 | ECOSYSTEM | 7.35 | 3.0 | 0.11 | ↑ Emerging |
-| 14 | IDENTIFICATION | 6.64 | 4.5 | 0.25 | ↑ Emerging |
-| 15 | O31 | 6.58 | 3.5 | 0.11 | ↑ Emerging |
-| 16 | SYSTEMATIC LITERATURE REVIEW | 6.39 | 3.5 | 0.19 | ↑ Emerging |
-| 17 | THEORY OF PLANNED BEHAVIOUR | 6.31 | 1.5 | 0.06 | ↑ Emerging |
-| 18 | UNIVERSITY SUPPORT | 6.31 | 1.5 | 0.06 | ↑ Emerging |
-| 19 | WORK | 6.26 | 5.0 | 0.33 | ↑ Emerging |
-| 20 | AMBIDEXTERITY | 5.92 | 1.0 | 0.03 | ↑ Emerging |
-| 21 | PHD STUDENTS | 5.92 | 1.0 | 0.03 | ↑ Emerging |
-| 22 | UNIVERSITY STARTUPS | 5.92 | 1.0 | 0.03 | ↑ Emerging |
-| 23 | DOCTORAL STUDENTS | 5.92 | 1.0 | 0.03 | ↑ Emerging |
-| 24 | LEAN STARTUP | 5.92 | 1.0 | 0.03 | ↑ Emerging |
-| 25 | RESILIENCE | 5.92 | 1.0 | 0.03 | ↑ Emerging |
-| 26 | ACCELERATORS | 5.92 | 1.0 | 0.03 | ↑ Emerging |
-| 27 | HIGHER EDUCATION | 5.39 | 5.5 | 0.50 | ↑ Emerging |
-| 28 | ECOSYSTEMS | 5.23 | 7.5 | 0.47 | ↑ Emerging |
-| 29 | SUSTAINABLE DEVELOPMENT | 5.13 | 1.5 | 0.08 | ↑ Emerging |
-| 30 | EDUCATION | 4.72 | 19.0 | 1.83 | ↑ Emerging |
-
-### Thematic Interpretation of Bursts
-
-**New Research Fronts Identified:**
-
-1. **Sustainability Theme**: SUSTAINABLE ENTREPRENEURSHIP, SUSTAINABILITY, SUSTAINABLE DEVELOPMENT
-2. **Ecosystem Perspective**: ECOSYSTEM, ECOSYSTEMS, INNOVATION ECOSYSTEM
-3. **Education Focus**: HIGHER EDUCATION, EDUCATION, PHD STUDENTS, DOCTORAL STUDENTS, UNIVERSITY-STUDENTS
-4. **Behavioral Research**: ENTREPRENEURIAL BEHAVIOR, THEORY OF PLANNED BEHAVIOUR
-5. **Startup Methodology**: LEAN STARTUP, ACCELERATORS, UNIVERSITY STARTUPS
-6. **Research Methodology**: SYSTEMATIC LITERATURE REVIEW, BIBLIOMETRIC ANALYSIS
-7. **Organizational Concepts**: AMBIDEXTERITY, RESILIENCE
-
----
-
-## 10. Summary and Key Insights
-
-### 10.1. Field Maturity
-- The field has evolved from nascent (1988-2005) through growth (2006-2015) to maturity (2016-2025)
-- Clear exponential growth pattern with 116 publications in 2025 alone
-
-### 10.2. Geographic Distribution
-- Strong European leadership (UK, Italy, Spain, Germany)
-- Growing contributions from Asia (China, Malaysia) and Latin America (Brazil)
-
-### 10.3. Intellectual Structure
-- Three main thematic clusters: Academic Entrepreneurship, Innovation, Spin-offs
-- High network density suggests field consolidation and integration
-- Clear community structure in bibliographic coupling (30 communities, modularity = 0.83)
-
-### 10.4. Research Fronts (2024-2025)
-- **Sustainability** is emerging as a major theme
-- **Ecosystem thinking** gaining prominence
-- **Education and students** (PhD, university students) becoming research subjects
-- **Behavioral theories** (TPB) increasingly applied
-- **Lean/agile methodologies** entering the academic entrepreneurship discourse
-
-### 10.5. Key Authors
-- WRIGHT, M is the most central author across all dimensions
-- European scholars dominate (UK, Italy, Spain)
-- Prolific author networks centered around major universities
-
----
-
-## 12. Historical Roots (RPYS - Reference Publication Year Spectroscopy)
-
-RPYS analysis examined **90,252 cited references** to identify the intellectual foundations of the field.
+**Total cited references analyzed**: 132,689
 
 ### Peak Years (Historical Roots)
 
-| Year | Citations | Deviation | Key Seminal Works |
-|------|-----------|-----------|-------------------|
-| **2011** | 4,422 | +840 | HAYTER (J Technol Transfer) - motivations of nascent academic entrepreneurs |
-| **2007** | 4,121 | +829 | CLARYSSE, SIEGEL, LOWE - university spin-offs and technology transfer |
-| **1998** | 1,481 | +385 | GARNSEY (Ind Corp Change), ADT Athens project |
-| **2005** | 3,776 | +270 | KONDO, COCHRANE - venture capital and science policy |
-| **2010** | 3,582 | +238 | HARRISON - regional studies on entrepreneurship |
-
-### Historical Foundations (Earlier Peaks)
-
-| Year | Citations | Key Works |
-|------|-----------|-----------|
-| **1912** | 36 | SCHUMPETER - Theory of Economic Development |
-| **1934** | 23 | SCHUMPETER - Theory of Economic Development (English) |
-| **1945** | 18 | BUSH - "Science, the Endless Frontier" |
-| **1962** | 70 | ARROW - Rate of Invention, Economic Studies |
-| **1973** | 118 | GRANOVETTER - Strength of Weak Ties |
-| **1986** | 390 | KENNEY - Biotechnology University-Industry relations |
-| **1991** | 764 | AJZEN - Theory of Planned Behavior; BARNEY - RBV |
-
-**Interpretation**: The field is built upon Schumpeterian economics (1912-1934), postwar science policy (Bush 1945), innovation economics (Arrow 1962), social network theory (Granovetter 1973), and the biotechnology revolution (Kenney 1986).
+| Year | Citations | Deviation | Key Works |
+|------|-----------|-----------|-----------|
+| 2007 | 5,731 | +992 | CLARYSSE - spin-offs; SIEGEL - technology transfer |
+| 2011 | 5,908 | +914 | HAYTER - motivations; D'ESTE - industry engagement |
+| 1998 | 2,310 | +678 | CLARK - entrepreneurial university; ETZKOWITZ - triple helix |
+| 2005 | 4,984 | +370 | SHANE - academic entrepreneurship |
 
 ---
 
-## 13. Main Path Analysis
+## 10. Main Path Analysis
 
-Main Path Analysis identified **20 key papers** that form the central trajectory of knowledge flow in the field.
+> [!IMPORTANT]
+> Main Path Analysis successfully identified the central knowledge trajectory with **27,636 internal citations** across **27,081 edges**.
 
 ### Citation Network Statistics
-- **Papers indexed**: 1,294
-- **Internal citations found**: 231
-- **Edges in network**: 217
+- **Papers indexed**: 2,794
+- **DOI index entries**: 2,632
+- **Internal citations found**: 27,636
+- **Citation network edges**: 27,081
 
-### Main Path Evolution (Chronological)
+### Main Path Evolution (20 Key Papers)
 
 | Year | Author | Title | Citations | Path Score |
 |------|--------|-------|-----------|------------|
-| 2001 | [ANONYMOUS] | University spin-offs on the rise | 0 | 0.298 |
-| 2003 | [ANONYMOUS] | University spin-off firms growing fast | 0 | 0.479 |
-| 2007 | TOOLE, AA | Biomedical academic entrepreneurship through SBIR | 75 | 0.133 |
-| 2008 | WRIGHT, M | Mid-range universities' linkages with industry | 333 | 0.133 |
-| 2009 | WRIGHT, M | Academic entrepreneurship and business schools | 87 | 0.133 |
-| 2011 | HAYTER, CS | In search of the profit-maximizing actor | 112 | 0.200 |
-| 2017 | HAYTER, CS | Who is the academic entrepreneur? | 103 | 0.133 |
-| 2017 | MERCELIS, J | Commercializing science: historical perspective | 19 | 0.200 |
-| 2018 | HMIELESKI, KM | Psychological foundations of university commercialization | 56 | 0.133 |
-| 2019 | MEIJER, LLJ | Barriers and drivers for technology commercialization | 51 | 0.133 |
-| 2020 | SECUNDO, G | Digital Academic Entrepreneurship: literature review | 110 | 0.133 |
-| 2021 | DOANH, DC | Academic entrepreneurship: invention commercialization | 7 | 0.133 |
+| 1998 | **CLARK, B.R.** | The entrepreneurial university: Demand and response | 107 | 0.285 |
+| 2000 | **ETZKOWITZ, H** | The future of the university and the university of the future | 1,413 | 0.525 |
+| 2008 | **BERCOVITZ, J** | Academic entrepreneurs: Organizational change at the individual level | 590 | 0.281 |
+| 2011 | **GRIMALDI, R** | 30 years after Bayh-Dole: Reassessing academic entrepreneurship | 560 | 0.312 |
+| 2011 | **D'ESTE, P** | Why do academics engage with industry? Entrepreneurial motivations | 678 | 0.247 |
+| 2012 | **GUERRERO, M** | The development of an entrepreneurial university | 469 | 0.313 |
+| 2013 | **PERKMANN, M** | Academic engagement and commercialisation: A review | 1,566 | 0.483 |
+| 2013 | **ABREU, M** | The nature of academic entrepreneurship in the UK | 357 | 0.330 |
+| 2014 | **AUDRETSCH, DB** | From the entrepreneurial university to the university for the entrepreneurial society | 532 | 0.241 |
+| 2015 | **SIEGEL, DS** | Academic Entrepreneurship: Time for a Rethink? | 439 | 0.355 |
+| 2015 | **GUERRERO, M** | Economic impact of entrepreneurial universities' activities | 361 | 0.270 |
+| 2016 | **GUERRERO, M** | Entrepreneurial universities: emerging models | 298 | 0.272 |
+| 2018 | **CLAUSS, T** | Entrepreneurial university: a stakeholder-based conceptualisation | 43 | 0.400 |
+| 2018 | **MIRANDA, FJ** | Re-thinking university spin-off: A critical literature review | 69 | 0.269 |
+| 2018 | **FINI, R** | Rethinking the commercialization of public science | 163 | 0.249 |
+| 2018 | **HAYTER, CS** | Conceptualizing academic entrepreneurship ecosystems | 187 | 0.600 |
+| 2019 | **MATHISEN, MT** | The development, growth, and performance of university spin-offs | 112 | 0.318 |
+| 2019 | **KLOFSTEN, M** | The entrepreneurial university as driver for economic growth | 290 | 0.518 |
+| 2019 | **CENTOBELLI, P** | Exploration and exploitation in more entrepreneurial universities | 81 | 0.255 |
+| 2020 | **COMPAGNUCCI, L** | The Third Mission of the university: A systematic literature review | 418 | 0.315 |
 
 ### Trajectory Interpretation
 
-1. **2001-2004**: Early descriptive phase (news articles about university spin-offs)
-2. **2007-2009**: WRIGHT and TOOLE establish theoretical foundations
-3. **2011-2017**: HAYTER develops behavioral/motivational research stream
-4. **2017-2018**: Historical and psychological perspectives emerge
-5. **2019-2021**: Contemporary topics include barriers, digitalization (SECUNDO), and emerging economies
-
-**Key Finding**: The main path shows evolution from descriptive reporting → theoretical frameworks (WRIGHT) → behavioral foundations (HAYTER) → current diversification (digital, barriers, global perspectives).
-
----
-
-## 15. Semantic Frontier Analysis (BERTopic NLP)
-
-BERTopic analysis processed **1,238 abstracts** using BERT embeddings, UMAP dimensionality reduction, and HDBSCAN clustering to identify latent semantic themes.
-
-### Key Finding: High Semantic Cohesion
-
-> [!IMPORTANT]
-> The field demonstrates **exceptional semantic homogeneity**. Despite forcing topic differentiation, BERTopic identified only 2 distinct semantic clusters, indicating a highly consolidated research domain.
-
-### Semantic Topics Identified
-
-| Topic | Documents | Status | Keywords | Interpretation |
-|-------|-----------|--------|----------|----------------|
-| **Topic 1** (Main) | 1,213 (98%) | EMERGING | university, research, academic, entrepreneurship, spin, knowledge, technology | Core traditional focus - mature and integrated |
-| **Topic 0** (Frontier) | 25 (2%) | FRONTIER | digital, entrepreneurship, technologies, academic, learning, dt | **Digital Academic Entrepreneurship** - emerging niche |
-
-### Comparison: NLP Topics vs. Bibliometric Keywords
-
-| Dimension | Bibliometric Analysis | BERTopic Semantic Analysis |
-|-----------|----------------------|---------------------------|
-| **Clusters** | 3 keyword clusters | 2 semantic topics |
-| **Method** | Keyword co-occurrence | Text embedding similarity |
-| **Top Keywords** | Academic entrepreneurship, innovation, spin-offs | University, research, entrepreneurship, digital |
-| **Overlap** | 50% | 10% (frontier) to 50% (main) |
-
-### Frontier Topic Deep Dive: Digital Academic Entrepreneurship
-
-**Representative Documents:**
-1. *"Today's digital technologies, such as social media, business analytics, the Internet of Things, big data, advanced manufacturing, 3D printing, cloud and cyber-solutions and MOOCs, permeate every private..."*
-
-2. *"Digital technologies are transforming the entrepreneurial landscape and enabling the democratization of entrepreneurship. The ongoing advancement of digital technologies has transformed the business..."*
-
-3. *"Digital technology has become a new economic and social force, reshaping traditional business models, strategies, structures, and processes..."*
-
-### Latent Themes Interpretation
-
-The **FRONTIER** topic (10% bibliometric overlap) represents research on:
-- **Digital transformation** of academic entrepreneurship
-- **Platform-based** knowledge commercialization
-- **Technology democratization** in university contexts
-- **New business models** enabled by digital technologies
-
-> [!TIP]
-> **Research Gap Identified**: Only 2% of the corpus addresses digital transformation explicitly. This suggests an underexplored frontier with high potential for novel contributions.
-
-### Why Only 2 Topics?
-
-The low topic count is **scientifically meaningful**, not a limitation:
-1. **Field Maturity**: Academic entrepreneurship is a consolidated research domain
-2. **Shared Vocabulary**: Common terminology across all subfields
-3. **Tight Citation Networks**: High bibliographic coupling (modularity 0.83)
-4. **Integrated Research Communities**: Strong collaboration patterns
+1. **1998-2000**: Foundation phase (CLARK, ETZKOWITZ establish the "entrepreneurial university" concept)
+2. **2008-2011**: Theoretical development (BERCOVITZ, GRIMALDI, D'ESTE - motivations and Bayh-Dole impact)
+3. **2012-2016**: GUERRERO era - economic impact and model development
+4. **2013**: PERKMANN's landmark review (1,566 citations - highest in main path)
+5. **2018**: Rethinking and ecosystem perspectives (FINI, HAYTER, MIRANDA)
+6. **2019-2020**: Contemporary diversification (third mission, spin-off performance, ecosystems)
 
 ---
 
-## 16. Output Files Reference
+## 11. Semantic Frontier Analysis (BERTopic)
+
+**Abstracts analyzed**: 2,739
+**Topics identified**: 14
+**Outlier documents**: 995
+
+### Main Topics
+
+| Topic | Documents | Keywords |
+|-------|-----------|----------|
+| 0 (Main) | 763 | entrepreneurial, entrepreneurship, academic, university, research |
+| 1 | 422 | universities, university, research, innovation, technology |
+| 2 | 317 | spin, offs, university, firms, research, companies |
+| 3 | 59 | engagement, scientists, research, academic, industry |
+| 4 (Frontier) | 53 | **digital**, design, entrepreneurship, technologies |
+
+### Frontier Topics Identified
+
+- **Topic 4**: Digital entrepreneurship, design thinking
+- **Topic 8**: Sustainability, sustainable development, environmental impacts
+- **Topic 11**: Creative industries, arts, creativity entrepreneurship
+- **Topic 12**: Science parks, STPs, NTBFs
+
+---
+
+## 12. Data Source Integration Summary
+
+| Metric | WoS Only | WoS + Scopus |
+|--------|----------|--------------|
+| Total Documents | 1,294 | 2,795 |
+| Time Span | 1988-2025 | 1972-2025 |
+| Unique Authors | 2,711 | 5,877 |
+| Total Citations | 44,190 | 94,128 |
+| Internal Citations (Main Path) | 231 | 27,636 |
+| Main Path Quality | Low (Anonymous authors) | High (Real authors) |
+
+---
+
+## 13. Output Files Reference
 
 | File | Description |
 |------|-------------|
@@ -464,13 +291,18 @@ The low topic count is **scientifically meaningful**, not a limitation:
 | `core_authors_by_cluster.csv` | Top authors per thematic cluster |
 | `keyword_bursts.csv` | Keywords with significant recent growth |
 | `network_statistics.csv` | Comparative network metrics |
-| `historical_roots.csv` | RPYS spectroscopy data (year citations) |
+| `historical_roots.csv` | RPYS spectroscopy data |
 | `main_path_papers.csv` | 20 key papers in knowledge trajectory |
+| `main_path_full_details.csv` | Extended paper metadata for main path |
 | `rpys_spectroscopy.pdf` | RPYS visualization plot |
 | `main_path_evolution.pdf` | Main path chronological visualization |
-| `semantic_topics.csv` | BERTopic semantic topics with representative docs |
+| `semantic_topics.csv` | BERTopic semantic topics |
+| `semantic_intertopic_distance.html` | Interactive topic distance map |
+| `semantic_topics_barchart.html` | Topic keywords bar chart |
 
 ---
 
-*Report generated: 2026-01-29*  
-*Analysis method: Advanced Bibliometric Analysis with Salton's Cosine normalization, Disparity Filter backbone extraction, and Z-score based burst detection*
+*Report generated: 2026-01-31*  
+*Data sources: Web of Science (1,606 records) + Scopus (2,423 records)*  
+*Deduplication: DOI-based matching (1,214 duplicates removed)*  
+*Analysis method: Advanced Bibliometric Analysis with Salton's Cosine normalization, Disparity Filter backbone extraction, Z-score burst detection, and BERTopic semantic analysis*

@@ -104,11 +104,20 @@ DOMAIN_STOPWORDS = {
 # =============================================================================
 
 def load_wos_data(data_dir: str) -> pd.DataFrame:
-    """Load all Web of Science .txt files from the specified directory."""
+    """Load consolidated WoS + Scopus data using bibliometric_analysis module."""
     print("\n" + "=" * 70)
-    print("DATA LOADING")
+    print("DATA LOADING (WoS + Scopus Consolidated)")
     print("=" * 70)
     
+    # Import the combined loader from bibliometric_analysis
+    try:
+        from bibliometric_analysis import load_combined_data
+        df = load_combined_data(data_dir)
+        return df
+    except ImportError:
+        print("  Warning: Could not import load_combined_data, falling back to WoS only")
+    
+    # Fallback to WoS-only loading
     txt_files = [f for f in os.listdir(data_dir) if f.endswith('.txt') and f.startswith('data-')]
     
     if not txt_files:
